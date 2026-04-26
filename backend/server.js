@@ -15,6 +15,17 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
+app.get('/api/health', (req, res) => {
+  res.json({
+    ok: true,
+    env: {
+      NODE_ENV: process.env.NODE_ENV || 'missing',
+      JWT_SECRET: process.env.JWT_SECRET ? 'set' : 'MISSING',
+      DATABASE_URL: process.env.DATABASE_URL ? 'set' : 'MISSING',
+    },
+  });
+});
+
 app.use('/api/auth',      require('./src/routes/auth'));
 app.use('/api/questions', require('./src/routes/questions'));
 app.use('/api/sessions',  require('./src/routes/sessions'));
