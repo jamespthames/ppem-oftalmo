@@ -230,4 +230,44 @@ router.post('/import', async (req, res) => {
   }
 });
 
+router.get('/reports', async (req, res) => {
+  try {
+    const reports = await prisma.questionReport.findMany({
+      where: { resolved: false },
+      include: {
+        question: { select: { enunciado: true, tema: true } },
+        user: { select: { name: true } },
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+    res.json({ reports });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener reportes' });
+  }
+});
+
+router.patch('/reports/:id/resolve', async (req, res) => {
+  try {
+    const report = await prisma.questionReport.update({
+      where: { id: req.params.id },
+      data: { resolved: true },
+    });
+    res.json({ report });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al resolver reporte' });
+  }
+});
+
+router.delete('/reports/:id', async (req, res) => {
+  try {
+    await prisma.questionReport.delete({ where: { id: req.params.id } });
+    res.json({ success: true });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al eliminar reporte' });
+  }
+});
+
 module.exports = router;

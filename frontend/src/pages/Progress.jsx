@@ -72,6 +72,63 @@ function BookmarkCard({ bookmark, onRemove }) {
   );
 }
 
+function CurveTab() {
+  const [data,          setData]          = useState([]);
+  const [selectedTema,  setSelectedTema]  = useState('');
+  const [loading,       setLoading]       = useState(true);
+
+  useEffect(() => {
+    api.get('/api/progress/curve').then(r => {
+      setData(r.data.curve);
+      const temas = [...new Set(r.data.curve.map(d => d.tema))];
+      if (temas.length) setSelectedTema(temas[0]);
+    }).finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <Spinner center />;
+
+  const temas    = [...new Set(data.map(d => d.tema))].sort();
+  const filtered = data.filter(d => d.tema === selectedTema).sort((a, b) => a.week.localeCompare(b.week));
+
+  if (!filtered.length) return (
+    <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--text-3)' }}>
+      Aún no hay datos suficientes. Completa sesiones de práctica para ver tu evolución.
+    </div>
+  );
+
+  const maxVal = 100;
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
+        {temas.map(t => (
+          <button key={t} className={`tab-pill${selectedTema === t ? ' active' : ''}`} onClick={() => setSelectedTema(t)} style={{ fontSize: 12 }}>{t}</button>
+        ))}
+      </div>
+
+      <div className="card" style={{ padding: '24px 20px' }}>
+        <h3 className="section-title" style={{ marginBottom: 20 }}>{selectedTema} — % de aciertos por semana</h3>
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 8, height: 180, overflowX: 'auto', paddingBottom: 8 }}>
+          {filtered.map(d => (
+            <div key={d.week} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, minWidth: 48 }}>
+              <span style={{ fontSize: 10, color: d.rate >= 70 ? 'var(--correct)' : d.rate >= 50 ? 'var(--amber)' : 'var(--wrong)', fontWeight: 600 }}>{d.rate}%</span>
+              <div style={{
+                width: 36, borderRadius: '4px 4px 0 0',
+                height: `${Math.max(4, (d.rate / maxVal) * 140)}px`,
+                background: d.rate >= 70 ? 'var(--correct)' : d.rate >= 50 ? 'oklch(75% 0.14 70)' : 'var(--wrong)',
+                opacity: 0.85,
+                transition: 'height 0.3s',
+              }} />
+              <span style={{ fontSize: 9, color: 'var(--text-4)', textAlign: 'center', lineHeight: 1.2 }}>{d.week.split('-W')[1] ? `Sem ${d.week.split('-W')[1]}` : d.week}</span>
+              <span style={{ fontSize: 9, color: 'var(--text-4)' }}>{d.total} resp</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Progress() {
   const location = useLocation();
   const initialTab = new URLSearchParams(location.search).get('tab') || 'stats';
@@ -131,6 +188,7 @@ export default function Progress() {
           ['stats',     'Estadísticas'],
           ['history',   'Historial'],
           ['bookmarks', `Marcadores (${bookmarks.length})`],
+          ['curve',     'Curva de aprendizaje'],
         ].map(([k, v]) => (
           <button key={k} className={`tab-pill${tab === k ? ' active' : ''}`} onClick={() => setTab(k)}>{v}</button>
         ))}
@@ -249,6 +307,9 @@ export default function Progress() {
               </div>
             )
           )}
+
+          {/* Curve */}
+          {tab === 'curve' && <CurveTab />}
 
           {/* Bookmarks */}
           {tab === 'bookmarks' && (

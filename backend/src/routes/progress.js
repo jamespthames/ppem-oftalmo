@@ -135,4 +135,46 @@ router.get('/bookmarks/:questionId/check', authenticate, async (req, res) => {
   }
 });
 
+router.get('/curve', authenticate, async (req, res) => {
+  try {
+    const twelveWeeksAgo = new Date();
+    twelveWeeksAgo.setDate(twelveWeeksAgo.getDate() - 84);
+
+    const answers = await prisma.userAnswer.findMany({
+      where: { userId: req.user.id, createdAt: { gte: twelveWeeksAgo } },
+      include: { question: { select: { tema: true } } },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    // Group by week + tema
+    const groups = {};
+    for (const a of answers) {
+      const d = new Date(a.createdAt);
+      const week = `${d.getFullYear()}-W${String(getWeekNumber(d)).padStart(2, '0')}`;
+      const key = `${week}__${a.question.tema}`;
+      if (!groups[key]) groups[key] = { week, tema: a.question.tema, total: 0, correct: 0 };
+      groups[key].total++;
+      if (a.isCorrect) groups[key].correct++;
+    }
+
+    const data = Object.values(groups).map(g => ({
+      ...g,
+      rate: g.total ? Math.round((g.correct / g.total) * 100) : 0,
+    }));
+
+    res.json({ curve: data });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener curva' });
+  }
+});
+
+function getWeekNumber(d) {
+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const dayNum = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  return Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+}
+
 module.exports = router;

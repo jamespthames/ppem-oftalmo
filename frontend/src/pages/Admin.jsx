@@ -3,9 +3,12 @@ import api from '../utils/api';
 import Spinner from '../components/Spinner';
 import { PlusIcon, EditIcon, TrashIcon, UploadIcon, CheckIcon, ShieldIcon } from '../components/Icons';
 
+const TYPE_BADGE = { feature: 'badge-indigo', fix: 'badge-wrong', content: 'badge-correct', improvement: 'badge-amber' };
+const TYPE_LABELS_CL = { feature: 'Nueva función', fix: 'Corrección', content: 'Contenido', improvement: 'Mejora' };
+
 const TEMAS = ['Catarata', 'Córnea', 'Glaucoma', 'Oculoplástica', 'Pediatría y Estrabismo', 'Retina', 'Uveítis', 'Óptica y Optometría'];
 const TIPOS = ['opcion_multiple', 'falso_verdadero', 'completar', 'asociacion'];
-const EMPTY = { examen: '', tema: TEMAS[0], numero: '', tipo: 'opcion_multiple', enunciado: '', opciones: { A: '', B: '', C: '', D: '' }, respuestaCorrecta: 'A', nota: '' };
+const EMPTY = { examen: '', tema: TEMAS[0], numero: '', tipo: 'opcion_multiple', enunciado: '', opciones: { A: '', B: '', C: '', D: '' }, respuestaCorrecta: 'A', nota: '', explicacion: '' };
 
 /* ── Stats tab ── */
 function StatsTab() {
@@ -144,9 +147,14 @@ function QuestionForm({ initial, onSave, onCancel }) {
         </>
       )}
 
-      <div style={{ marginBottom: 22 }}>
+      <div style={{ marginBottom: 14 }}>
         <label className="field-label">Nota (opcional)</label>
         <input className="input" value={form.nota} onChange={e => upd('nota', e.target.value)} placeholder="Aclaración o comentario adicional" />
+      </div>
+
+      <div style={{ marginBottom: 22 }}>
+        <label className="field-label">Explicación (opcional)</label>
+        <textarea className="input" value={form.explicacion || ''} onChange={e => upd('explicacion', e.target.value)} placeholder="Explicación detallada de la respuesta correcta" rows={3} />
       </div>
 
       <div style={{ display: 'flex', gap: 10 }}>
@@ -450,6 +458,152 @@ function QuestionsTab() {
   );
 }
 
+/* ── Changelog tab ── */
+function ChangelogTab() {
+  const [entries,  setEntries]  = useState([]);
+  const [loading,  setLoading]  = useState(true);
+  const [form,     setForm]     = useState({ title: '', description: '', type: 'feature' });
+  const [saving,   setSaving]   = useState(false);
+  const [error,    setError]    = useState('');
+
+  const load = () => {
+    setLoading(true);
+    api.get('/api/changelog').then(r => setEntries(r.data.entries || r.data)).finally(() => setLoading(false));
+  };
+  useEffect(load, []);
+
+  const handleCreate = async (e) => {
+    e.preventDefault(); setError(''); setSaving(true);
+    try {
+      await api.post('/api/changelog', form);
+      setForm({ title: '', description: '', type: 'feature' });
+      load();
+    } catch (err) {
+      setError(err.response?.data?.error || 'Error al guardar');
+    } finally { setSaving(false); }
+  };
+
+  const handleDelete = async (id) => {
+    if (!window.confirm('¿Eliminar esta entrada?')) return;
+    await api.delete(`/api/changelog/${id}`);
+    load();
+  };
+
+  return (
+    <div>
+      <div className="card" style={{ padding: '20px 22px', marginBottom: 24 }}>
+        <h3 className="section-title" style={{ marginBottom: 16 }}>Nueva entrada</h3>
+        {error && <div className="feedback-box feedback-wrong" style={{ marginBottom: 12 }}>{error}</div>}
+        <form onSubmit={handleCreate} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: 12 }}>
+            <div>
+              <label className="form-label">Título</label>
+              <input className="form-input" value={form.title} onChange={e => setForm(f => ({ ...f, title: e.target.value }))} required />
+            </div>
+            <div>
+              <label className="form-label">Tipo</label>
+              <select className="form-select" value={form.type} onChange={e => setForm(f => ({ ...f, type: e.target.value }))}>
+                {Object.entries(TYPE_LABELS_CL).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label className="form-label">Descripción</label>
+            <textarea className="form-input" value={form.description} onChange={e => setForm(f => ({ ...f, description: e.target.value }))} rows={3} required />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <button type="submit" className="btn btn-primary btn-sm" disabled={saving}>
+              {saving ? <span className="spinner spinner-sm" /> : <><PlusIcon size={13} /> Publicar</>}
+            </button>
+          </div>
+        </form>
+      </div>
+
+      {loading ? <Spinner center /> : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {entries.map(e => (
+            <div key={e.id} className="card" style={{ padding: '16px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 6 }}>
+                <span className={`badge ${TYPE_BADGE[e.type] || 'badge-neutral'}`}>{TYPE_LABELS_CL[e.type] || e.type}</span>
+                <span style={{ fontWeight: 600, fontSize: 14, color: 'var(--text-1)', flex: 1 }}>{e.title}</span>
+                <button className="btn btn-danger btn-sm" onClick={() => handleDelete(e.id)} style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+                  <TrashIcon size={12} />
+                </button>
+              </div>
+              <p style={{ fontSize: 13, color: 'var(--text-2)', margin: '0 0 6px', lineHeight: 1.6 }}>{e.description}</p>
+              <span style={{ fontSize: 11, color: 'var(--text-4)' }}>
+                {new Date(e.createdAt).toLocaleDateString('es-CR', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Reports tab ── */
+function ReportsTab() {
+  const [reports, setReports] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const load = () => {
+    setLoading(true);
+    api.get('/api/admin/reports').then(r => setReports(r.data.reports || r.data)).finally(() => setLoading(false));
+  };
+  useEffect(load, []);
+
+  const handleResolve = async (id) => {
+    await api.patch(`/api/admin/reports/${id}/resolve`);
+    load();
+  };
+
+  const handleDelete = async (id) => {
+    if (!window.confirm('¿Eliminar este reporte?')) return;
+    await api.delete(`/api/admin/reports/${id}`);
+    load();
+  };
+
+  if (loading) return <Spinner center />;
+
+  if (!reports.length) return (
+    <p style={{ textAlign: 'center', padding: '48px 0', color: 'var(--text-3)' }}>No hay reportes pendientes</p>
+  );
+
+  return (
+    <div className="card" style={{ overflow: 'hidden' }}>
+      <table className="data-table">
+        <thead>
+          <tr><th>Pregunta</th><th>Tema</th><th>Reportado por</th><th>Motivo</th><th>Fecha</th><th></th></tr>
+        </thead>
+        <tbody>
+          {reports.map(r => (
+            <tr key={r.id}>
+              <td style={{ fontSize: 12.5, maxWidth: 200, color: 'var(--text-2)' }}>
+                {(r.question?.enunciado || '').slice(0, 60)}{(r.question?.enunciado || '').length > 60 ? '…' : ''}
+              </td>
+              <td><span className="badge badge-neutral">{r.question?.tema}</span></td>
+              <td style={{ fontSize: 12.5 }}>{r.user?.name || '—'}</td>
+              <td style={{ fontSize: 12.5, color: 'var(--text-2)', maxWidth: 160 }}>{r.reason}</td>
+              <td style={{ fontSize: 11, color: 'var(--text-4)', whiteSpace: 'nowrap' }}>
+                {new Date(r.createdAt).toLocaleDateString('es-CR')}
+              </td>
+              <td>
+                <div style={{ display: 'flex', gap: 6 }}>
+                  <button className="btn btn-secondary btn-sm" onClick={() => handleResolve(r.id)}>Resolver</button>
+                  <button className="btn btn-danger btn-sm" onClick={() => handleDelete(r.id)} style={{ display: 'flex', alignItems: 'center' }}>
+                    <TrashIcon size={12} />
+                  </button>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function Admin() {
   const [tab, setTab] = useState('stats');
 
@@ -461,15 +615,17 @@ export default function Admin() {
       </div>
 
       <div className="tab-row" style={{ marginBottom: 28 }}>
-        {[['stats', 'Estadísticas'], ['questions', 'Preguntas'], ['users', 'Usuarios'], ['import', 'Importar JSON']].map(([k, v]) => (
+        {[['stats','Estadísticas'], ['questions','Preguntas'], ['users','Usuarios'], ['reports','Reportes'], ['changelog','Changelog'], ['import','Importar JSON']].map(([k, v]) => (
           <button key={k} className={`tab-pill${tab === k ? ' active' : ''}`} onClick={() => setTab(k)}>{v}</button>
         ))}
       </div>
 
-      {tab === 'stats'     && <StatsTab />}
-      {tab === 'questions' && <QuestionsTab />}
-      {tab === 'users'     && <UsersTab />}
-      {tab === 'import'    && <ImportTab />}
+      {tab === 'stats'      && <StatsTab />}
+      {tab === 'questions'  && <QuestionsTab />}
+      {tab === 'users'      && <UsersTab />}
+      {tab === 'reports'    && <ReportsTab />}
+      {tab === 'changelog'  && <ChangelogTab />}
+      {tab === 'import'     && <ImportTab />}
     </div>
   );
 }

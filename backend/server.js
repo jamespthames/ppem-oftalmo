@@ -20,6 +20,7 @@ app.use('/api/questions', require('./src/routes/questions'));
 app.use('/api/sessions',  require('./src/routes/sessions'));
 app.use('/api/progress',  require('./src/routes/progress'));
 app.use('/api/admin',     require('./src/routes/admin'));
+app.use('/api/changelog', require('./src/routes/changelog'));
 
 // Serve React build in production
 if (IS_PROD) {

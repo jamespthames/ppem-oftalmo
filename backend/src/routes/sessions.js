@@ -7,16 +7,15 @@ const prisma = new PrismaClient();
 
 router.post('/start', authenticate, async (req, res) => {
   try {
-    const { temas, count = 10, soloOpcionMultiple = true, questionIds } = req.body;
+    const { temas, count = 10, soloOpcionMultiple = true, questionIds, spacedRepetition = false, timed = false, timeLimitSec } = req.body;
 
-    let selected;
+    let allQuestions;
     let sessionTemas;
 
     if (questionIds && questionIds.length) {
       const where = { id: { in: questionIds }, tipo: 'opcion_multiple' };
-      const allQuestions = await prisma.question.findMany({ where });
-      selected = allQuestions.sort(() => Math.random() - 0.5);
-      const temasSet = [...new Set(selected.map(q => q.tema))];
+      allQuestions = await prisma.question.findMany({ where });
+      const temasSet = [...new Set(allQuestions.map(q => q.tema))];
       sessionTemas = temasSet;
     } else {
       if (!temas || !temas.length) {
@@ -24,10 +23,51 @@ router.post('/start', authenticate, async (req, res) => {
       }
       const where = { tema: { in: temas } };
       if (soloOpcionMultiple) where.tipo = 'opcion_multiple';
-      const allQuestions = await prisma.question.findMany({ where });
+      allQuestions = await prisma.question.findMany({ where });
+      sessionTemas = temas;
+    }
+
+    if (!allQuestions.length) {
+      return res.status(400).json({ error: 'No hay preguntas disponibles para esta selección' });
+    }
+
+    let selected;
+    if (spacedRepetition) {
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+      const wrongAnswers = await prisma.userAnswer.findMany({
+        where: { userId: req.user.id, isCorrect: false, createdAt: { gte: thirtyDaysAgo } },
+        select: { questionId: true },
+      });
+      const wrongIds = new Set(wrongAnswers.map(a => a.questionId));
+
+      // Build weighted pool: wrong questions appear 3x, others 1x
+      const pool = [];
+      for (const q of allQuestions) {
+        if (wrongIds.has(q.id)) {
+          pool.push(q, q, q);
+        } else {
+          pool.push(q);
+        }
+      }
+
+      // Randomly sample `count` from weighted pool
+      const target = Math.min(Number(count), allQuestions.length);
+      const shuffledPool = pool.sort(() => Math.random() - 0.5);
+      const seen = new Set();
+      selected = [];
+      for (const q of shuffledPool) {
+        if (!seen.has(q.id)) {
+          seen.add(q.id);
+          selected.push(q);
+          if (selected.length >= target) break;
+        }
+      }
+    } else if (questionIds && questionIds.length) {
+      selected = allQuestions.sort(() => Math.random() - 0.5);
+    } else {
       const shuffled = allQuestions.sort(() => Math.random() - 0.5);
       selected = shuffled.slice(0, Math.min(Number(count), shuffled.length));
-      sessionTemas = temas;
     }
 
     if (!selected.length) {
@@ -41,6 +81,8 @@ router.post('/start', authenticate, async (req, res) => {
         totalQs: selected.length,
         correctQs: 0,
         durationSec: 0,
+        timed: !!timed,
+        timeLimitSec: timeLimitSec ? parseInt(timeLimitSec) : null,
       },
     });
 

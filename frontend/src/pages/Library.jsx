@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import api from '../utils/api';
 import Spinner from '../components/Spinner';
-import { BookmarkIcon, ChevronDownIcon, ChevronUpIcon, ImageIcon, CheckIcon, SearchIcon, XIcon } from '../components/Icons';
+import { BookmarkIcon, ChevronDownIcon, ChevronUpIcon, ImageIcon, CheckIcon, SearchIcon, XIcon, AlertCircleIcon } from '../components/Icons';
 
 const TIPO_LABELS = {
   opcion_multiple: 'Opción múltiple',
@@ -96,10 +96,17 @@ function MultiSelect({ label, options, selected, onChange, renderLabel }) {
 
 /* ── Question card ── */
 function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
-  const [expanded,      setExpanded]      = useState(false);
-  const [answer,        setAnswer]        = useState(null);
-  const [loadingAnswer, setLoadingAnswer] = useState(false);
-  const [imgData,       setImgData]       = useState(null);
+  const [expanded,        setExpanded]        = useState(false);
+  const [answer,          setAnswer]          = useState(null);
+  const [loadingAnswer,   setLoadingAnswer]   = useState(false);
+  const [imgData,         setImgData]         = useState(null);
+  const [comments,        setComments]        = useState([]);
+  const [commentText,     setCommentText]     = useState('');
+  const [loadingComments, setLoadingComments] = useState(false);
+  const [showComments,    setShowComments]    = useState(false);
+  const [showReportForm,  setShowReportForm]  = useState(false);
+  const [reportReason,    setReportReason]    = useState('');
+  const [reportSent,      setReportSent]      = useState(false);
   const isBookmarked = bookmarks.has(question.id);
 
   const revealAnswer = async () => {
@@ -114,10 +121,31 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
   const toggle = async () => {
     const next = !expanded;
     setExpanded(next);
-    if (next && question.hasImage && !imgData) {
-      const r = await api.get(`/api/questions/${question.id}/image`);
-      setImgData(r.data.imagenBase64);
+    if (next) {
+      if (question.hasImage && !imgData) {
+        const r = await api.get(`/api/questions/${question.id}/image`);
+        setImgData(r.data.imagenBase64);
+      }
+      if (!comments.length) {
+        setLoadingComments(true);
+        api.get(`/api/questions/${question.id}/comments`).then(r => setComments(r.data.comments || r.data)).finally(() => setLoadingComments(false));
+      }
     }
+  };
+
+  const submitComment = async () => {
+    if (!commentText.trim()) return;
+    const r = await api.post(`/api/questions/${question.id}/comments`, { text: commentText });
+    setCommentText('');
+    setComments(prev => [...prev, r.data.comment || r.data]);
+  };
+
+  const submitReport = async () => {
+    if (!reportReason.trim()) return;
+    await api.post(`/api/questions/${question.id}/report`, { reason: reportReason });
+    setReportReason('');
+    setShowReportForm(false);
+    setReportSent(true);
   };
 
   const rawOpciones = question.opciones || {};
@@ -195,30 +223,106 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
             </p>
           )}
 
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
-            {question.tipo === 'opcion_multiple' && (
-              !answer ? (
-                <button className="btn btn-secondary btn-sm" onClick={revealAnswer} disabled={loadingAnswer}>
-                  {loadingAnswer ? <span className="spinner spinner-sm" /> : 'Ver respuesta correcta'}
-                </button>
-              ) : (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          {question.tipo === 'opcion_multiple' && (
+            !answer ? (
+              <button className="btn btn-secondary btn-sm" onClick={revealAnswer} disabled={loadingAnswer}>
+                {loadingAnswer ? <span className="spinner spinner-sm" /> : 'Ver respuesta correcta'}
+              </button>
+            ) : (
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 0 }}>
                   <div className="feedback-box feedback-correct" style={{ fontSize: 13, padding: '8px 13px' }}>
                     Respuesta: <strong style={{ color: 'var(--correct)' }}>{answer.respuestaCorrecta.toUpperCase()}</strong>
                     {answer.nota && <span style={{ marginLeft: 8, color: 'oklch(42% 0.13 145)', fontWeight: 400 }}>· {answer.nota}</span>}
                   </div>
                   <button className="btn btn-ghost btn-sm" onClick={() => setAnswer(null)} style={{ fontSize: 12 }}>Ocultar</button>
                 </div>
-              )
-            )}
+                {answer?.explicacion && (
+                  <div style={{ marginTop: 10, padding: '10px 14px', borderRadius: 'var(--r-sm)', background: 'oklch(96% 0.02 258)', border: '1px solid oklch(88% 0.04 258)', fontSize: 13 }}>
+                    <strong style={{ color: 'var(--indigo)', fontSize: 12, display: 'block', marginBottom: 4 }}>Explicación</strong>
+                    <span style={{ color: 'var(--text-1)', lineHeight: 1.6 }}>{answer.explicacion}</span>
+                  </div>
+                )}
+              </div>
+            )
+          )}
+
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', marginTop: 12 }}>
             <button
               className={`btn btn-sm ${isBookmarked ? 'btn-danger' : 'btn-ghost'}`}
               onClick={() => onBookmarkToggle(question.id, isBookmarked)}
-              style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 5 }}
+              style={{ display: 'flex', alignItems: 'center', gap: 5 }}
             >
               <BookmarkIcon size={13} filled={isBookmarked} />
               {isBookmarked ? 'Marcado' : 'Marcar'}
             </button>
+            {reportSent ? (
+              <span style={{ fontSize: 12, color: 'var(--correct)' }}>Reporte enviado</span>
+            ) : (
+              <button
+                className="btn btn-ghost btn-sm"
+                onClick={() => setShowReportForm(f => !f)}
+                style={{ display: 'flex', alignItems: 'center', gap: 5 }}
+              >
+                <AlertCircleIcon size={13} /> Reportar
+              </button>
+            )}
+          </div>
+
+          {showReportForm && (
+            <div style={{ marginTop: 10, display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+              <input
+                className="input"
+                style={{ flex: 1, minWidth: 160, fontSize: 13 }}
+                placeholder="Motivo del reporte..."
+                value={reportReason}
+                onChange={e => setReportReason(e.target.value)}
+              />
+              <button className="btn btn-primary btn-sm" onClick={submitReport}>Enviar</button>
+              <button className="btn btn-ghost btn-sm" onClick={() => setShowReportForm(false)}>Cancelar</button>
+            </div>
+          )}
+
+          <div style={{ marginTop: 14, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() => setShowComments(s => !s)}
+              style={{ fontSize: 12 }}
+            >
+              Comentarios ({loadingComments ? '…' : comments.length})
+            </button>
+
+            {showComments && (
+              <div style={{ marginTop: 10 }}>
+                {loadingComments ? <Spinner center /> : (
+                  <>
+                    {comments.length === 0 && (
+                      <p style={{ fontSize: 12.5, color: 'var(--text-4)', marginBottom: 8 }}>Sin comentarios aún.</p>
+                    )}
+                    {comments.map((c, i) => (
+                      <div key={c.id || i} style={{ marginBottom: 8, padding: '8px 12px', borderRadius: 'var(--r-sm)', background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                        <div style={{ display: 'flex', gap: 8, alignItems: 'baseline', marginBottom: 3 }}>
+                          <span style={{ fontWeight: 500, fontSize: 12.5, color: 'var(--text-1)' }}>{c.user?.name || 'Usuario'}</span>
+                          <span style={{ fontSize: 11, color: 'var(--text-4)' }}>{new Date(c.createdAt).toLocaleDateString('es-CR')}</span>
+                        </div>
+                        <p style={{ fontSize: 13, color: 'var(--text-2)', margin: 0, lineHeight: 1.5 }}>{c.text}</p>
+                      </div>
+                    ))}
+                    <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
+                      <input
+                        className="input"
+                        style={{ flex: 1, fontSize: 13 }}
+                        placeholder="Escribe un comentario..."
+                        value={commentText}
+                        onChange={e => setCommentText(e.target.value)}
+                        onKeyDown={e => { if (e.key === 'Enter') submitComment(); }}
+                      />
+                      <button className="btn btn-primary btn-sm" onClick={submitComment}>Enviar</button>
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         </div>
       )}

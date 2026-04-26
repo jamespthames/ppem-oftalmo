@@ -143,6 +143,13 @@ export default function Results() {
           <PlayIcon size={14} /> Nueva práctica
         </button>
         <Link to="/" className="btn btn-secondary btn-lg">Ir al inicio</Link>
+        <button
+          className="btn btn-ghost btn-sm"
+          onClick={() => window.print()}
+          style={{ display: 'flex', alignItems: 'center', gap: 5 }}
+        >
+          Exportar PDF
+        </button>
       </div>
     </div>
   );

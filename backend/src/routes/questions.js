@@ -16,6 +16,7 @@ const toPublic = (q) => ({
   tieneImagen: q.tieneImagen,
   hasImage: !!q.imagenBase64,
   nota: q.nota,
+  explicacion: q.explicacion || null,
 });
 
 router.get('/topics', authenticate, async (req, res) => {
@@ -104,16 +105,58 @@ router.get('/:id/answer', authenticate, async (req, res) => {
   try {
     const q = await prisma.question.findUnique({
       where: { id: req.params.id },
-      select: { respuestaCorrecta: true, nota: true, opciones: true },
+      select: { respuestaCorrecta: true, nota: true, opciones: true, explicacion: true },
     });
     if (!q) return res.status(404).json({ error: 'No encontrada' });
     res.json({
       respuestaCorrecta: q.respuestaCorrecta,
       nota: q.nota,
       opciones: JSON.parse(q.opciones),
+      explicacion: q.explicacion || null,
     });
   } catch {
     res.status(500).json({ error: 'Error al obtener respuesta' });
+  }
+});
+
+router.post('/:id/report', authenticate, async (req, res) => {
+  try {
+    const { reason } = req.body;
+    const report = await prisma.questionReport.create({
+      data: { userId: req.user.id, questionId: req.params.id, reason },
+    });
+    res.json({ report });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al reportar pregunta' });
+  }
+});
+
+router.get('/:id/comments', authenticate, async (req, res) => {
+  try {
+    const comments = await prisma.questionComment.findMany({
+      where: { questionId: req.params.id },
+      include: { user: { select: { name: true } } },
+      orderBy: { createdAt: 'asc' },
+    });
+    res.json({ comments });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener comentarios' });
+  }
+});
+
+router.post('/:id/comments', authenticate, async (req, res) => {
+  try {
+    const { text } = req.body;
+    const comment = await prisma.questionComment.create({
+      data: { userId: req.user.id, questionId: req.params.id, text },
+      include: { user: { select: { name: true } } },
+    });
+    res.json({ comment });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al crear comentario' });
   }
 });
 

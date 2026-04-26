@@ -8,15 +8,18 @@ datasource db {
 }
 
 model User {
-  id        String         @id @default(cuid())
+  id        String           @id @default(cuid())
   name      String
-  email     String         @unique
+  email     String           @unique
   password  String
-  role      String         @default("student")
-  createdAt DateTime       @default(now())
+  role      String           @default("student")
+  createdAt DateTime         @default(now())
   sessions  StudySession[]
   answers   UserAnswer[]
   bookmarks Bookmark[]
+  changelog Changelog[]
+  reports   QuestionReport[]
+  comments  QuestionComment[]
 }
 
 model Question {
@@ -32,21 +35,26 @@ model Question {
   imagenRef         String?
   imagenBase64      String?
   nota              String?
-  createdAt         DateTime     @default(now())
+  explicacion       String?
+  createdAt         DateTime         @default(now())
   answers           UserAnswer[]
   bookmarks         Bookmark[]
+  reports           QuestionReport[]
+  comments          QuestionComment[]
 }
 
 model StudySession {
-  id          String       @id @default(cuid())
-  userId      String
-  user        User         @relation(fields: [userId], references: [id])
-  temas       String
-  totalQs     Int
-  correctQs   Int
-  durationSec Int
-  createdAt   DateTime     @default(now())
-  answers     UserAnswer[]
+  id           String       @id @default(cuid())
+  userId       String
+  user         User         @relation(fields: [userId], references: [id])
+  temas        String
+  totalQs      Int
+  correctQs    Int
+  durationSec  Int
+  timed        Boolean      @default(false)
+  timeLimitSec Int?
+  createdAt    DateTime     @default(now())
+  answers      UserAnswer[]
 }
 
 model UserAnswer {
@@ -71,4 +79,35 @@ model Bookmark {
   createdAt  DateTime @default(now())
 
   @@unique([userId, questionId])
+}
+
+model Changelog {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  type        String   @default("feature")
+  createdAt   DateTime @default(now())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model QuestionReport {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+  reason     String
+  resolved   Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
+
+model QuestionComment {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+  text       String
+  createdAt  DateTime @default(now())
 }

@@ -14,13 +14,45 @@ export default function PracticeSession() {
   const [submitting, setSubmitting] = useState(false);
   const [results,    setResults]    = useState([]);
 
+  const timed        = state?.timed;
+  const timeLimitSec = state?.timeLimitSec;
+  const [timeLeft, setTimeLeft] = useState(timeLimitSec || 0);
+  const timerRef = useRef(null);
+
   const questions = state?.questions || [];
   const sessionId = state?.sessionId;
   const question  = questions[idx];
 
+  const formatTime = (sec) => {
+    const m = Math.floor(sec / 60);
+    const s = sec % 60;
+    return `${m}:${String(s).padStart(2, '0')}`;
+  };
+
+  const handleTimeUp = () => {
+    const durationSec = Math.round((Date.now() - startTime.current) / 1000);
+    api.post(`/api/sessions/${sessionId}/complete`, { durationSec }).catch(() => {});
+    navigate('/practice/results', { state: { results, durationSec } });
+  };
+
   useEffect(() => {
     if (!sessionId) navigate('/practice', { replace: true });
   }, []);
+
+  useEffect(() => {
+    if (!timed || !timeLimitSec) return;
+    timerRef.current = setInterval(() => {
+      setTimeLeft(t => {
+        if (t <= 1) {
+          clearInterval(timerRef.current);
+          handleTimeUp();
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timerRef.current);
+  }, [timed]);
 
   if (!question) return null;
 
@@ -73,6 +105,17 @@ export default function PracticeSession() {
           </div>
 
           <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 14 }}>
+            {timed && (
+              <div style={{
+                fontVariantNumeric: 'tabular-nums', fontWeight: 600, fontSize: 14,
+                color: timeLeft < 60 ? 'var(--wrong)' : timeLeft < 120 ? 'var(--amber)' : 'var(--text-1)',
+                padding: '4px 12px', borderRadius: 'var(--r-sm)',
+                background: timeLeft < 60 ? 'var(--wrong-tint)' : 'var(--surface-2)',
+                border: '1px solid var(--border)',
+              }}>
+                {formatTime(timeLeft)}
+              </div>
+            )}
             {results.length > 0 && (
               <span style={{ fontSize: 12, color: 'var(--correct)', fontWeight: 500 }}>
                 {correctSoFar}/{results.length}
@@ -131,16 +174,24 @@ export default function PracticeSession() {
 
           {/* Feedback */}
           {feedback && (
-            <div className={`feedback-box ${feedback.isCorrect ? 'feedback-correct' : 'feedback-wrong'} slide-up`} style={{ marginBottom: 20, display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-              <div style={{ flexShrink: 0, marginTop: 2 }}>
-                {feedback.isCorrect ? <CheckIcon size={16} /> : <XIcon size={16} />}
-              </div>
-              <div>
-                <div style={{ fontWeight: 600, marginBottom: feedback.nota ? 4 : 0 }}>
-                  {feedback.isCorrect ? 'Respuesta correcta' : `Incorrecto — la respuesta era ${feedback.respuestaCorrecta.toUpperCase()}`}
+            <div className="slide-up" style={{ marginBottom: 20 }}>
+              <div className={`feedback-box ${feedback.isCorrect ? 'feedback-correct' : 'feedback-wrong'}`} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+                <div style={{ flexShrink: 0, marginTop: 2 }}>
+                  {feedback.isCorrect ? <CheckIcon size={16} /> : <XIcon size={16} />}
                 </div>
-                {feedback.nota && <div style={{ fontSize: 12.5, marginTop: 3, opacity: 0.8 }}>{feedback.nota}</div>}
+                <div>
+                  <div style={{ fontWeight: 600, marginBottom: feedback.nota ? 4 : 0 }}>
+                    {feedback.isCorrect ? 'Respuesta correcta' : `Incorrecto — la respuesta era ${feedback.respuestaCorrecta.toUpperCase()}`}
+                  </div>
+                  {feedback.nota && <div style={{ fontSize: 12.5, marginTop: 3, opacity: 0.8 }}>{feedback.nota}</div>}
+                </div>
               </div>
+              {feedback?.explicacion && (
+                <div style={{ marginTop: 8, padding: '8px 12px', borderRadius: 6, background: 'oklch(96% 0.02 258)', border: '1px solid oklch(88% 0.04 258)', fontSize: 13 }}>
+                  <strong style={{ color: 'var(--indigo)', fontSize: 11, display: 'block', marginBottom: 3 }}>Explicación</strong>
+                  {feedback.explicacion}
+                </div>
+              )}
             </div>
           )}
 
