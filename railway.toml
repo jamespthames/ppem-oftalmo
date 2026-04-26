@@ -1,6 +1,5 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd frontend && npm install --include=dev && npm run build && cd ../backend && DATABASE_URL=postgresql://x:x@localhost:5432/x npm install"
 
 [deploy]
 startCommand = "cd backend && cp prisma/schema.prod.prisma prisma/schema.prisma && npx prisma generate && npx prisma db push --accept-data-loss && node prisma/seed-prod.js && NODE_ENV=production node server.js"
