@@ -1,8 +1,8 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd frontend && npm install --include=dev && npm run build && cd ../backend && npm install && cp prisma/schema.prod.prisma prisma/schema.prisma && npx prisma db push --accept-data-loss && npx prisma generate && node prisma/seed-prod.js"
+buildCommand = "cd frontend && npm install --include=dev && npm run build && cd ../backend && DATABASE_URL=postgresql://x:x@localhost:5432/x npm install"
 
 [deploy]
-startCommand = "cd backend && NODE_ENV=production node server.js"
+startCommand = "cd backend && cp prisma/schema.prod.prisma prisma/schema.prisma && npx prisma generate && npx prisma db push --accept-data-loss && node prisma/seed-prod.js && NODE_ENV=production node server.js"
 healthcheckPath = "/api/questions?limit=1"
 restartPolicyType = "on_failure"
