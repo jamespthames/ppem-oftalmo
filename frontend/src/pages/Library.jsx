@@ -1,7 +1,7 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import api from '../utils/api';
 import Spinner from '../components/Spinner';
-import { BookmarkIcon, ChevronDownIcon, ChevronUpIcon, ImageIcon, CheckIcon, SearchIcon, FilterIcon } from '../components/Icons';
+import { BookmarkIcon, ChevronDownIcon, ChevronUpIcon, ImageIcon, CheckIcon, SearchIcon, XIcon } from '../components/Icons';
 
 const TIPO_LABELS = {
   opcion_multiple: 'Opción múltiple',
@@ -10,6 +10,91 @@ const TIPO_LABELS = {
   asociacion:      'Asociación',
 };
 
+const TIPOS = Object.entries(TIPO_LABELS);
+
+/* ── Multi-select dropdown ── */
+function MultiSelect({ label, options, selected, onChange, renderLabel }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const toggle = (val) => {
+    onChange(selected.includes(val) ? selected.filter(v => v !== val) : [...selected, val]);
+  };
+
+  const count = selected.length;
+
+  return (
+    <div ref={ref} style={{ position: 'relative' }}>
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        style={{
+          width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          gap: 8, padding: '9px 12px', borderRadius: 'var(--r-sm)',
+          border: `1px solid ${count > 0 ? 'var(--indigo)' : 'var(--border)'}`,
+          background: count > 0 ? 'var(--indigo-tint)' : 'var(--surface)',
+          color: count > 0 ? 'var(--indigo)' : 'var(--text-2)',
+          fontSize: 13, fontWeight: count > 0 ? 500 : 400, cursor: 'pointer',
+          transition: 'all 0.15s',
+        }}
+      >
+        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          {count === 0 ? label : count === 1 ? (renderLabel ? renderLabel(selected[0]) : selected[0]) : `${label} (${count})`}
+        </span>
+        <ChevronDownIcon size={13} style={{ flexShrink: 0, transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }} />
+      </button>
+
+      {open && (
+        <div style={{
+          position: 'absolute', top: '100%', left: 0, right: 0, zIndex: 100,
+          marginTop: 4, background: 'var(--surface)',
+          border: '1px solid var(--border)', borderRadius: 'var(--r-sm)',
+          boxShadow: '0 8px 24px oklch(0% 0 0 / 0.12)',
+          maxHeight: 280, overflowY: 'auto',
+        }}>
+          {options.map(opt => {
+            const val = typeof opt === 'string' ? opt : opt[0];
+            const lbl = typeof opt === 'string' ? (renderLabel ? renderLabel(opt) : opt) : opt[1];
+            const active = selected.includes(val);
+            return (
+              <button
+                key={val}
+                type="button"
+                onClick={() => toggle(val)}
+                style={{
+                  width: '100%', display: 'flex', alignItems: 'center', gap: 10,
+                  padding: '9px 12px', background: active ? 'var(--indigo-tint)' : 'transparent',
+                  border: 'none', borderBottom: '1px solid var(--border-light)',
+                  color: active ? 'var(--indigo)' : 'var(--text-1)',
+                  fontSize: 13, textAlign: 'left', cursor: 'pointer',
+                  transition: 'background 0.1s',
+                }}
+              >
+                <span style={{
+                  width: 16, height: 16, borderRadius: 4, flexShrink: 0,
+                  border: `1.5px solid ${active ? 'var(--indigo)' : 'var(--border-strong)'}`,
+                  background: active ? 'var(--indigo)' : 'transparent',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                }}>
+                  {active && <CheckIcon size={10} style={{ color: 'white' }} />}
+                </span>
+                {lbl}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Question card ── */
 function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
   const [expanded,      setExpanded]      = useState(false);
   const [answer,        setAnswer]        = useState(null);
@@ -43,7 +128,6 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
 
   return (
     <div className={`question-card${expanded ? ' expanded' : ''}`}>
-      {/* Header row */}
       <div className="question-header" onClick={toggle}>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 8, flexWrap: 'wrap' }}>
@@ -54,7 +138,7 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
                 <ImageIcon size={10} /> Imagen
               </span>
             )}
-            <span style={{ fontSize: 11, color: 'var(--text-4)', marginLeft: 'auto', white: 'nowrap' }}>
+            <span style={{ fontSize: 11, color: 'var(--text-4)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>
               {question.examen} · #{question.numero}
             </span>
           </div>
@@ -67,23 +151,15 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
         </div>
       </div>
 
-      {/* Expanded body */}
       {expanded && (
         <div className="question-body slide-up">
-          {/* Clinical image */}
           {imgData && (
-            <img
-              src={imgData}
-              alt="Imagen clínica"
-              style={{
-                width: '100%', maxWidth: 480, borderRadius: 8, marginBottom: 18,
-                border: '1px solid var(--border)', display: 'block',
-                imageOrientation: 'from-image',
-              }}
-            />
+            <img src={imgData} alt="Imagen clínica" style={{
+              width: '100%', maxWidth: 480, borderRadius: 8, marginBottom: 18,
+              border: '1px solid var(--border)', display: 'block', imageOrientation: 'from-image',
+            }} />
           )}
 
-          {/* Options */}
           {keys.length > 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 7, marginBottom: 16 }}>
               {keys.map(k => {
@@ -91,8 +167,7 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
                 return (
                   <div key={k} style={{
                     display: 'flex', gap: 10, alignItems: 'flex-start',
-                    padding: '10px 13px',
-                    borderRadius: 'var(--r-sm)',
+                    padding: '10px 13px', borderRadius: 'var(--r-sm)',
                     background: isCorrect ? 'var(--correct-tint)' : 'var(--surface)',
                     border: `1px solid ${isCorrect ? 'oklch(84% 0.06 145)' : 'var(--border)'}`,
                     fontSize: 13.5, lineHeight: 1.5,
@@ -120,7 +195,6 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
             </p>
           )}
 
-          {/* Answer reveal + bookmark */}
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
             {question.tipo === 'opcion_multiple' && (
               !answer ? (
@@ -133,13 +207,10 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
                     Respuesta: <strong style={{ color: 'var(--correct)' }}>{answer.respuestaCorrecta.toUpperCase()}</strong>
                     {answer.nota && <span style={{ marginLeft: 8, color: 'oklch(42% 0.13 145)', fontWeight: 400 }}>· {answer.nota}</span>}
                   </div>
-                  <button className="btn btn-ghost btn-sm" onClick={() => setAnswer(null)} style={{ fontSize: 12 }}>
-                    Ocultar
-                  </button>
+                  <button className="btn btn-ghost btn-sm" onClick={() => setAnswer(null)} style={{ fontSize: 12 }}>Ocultar</button>
                 </div>
               )
             )}
-
             <button
               className={`btn btn-sm ${isBookmarked ? 'btn-danger' : 'btn-ghost'}`}
               onClick={() => onBookmarkToggle(question.id, isBookmarked)}
@@ -155,6 +226,24 @@ function QuestionCard({ question, bookmarks, onBookmarkToggle }) {
   );
 }
 
+/* ── Active filter chip ── */
+function Chip({ label, onRemove }) {
+  return (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center', gap: 5,
+      padding: '3px 10px 3px 10px', borderRadius: 20,
+      background: 'var(--indigo-tint)', border: '1px solid oklch(86% 0.06 258)',
+      color: 'var(--indigo)', fontSize: 12, fontWeight: 500,
+    }}>
+      {label}
+      <button onClick={onRemove} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', color: 'inherit', opacity: 0.7 }}>
+        <XIcon size={11} />
+      </button>
+    </span>
+  );
+}
+
+/* ── Main page ── */
 export default function Library() {
   const [questions, setQuestions] = useState([]);
   const [topics,    setTopics]    = useState([]);
@@ -164,23 +253,28 @@ export default function Library() {
   const [loading,   setLoading]   = useState(true);
   const [bookmarks, setBookmarks] = useState(new Set());
 
-  const [filters, setFilters] = useState({ tema: '', examen: '', tipo: '', search: '' });
-  const [page,    setPage]    = useState(1);
+  const [search,    setSearch]    = useState('');
+  const [temas,     setTemas]     = useState([]);
+  const [examenes,  setExamenes]  = useState([]);
+  const [tipos,     setTipos]     = useState([]);
+  const [soloImagen, setSoloImagen] = useState(false);
+  const [page,      setPage]      = useState(1);
 
   const fetchQuestions = useCallback(async () => {
     setLoading(true);
     try {
       const p = new URLSearchParams({ page, limit: 15 });
-      if (filters.tema)   p.set('tema',   filters.tema);
-      if (filters.examen) p.set('examen', filters.examen);
-      if (filters.tipo)   p.set('tipo',   filters.tipo);
-      if (filters.search) p.set('search', filters.search);
+      if (search)        p.set('search',   search);
+      if (temas.length)  p.set('tema',     temas.join(','));
+      if (examenes.length) p.set('examen', examenes.join(','));
+      if (tipos.length)  p.set('tipo',     tipos.join(','));
+      if (soloImagen)    p.set('hasImage', 'true');
       const r = await api.get(`/api/questions?${p}`);
       setQuestions(r.data.questions);
       setTotal(r.data.total);
       setPages(r.data.pages);
     } finally { setLoading(false); }
-  }, [filters, page]);
+  }, [search, temas, examenes, tipos, soloImagen, page]);
 
   useEffect(() => { fetchQuestions(); }, [fetchQuestions]);
 
@@ -196,9 +290,10 @@ export default function Library() {
     });
   }, []);
 
-  const setFilter = (k, v) => { setFilters(f => ({ ...f, [k]: v })); setPage(1); };
+  const resetPage = () => setPage(1);
+  const clearAll = () => { setSearch(''); setTemas([]); setExamenes([]); setTipos([]); setSoloImagen(false); setPage(1); };
 
-  const hasFilters = filters.tema || filters.examen || filters.tipo || filters.search;
+  const hasFilters = search || temas.length || examenes.length || tipos.length || soloImagen;
 
   const handleBookmarkToggle = async (qid, isBm) => {
     try {
@@ -219,9 +314,10 @@ export default function Library() {
         <p className="page-subtitle">{total} pregunta{total !== 1 ? 's' : ''} disponibles</p>
       </div>
 
-      {/* Filters */}
+      {/* Filter panel */}
       <div className="card" style={{ padding: '16px 20px', marginBottom: 18 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(155px, 1fr))', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 10 }}>
+          {/* Search */}
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-4)', pointerEvents: 'none' }}>
               <SearchIcon size={14} />
@@ -229,33 +325,63 @@ export default function Library() {
             <input
               className="input"
               placeholder="Buscar enunciados..."
-              value={filters.search}
-              onChange={e => setFilter('search', e.target.value)}
+              value={search}
+              onChange={e => { setSearch(e.target.value); resetPage(); }}
               style={{ paddingLeft: 32 }}
             />
           </div>
-          <select className="input" value={filters.tema}   onChange={e => setFilter('tema', e.target.value)}>
-            <option value="">Todos los temas</option>
-            {topics.map(t => <option key={t} value={t}>{t}</option>)}
-          </select>
-          <select className="input" value={filters.examen} onChange={e => setFilter('examen', e.target.value)}>
-            <option value="">Todos los exámenes</option>
-            {exams.map(e => <option key={e} value={e}>{e}</option>)}
-          </select>
-          <select className="input" value={filters.tipo}   onChange={e => setFilter('tipo', e.target.value)}>
-            <option value="">Todos los tipos</option>
-            <option value="opcion_multiple">Opción múltiple</option>
-            <option value="falso_verdadero">Falso / Verdadero</option>
-            <option value="completar">Completar</option>
-            <option value="asociacion">Asociación</option>
-          </select>
+
+          <MultiSelect
+            label="Temas"
+            options={topics}
+            selected={temas}
+            onChange={v => { setTemas(v); resetPage(); }}
+          />
+
+          <MultiSelect
+            label="Exámenes"
+            options={exams}
+            selected={examenes}
+            onChange={v => { setExamenes(v); resetPage(); }}
+          />
+
+          <MultiSelect
+            label="Tipo"
+            options={TIPOS}
+            selected={tipos}
+            onChange={v => { setTipos(v); resetPage(); }}
+            renderLabel={v => TIPO_LABELS[v] || v}
+          />
+
+          {/* Solo con imagen toggle */}
+          <button
+            type="button"
+            onClick={() => { setSoloImagen(s => !s); resetPage(); }}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 8,
+              padding: '9px 12px', borderRadius: 'var(--r-sm)',
+              border: `1px solid ${soloImagen ? 'var(--indigo)' : 'var(--border)'}`,
+              background: soloImagen ? 'var(--indigo-tint)' : 'var(--surface)',
+              color: soloImagen ? 'var(--indigo)' : 'var(--text-2)',
+              fontSize: 13, fontWeight: soloImagen ? 500 : 400, cursor: 'pointer',
+              transition: 'all 0.15s',
+            }}
+          >
+            <ImageIcon size={14} />
+            Solo con imagen
+          </button>
         </div>
+
+        {/* Active chips + clear */}
         {hasFilters && (
-          <div style={{ marginTop: 12, display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span style={{ fontSize: 12, color: 'var(--text-3)' }}>{total} resultado{total !== 1 ? 's' : ''}</span>
-            <button className="btn btn-ghost btn-sm" onClick={() => { setFilters({ tema: '', examen: '', tipo: '', search: '' }); setPage(1); }}>
-              Limpiar filtros
-            </button>
+          <div style={{ marginTop: 12, display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 12, color: 'var(--text-3)', marginRight: 4 }}>{total} resultado{total !== 1 ? 's' : ''}</span>
+            {temas.map(t => <Chip key={t} label={t} onRemove={() => { setTemas(s => s.filter(x => x !== t)); resetPage(); }} />)}
+            {examenes.map(e => <Chip key={e} label={e} onRemove={() => { setExamenes(s => s.filter(x => x !== e)); resetPage(); }} />)}
+            {tipos.map(t => <Chip key={t} label={TIPO_LABELS[t] || t} onRemove={() => { setTipos(s => s.filter(x => x !== t)); resetPage(); }} />)}
+            {soloImagen && <Chip label="Con imagen" onRemove={() => { setSoloImagen(false); resetPage(); }} />}
+            {search && <Chip label={`"${search}"`} onRemove={() => { setSearch(''); resetPage(); }} />}
+            <button className="btn btn-ghost btn-sm" onClick={clearAll} style={{ fontSize: 12 }}>Limpiar todo</button>
           </div>
         )}
       </div>

@@ -46,12 +46,24 @@ router.get('/exams', authenticate, async (req, res) => {
 
 router.get('/', authenticate, async (req, res) => {
   try {
-    const { tema, examen, tipo, search, page = 1, limit = 15 } = req.query;
+    const { tema, examen, tipo, search, page = 1, limit = 15, hasImage } = req.query;
     const where = {};
-    if (tema) where.tema = tema;
-    if (examen) where.examen = examen;
-    if (tipo) where.tipo = tipo;
+
+    // Support comma-separated multi-values
+    if (tema) {
+      const temas = tema.split(',').map(s => s.trim()).filter(Boolean);
+      where.tema = temas.length === 1 ? temas[0] : { in: temas };
+    }
+    if (examen) {
+      const examenes = examen.split(',').map(s => s.trim()).filter(Boolean);
+      where.examen = examenes.length === 1 ? examenes[0] : { in: examenes };
+    }
+    if (tipo) {
+      const tipos = tipo.split(',').map(s => s.trim()).filter(Boolean);
+      where.tipo = tipos.length === 1 ? tipos[0] : { in: tipos };
+    }
     if (search) where.enunciado = { contains: search };
+    if (hasImage === 'true') where.imagenBase64 = { not: null };
 
     const skip = (parseInt(page) - 1) * parseInt(limit);
     const [questions, total] = await Promise.all([
