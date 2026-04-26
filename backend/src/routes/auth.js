@@ -24,8 +24,9 @@ router.post('/register', async (req, res) => {
     const hashed = await bcrypt.hash(password, 10);
     const user = await prisma.user.create({ data: { name, email, password: hashed } });
     res.json({ token: signToken(user.id), user: safeUser(user) });
-  } catch {
-    res.status(500).json({ error: 'Error al registrar usuario' });
+  } catch (err) {
+    console.error('[REGISTER ERROR]', err);
+    res.status(500).json({ error: 'Error al registrar usuario', detail: err.message });
   }
 });
 
@@ -37,8 +38,9 @@ router.post('/login', async (req, res) => {
       return res.status(400).json({ error: 'Credenciales incorrectas' });
     }
     res.json({ token: signToken(user.id), user: safeUser(user) });
-  } catch {
-    res.status(500).json({ error: 'Error al iniciar sesión' });
+  } catch (err) {
+    console.error('[LOGIN ERROR]', err);
+    res.status(500).json({ error: 'Error al iniciar sesión', detail: err.message });
   }
 });
 
