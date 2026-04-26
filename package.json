@@ -1,0 +1,13 @@
+{
+  "name": "ophthalmology-exam-system",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently -n backend,frontend -c cyan,yellow \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "seed": "cd backend && npm run seed",
+    "migrate": "cd backend && npx prisma migrate dev --name init"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

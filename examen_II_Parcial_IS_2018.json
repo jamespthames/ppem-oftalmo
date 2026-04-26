@@ -1,0 +1,450 @@
+{
+  "examen": "II Parcial I Semestre 2018",
+  "calificacion_visible": "47/50",
+  "temas": [
+    {
+      "tema": "Oculoplástica",
+      "preguntas": [
+        {
+          "numero": 1,
+          "tipo": "opcion_multiple",
+          "enunciado": "Las siguientes son características sospechosas de lesiones malignas palpebrales:",
+          "opciones": {
+            "A": "Telangiectasias, crecimiento lento, bordes perlados",
+            "B": "Ulceración, madarosis, bordes irregulares",
+            "C": "Crecimiento rápido, estructura quística, telangiectasias",
+            "D": "Anexos conservados, ulceración, seborrea"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 2,
+          "tipo": "opcion_multiple",
+          "enunciado": "Para el caso anterior [imagen de lesión palpebral inferior con puntos de sutura] ¿cuál sería el mejor plan de reconstrucción palpebral, posterior a la resección completa de dicha lesión?",
+          "opciones": {
+            "A": "Cierre directo más cantotomía lateral",
+            "B": "Injerto de tarso libre contralateral más injerto de piel retroauricular (2 lamelas)",
+            "C": "Colgajo frontoglabelar",
+            "D": "Colgajo tarso conjuntival más injerto libre cutáneo de párpado contralateral (Hughes)"
+          },
+          "respuesta_correcta": "B",
+          "imagen": true,
+          "imagen_ref": "II_parcial_IS2018_p1_p2.jpg",
+          "nota_imagen": "Imagen de ojo derecho con lesión palpebral inferior y puntos de sutura visibles"
+        },
+        {
+          "numero": 3,
+          "tipo": "opcion_multiple",
+          "enunciado": "Los siguientes son características de obstrucción de vía lagrimal alta, excepto:",
+          "opciones": {
+            "A": "Reflujo de material mucoso durante dígito presión del saco lagrimal",
+            "B": "Estenosis de los puntos lagrimales",
+            "C": "Tope blando en el trayecto del sondeo del canalículo",
+            "D": "Reflujo del líquido de irrigación a través del mismo canalículo explorado"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false,
+          "nota": "Pregunta marcada con -2 puntos en el original"
+        },
+        {
+          "numero": 4,
+          "tipo": "opcion_multiple",
+          "enunciado": "La realización de un sondeo nasolagrimal como tratamiento para un cuadro de obstrucción nasolagrimal congénita está indicado en los siguientes casos, excepto:",
+          "opciones": {
+            "A": "Paciente de 13 meses con epífora persistente a pesar de masaje constante",
+            "B": "Paciente de 2 meses de edad con dacriocistocele infectado",
+            "C": "Paciente de 5 años con antecedente de 3 sondeos previos fallidos y saco retenedor",
+            "D": "Paciente de 7 meses de edad con cuadro de dacriocistitis aguda"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 5,
+          "tipo": "opcion_multiple",
+          "enunciado": "Los siguientes enunciados en relación a la lesión presentada anteriormente son correctos, excepto: [imagen clínica de bebé con lesión vascular facial rojiza en región frontal y periorbitaria]",
+          "opciones": {
+            "A": "Resección quirúrgica como primera línea de tratamiento",
+            "B": "Presenta una fase inicial de crecimiento rápido y posteriormente una fase de remisión lenta",
+            "C": "Puede asociar glaucoma (PTACE)",
+            "D": "Puede inducir ambliopía (Retina)"
+          },
+          "respuesta_correcta": "A",
+          "imagen": true,
+          "imagen_ref": "II_parcial_IS2018_p3_p4_p5.jpg",
+          "nota_imagen": "Imagen de bebé con hemangioma capilar facial/periorbital de gran tamaño",
+          "nota": "En el original hay anotaciones: 'x ejercoder B bios'"
+        }
+      ]
+    },
+    {
+      "tema": "Óptica",
+      "preguntas": [
+        {
+          "numero": 6,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente con un diámetro horizontal de iris visible de 11.5 mm, debería usar un diámetro de L.C de:",
+          "opciones": {
+            "A": "14.5mm",
+            "B": "14.0mm",
+            "C": "11.5mm",
+            "D": "10.7mm"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false,
+          "nota": "Anotación en el original: 11.5 + 2.5 = 14"
+        },
+        {
+          "numero": 7,
+          "tipo": "opcion_multiple",
+          "enunciado": "La Aphakia es un ejemplo de:",
+          "opciones": {
+            "A": "Hipermetropía axial",
+            "B": "Hipermetropía refractiva",
+            "C": "Hipermetropía latente",
+            "D": "Hipermetropía manifiesta"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false,
+          "nota": "Marcada como correcta con anotación 'Sí' y tachada la D con 'No'"
+        },
+        {
+          "numero": 8,
+          "tipo": "opcion_multiple",
+          "enunciado": "El paciente hipermetrópico puede tener ambliopía cuando hay una diferencia de poder en A.O de:",
+          "opciones": {
+            "A": "2D",
+            "B": "3D",
+            "C": "0.50D",
+            "D": "1D"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        },
+        {
+          "numero": 9,
+          "tipo": "opcion_multiple",
+          "enunciado": "Cuando en un astigmatismo, los rayos de luz para formar la imagen, cae uno en la retina y otro antes de la retina, el paciente tiene:",
+          "opciones": {
+            "A": "Astigmatismo miopico simple",
+            "B": "Astigmatismo miopico compuesto",
+            "C": "Astigmatismo hipermetropico simple",
+            "D": "Astigmatismo mixto"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false,
+          "nota": "Marcada A con 'Sí' y D tachada con 'No' en el original"
+        },
+        {
+          "numero": 10,
+          "tipo": "opcion_multiple",
+          "enunciado": "Si tengo un poder de anteojos de -5.00 D, tomando en cuenta la distancia al vértice de un miope (enfoque antes de la retina) el poder de L.C es:",
+          "opciones": {
+            "A": "-4.75 D",
+            "B": "-5.25 D",
+            "C": "+5.25 D",
+            "D": "No se le saca distancia al vértice"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Glaucoma",
+      "preguntas": [
+        {
+          "numero": 11,
+          "tipo": "opcion_multiple",
+          "enunciado": "Es indicación de iridotomía, según la escala de Schaffer:",
+          "opciones": {
+            "A": "4 cuadrantes grado 4",
+            "B": "2 cuadrantes grado 2",
+            "C": "3 cuadrantes grado 1",
+            "D": "2 cuadrantes grado 1"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false,
+          "nota": "Anotación: 180° → 2c grado 1; círculo con '71'"
+        },
+        {
+          "numero": 12,
+          "tipo": "opcion_multiple",
+          "enunciado": "¿Cuál de las siguientes alteraciones es más probable que presente artefactos en un OCT de Nervio óptico?",
+          "opciones": {
+            "A": "Degeneración Macular Relacionada a la Edad",
+            "B": "Ambliopía",
+            "C": "Cicatriz de toxoplasmosis en periferia",
+            "D": "Atrofia alfa y beta"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false,
+          "nota": "Anotación 'No' en A, 'Sí' en B y D tachadas con x"
+        },
+        {
+          "numero": 13,
+          "tipo": "opcion_multiple",
+          "enunciado": "Marque la incorrecta:",
+          "opciones": {
+            "A": "Si un CV24-2 es Dentro de límites normales, un CV 10-2 indudablemente va a ser normal",
+            "B": "Un CV 24-2 no descarta por completo daño macular",
+            "C": "La región macular cubre menos del 2% del área de la retina, pero contiene 30% de las células ganglionares",
+            "D": "Un CV 10-2 se utiliza para detectar progresión en glaucomas muy avanzados."
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 14,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente masculino, cita de primera vez, 60 años, con AHF de glaucoma en padre. Nervio óptico con excavación de 70% vertical, con adelgazamiento del anillo neurorretiniano inferior y superior, CV con un escalón nasal y una DM de -7.00. PIO actual en 27 mmHg. ¿Cuál es la PIO meta para este paciente, según la clasificación de leve, moderado y severo?",
+          "opciones": {
+            "A": "<18mmHg",
+            "B": "<15mmHg",
+            "C": "<12 mmHg",
+            "D": "<10mmHg"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false,
+          "nota": "Anotaciones en el original: PIO 27→18; L:-6, M:6-12, S:12; y 15-17 / 12-15"
+        },
+        {
+          "numero": 15,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente masculino 40 años, sano, con historia familiar de glaucoma en madre, PIO 22mmHg (promedio de 3 tomas). Nervio óptico excavación 60%, ISNT, sin muescas ni atrofia peripapilar, sin palidez del disco. Gonioscopía grado 4 en 4 cuadrantes (Schaffer). [Continúa en imagen siguiente] Paquimetría de 555 micras. AV corregida 20/20 AO. RX OD-7,00-2,00x100 y OI-6,50-1,75x10. OCT de células ganglionares bien. OCT de Nervio óptico artefactos no permiten buena medida. CV10-2 y 24-2 dentro de límites normales. ¿Cuál es el mejor manejo?",
+          "opciones": {
+            "A": "SLT",
+            "B": "Observación",
+            "C": "Iridotomía y Latanoprost",
+            "D": "Timolol y dorzolamida"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false,
+          "nota": "Anotaciones: PIO 2, exc 60%"
+        }
+      ]
+    },
+    {
+      "tema": "Catarata",
+      "preguntas": [
+        {
+          "numero": 16,
+          "tipo": "opcion_multiple",
+          "enunciado": "Un dispositivo viscoelástico oftálmico de tipo dispersivo que se utiliza en facoemulsificación tiene la siguiente propiedad:",
+          "opciones": {
+            "A": "Se adhiere y protege el endotelio",
+            "B": "Es fácil de remover al final de la cirugía",
+            "C": "El viscoelástico retenido no causa un aumento en la PIO en el postoperatorio",
+            "D": "Previene el colapso de la cámara anterior en situaciones de vacío alto."
+          },
+          "respuesta_correcta": "A",
+          "imagen": false,
+          "nota": "Anotación en el original: 'Macrómey' (nombre comercial). C marcada con 'Sí' tachado"
+        },
+        {
+          "numero": 17,
+          "tipo": "opcion_multiple",
+          "enunciado": "¿Por qué están presentes en la cámara anterior el glutatión y las vitaminas A y C?",
+          "opciones": {
+            "A": "Para ajustar el pH y actuar como un buffer",
+            "B": "Para proteger el endotelio corneal",
+            "C": "Para capturar radicales libres",
+            "D": "Para inducir daño al ADN"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 18,
+          "tipo": "opcion_multiple",
+          "enunciado": "Para la edad adulta, el eje anteroposterior del cristalino mide:",
+          "opciones": {
+            "A": "10 mm",
+            "B": "1.2 mm",
+            "C": "4-5 mm",
+            "D": "2.5 mm"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 19,
+          "tipo": "opcion_multiple",
+          "enunciado": "En relación con un agente viscoelástico, la pseudoplasticidad se refiere a:",
+          "opciones": {
+            "A": "su elasticidad",
+            "B": "su grosor, relacionado al peso molecular",
+            "C": "su habilidad para cubrir y proteger",
+            "D": "su habilidad para cambiar de gel a un líquido"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        },
+        {
+          "numero": 20,
+          "tipo": "opcion_multiple",
+          "enunciado": "¿Cuál de las siguientes no es una función del cristalino?",
+          "opciones": {
+            "A": "Mantener la claridad",
+            "B": "Encargarse de la acomodación",
+            "C": "Metabolizar toxinas",
+            "D": "Refractar la luz"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 21,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente programado para facoemulsificación de OD por catarata subcapsular posterior. Presenta los siguientes datos para la Biometría: LA OD 23.35 mm, LA OI 23.21 mm, K1 45.25 D @30 K2 45.75 D @120 (OD), K1 45.75 D @110 K2 46.50 @20 (OI). A 118,7 OD 19.00 D OI 19.00 calculados con la fórmula Holladay I. Basándose en la longitud axial, la fórmula ideal para dicho paciente sería, marque la correcta:",
+          "opciones": {
+            "A": "SRK-T",
+            "B": "Holladay II",
+            "C": "Hoffer Q",
+            "D": "Todas las anteriores"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false,
+          "nota": "Anotaciones: <21 Hoffer; 21-24 cualo; 24-26 Holladay; >26 SRK#"
+        }
+      ]
+    },
+    {
+      "tema": "Retina",
+      "preguntas": [
+        {
+          "numero": 22,
+          "tipo": "opcion_multiple",
+          "enunciado": "En relación con la Vasculopatía Coroidal Polipoidea (marque la correcta):",
+          "opciones": {
+            "A": "Es más comúnmente una enfermedad unilateral que bilateral",
+            "B": "Mayor incidencia en raza negra y caucásicos",
+            "C": "Mayor frecuencia de desprendimiento del EPR y hemorragia subretiniana",
+            "D": "Ninguna es correcta",
+            "E": "Todas son correctas",
+            "F": "a y c son correctas"
+          },
+          "respuesta_correcta": "F",
+          "imagen": false
+        },
+        {
+          "numero": 23,
+          "tipo": "opcion_multiple",
+          "enunciado": "En el tratamiento de la Vasculopatía Coroidal Polipoidea el estudio Planet (Marque la correcta):",
+          "opciones": {
+            "A": "Demostró una no-inferioridad en ganancia de agudeza visual de la monoterapia con Aflibercept frente a combinación de la misma con terapia fotodinámica de rescate",
+            "B": "Demostró una no-inferioridad en ganancia de agudeza visual de la monoterapia con Ranibizumab frente a combinación de la misma con terapia fotodinámica de rescate",
+            "C": "Demostró que la terapia fotodinámica es superior a cualquier antiVEGF en el tratamiento de Vasculopatía Coroidal Polipoidea",
+            "D": "Demostró que el láser es una excelente opción para pólipos extrafoveales"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 24,
+          "tipo": "opcion_multiple",
+          "enunciado": "El protocolo T demostró que en el tratamiento de Edema Macular Diabético Severo (marque la correcta):",
+          "opciones": {
+            "A": "Se requieren menos inyecciones de antiVEGF en el segundo año de seguimiento",
+            "B": "El Bevacizumab es igual de efectivo que las otras drogas en ganancia visual en pacientes que presentaron agudezas visuales de 20/40 o mejor de base",
+            "C": "En pacientes con agudeza visual de 20/50 o peor el Bevacizumab presenta menor ganancia visual que Ranibizumab o Aflibercept hacia el segundo año de seguimiento",
+            "D": "Todas son correctas",
+            "E": "Ninguna es correcta",
+            "F": "b y c son correctas"
+          },
+          "respuesta_correcta": "F",
+          "imagen": false
+        },
+        {
+          "numero": 25,
+          "tipo": "opcion_multiple",
+          "enunciado": "En relación a los suplementos AREDS y AREDS 2 (marque la correcta):",
+          "opciones": {
+            "A": "Los ojos catalogados como degeneración macular intermedia tienen un 18% de progresión a una enfermedad avanzada en algún ojo en los siguientes 5 años, y los ojos con degeneración avanzada en 1 ojo tienen 43% de riesgo de presentar una enfermedad avanzada en el ojo contralateral en los siguientes 5 años",
+            "B": "AREDS 2 no demostró un beneficio adicional o un efecto dañino al agregar Lutein y Zeaxantina y Omega 3 o la combinación en la progresión a degeneración macular avanzada al compararlo contra Placebo",
+            "C": "Debido al riesgo potencial de cáncer de pulmón en fumadores previos o activos el uso de zeaxantina y luteína parece ser un sustituto más seguro al betacaroteno en la formulación de AREDS",
+            "D": "La comparación en el estudio de AREDS 2 de suplementos con baja dosis de zinc (25 mg) versus alta dosis (80 mg) no demostró ningún efecto clínicamente significativo y la evidencia fue insuficiente para dar una recomendación clínica",
+            "E": "Todas son correctas",
+            "F": "Ninguna es correcta",
+            "G": "b y c son correctas"
+          },
+          "respuesta_correcta": "E",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Córnea",
+      "preguntas": [
+        {
+          "numero": 26,
+          "tipo": "opcion_multiple",
+          "enunciado": "Se ha estimado que la pérdida fisiológica anual de células endoteliales corneales en el ser humano es aproximadamente",
+          "opciones": {
+            "A": "5%",
+            "B": "0.05%",
+            "C": "0.5%",
+            "D": "2%"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 27,
+          "tipo": "opcion_multiple",
+          "enunciado": "En el estudio de tomografía corneal por imágenes de Scheimpflug Pentacam (Oculus), los valores considerados como límite superior normal para la elevación corneal anterior y posterior con respecto a esfera de mejor acoplamiento son respectivamente:",
+          "opciones": {
+            "A": "28 um y 35 um",
+            "B": "12 um y 18 um",
+            "C": "3 um y 10 um",
+            "D": "10 um y 40 um"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 28,
+          "tipo": "opcion_multiple",
+          "enunciado": "El porcentaje de hexagonalidad de las células endoteliales en córneas sanas está por encima del:",
+          "opciones": {
+            "A": "95%",
+            "B": "60%",
+            "C": "40%",
+            "D": "30%"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 29,
+          "tipo": "opcion_multiple",
+          "enunciado": "Una córnea sana, con una prolaticidad normal, tendría un coeficiente de asfericidad (Q) de:",
+          "opciones": {
+            "A": "-0.23",
+            "B": "-1.3",
+            "C": "0.21",
+            "D": "1.0"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false,
+          "nota": "Anotación en el original: 0/-1"
+        },
+        {
+          "numero": 30,
+          "tipo": "opcion_multiple",
+          "enunciado": "El tomógrafo corneal Galilei es un ejemplo de:",
+          "opciones": {
+            "26": "Tomografía de Scheimpflug",
+            "27": "Topografía por anillos de Plácido",
+            "28": "Aberrometría tipo Hartman Shack",
+            "29": "A y b con correctas"
+          },
+          "respuesta_correcta": "29",
+          "imagen": false,
+          "nota": "Las opciones en el original están numeradas 26-29 en lugar de A-D"
+        }
+      ]
+    }
+  ]
+}

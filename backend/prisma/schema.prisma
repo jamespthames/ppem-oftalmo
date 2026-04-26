@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String         @id @default(cuid())
+  name      String
+  email     String         @unique
+  password  String
+  role      String         @default("student")
+  createdAt DateTime       @default(now())
+  sessions  StudySession[]
+  answers   UserAnswer[]
+  bookmarks Bookmark[]
+}
+
+model Question {
+  id                String       @id @default(cuid())
+  examen            String
+  tema              String
+  numero            Int
+  tipo              String
+  enunciado         String
+  opciones          String
+  respuestaCorrecta String
+  tieneImagen       Boolean      @default(false)
+  imagenRef         String?
+  imagenBase64      String?
+  nota              String?
+  createdAt         DateTime     @default(now())
+  answers           UserAnswer[]
+  bookmarks         Bookmark[]
+}
+
+model StudySession {
+  id          String       @id @default(cuid())
+  userId      String
+  user        User         @relation(fields: [userId], references: [id])
+  temas       String
+  totalQs     Int
+  correctQs   Int
+  durationSec Int
+  createdAt   DateTime     @default(now())
+  answers     UserAnswer[]
+}
+
+model UserAnswer {
+  id          String        @id @default(cuid())
+  userId      String
+  user        User          @relation(fields: [userId], references: [id])
+  questionId  String
+  question    Question      @relation(fields: [questionId], references: [id])
+  sessionId   String?
+  session     StudySession? @relation(fields: [sessionId], references: [id])
+  answerGiven String
+  isCorrect   Boolean
+  createdAt   DateTime      @default(now())
+}
+
+model Bookmark {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, questionId])
+}

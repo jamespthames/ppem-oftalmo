@@ -1,0 +1,695 @@
+{
+  "examen": "I Semestral 2018",
+  "nombre_archivo": "Machote IS 2018",
+  "temas": [
+    {
+      "tema": "Oculoplástica",
+      "preguntas": [
+        {
+          "numero": 1,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente masculino de 50 años, usuario de lentes de contacto desde los 18 años, actualmente consulta por 'párpado caído' de 2 años de evolución. Al examen físico presenta:\n\nOJO DERECHO: DMR1=2MM, DMR2=5MM, Función del Elevador=12MM\nOJO IZQUIERDO: DMR1=5MM, DMR2=5MM, Función del Elevador=12MM\n\nEn base a los datos anteriores, ¿Cuál sería el plan quirúrgico adecuado para este paciente?",
+          "opciones": {
+            "A": "Müllerectomia",
+            "B": "Reinserción de la aponeurosis del elevador",
+            "C": "Suspensión al frontal",
+            "D": "Resección de la aponeurosis del elevador"
+          },
+          "respuesta_correcta": "B",
+          "imagen": true
+        },
+        {
+          "numero": 2,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente masculino de 65 años con historia de resección de carcinoma basocelular región nasal derecha, que indica que desde hace 2 años presenta eritema, lagrimeo y secreción en ojo derecho. [Imagen clínica adjunta] Este cuadro clínico corresponde a la siguiente patología:",
+          "opciones": {
+            "A": "Ectropión senil",
+            "B": "Ectropión cicatrizal",
+            "C": "Ectropión paralítico",
+            "D": "Entropión cicatrizal"
+          },
+          "respuesta_correcta": "B",
+          "imagen": true
+        },
+        {
+          "numero": 3,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente femenina de 1 mes de edad referida de la consulta de niño sano, por dificultad para la revisión ocular y alteración del reflejo rojo ojo izquierdo. Al examen físico presenta párpados sin alteraciones anatómicas, globo ocular de volumen disminuido, microcórnea, sinequias anteriores, cristalino con opacidad. Se le realiza un US que documenta lesión quística a nivel del nervio óptico y polo posterior desorganizado. De acuerdo con los hallazgos descritos la patología que presenta la niña en su ojo izquierdo corresponde a:",
+          "opciones": {
+            "A": "Anoftalmos",
+            "B": "Nanoftalmos",
+            "C": "Microftalmos",
+            "D": "Criptoftalmos"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 4,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente femenina de 35 años de edad con historia de 2 semanas de evolución de desviación de la comisura labial hacia la derecha, dificultad del cierre palpebral izquierdo además de lagrimeo, sensación de cuerpo extraño en ese mismo ojo, y familiares indican que no realiza cierre completo a la hora de dormir. Se le realizaron estudios complementarios y valoración por ORL, sin lograr identificar patología responsable del cuadro. A la valoración oftalmológica presenta, eritema conjuntival inferior, queratitis puntata superficial 70%, buen fenómeno de Bell. [Imagen clínica adjunta] Desde el punto de visto oftalmológico el manejo más adecuado para esta paciente en este momento sería:",
+          "opciones": {
+            "A": "Tarsorrafia lateral permanente",
+            "B": "Pesa de oro",
+            "C": "Lubricación frecuente y oclusión nocturna",
+            "D": "Tira tarsal izquierda"
+          },
+          "respuesta_correcta": "C",
+          "imagen": true
+        },
+        {
+          "numero": 5,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente masculino de 70 años de edad con historia de irritación ocular bilateral de larga data, asociado a sensación de cuerpo extraño y lagrimeo, que a pesar de múltiples tratamientos médicos en varios centros no ha obtenido una mejoría importante de sus síntomas. A la exploración presenta simblefaro en ambos ojos con acortamiento de fondo de saco inferior y entropión cicatrizal, además a nivel de corneal presenta pannus inferior y queratitis puntata superficial. Actualmente se encuentra en tratamiento con lágrimas artificiales, dexametasona con neomicina y diclofenaco tópico. [Imagen clínica adjunta] Basado en lo anterior ¿cuál sería el mejor manejo para esta paciente?",
+          "opciones": {
+            "A": "Tira tarsal",
+            "B": "Biopsia de conjuntiva",
+            "C": "Fotocoagulación de pestañas",
+            "D": "Tarsorrafia lateral"
+          },
+          "respuesta_correcta": "B",
+          "imagen": true,
+          "nota": "Marcado como 'Valorar eliminar' en el original"
+        },
+        {
+          "numero": 6,
+          "tipo": "opcion_multiple",
+          "enunciado": "Paciente femenina de 15 años con historia de ptosis bilateral asimétrica variable, de 6 meses de evolución asociado a diplopía intermitente, a la exploración se documenta:\n\nOJO DERECHO: DMR1=2MM, DMR2=5MM, Función del Elevador=7MM\nOJO IZQUIERDO: DMR1=4MM, DMR2=5MM, Función del Elevador=9MM\n\nAdemás presenta exotropia izquierda de 20D, resto de examen oftalmológico normal. Según los datos anteriores ¿cuál es el tipo de ptosis más probable que presenta la paciente?",
+          "opciones": {
+            "A": "Congénita",
+            "B": "Aponeurótica",
+            "C": "Mecánica",
+            "D": "Miogénica"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Córnea",
+      "preguntas": [
+        {
+          "numero": 7,
+          "tipo": "opcion_multiple",
+          "enunciado": "El epitelio corneal normal mide en promedio",
+          "opciones": {
+            "a": "20 um",
+            "b": "50 um",
+            "c": "120 um",
+            "d": "200 um"
+          },
+          "respuesta_correcta": "b",
+          "imagen": false
+        },
+        {
+          "numero": 8,
+          "tipo": "opcion_multiple",
+          "enunciado": "Los siguientes son filamentos intermedios típicos de las células epiteliales corneales maduras (usados como marcadores de las mismas)",
+          "opciones": {
+            "a": "Queratinas 4 y 8",
+            "b": "Queratinas 1 y 8",
+            "c": "Queratinas 3 y 12",
+            "d": "Queratinas 6 y 9"
+          },
+          "respuesta_correcta": "c",
+          "imagen": false
+        },
+        {
+          "numero": 9,
+          "tipo": "opcion_multiple",
+          "enunciado": "Los siguientes son los componentes primordiales de la membrana basal epitelial corneal",
+          "opciones": {
+            "a": "Fibronectina y colágeno tipo 3",
+            "b": "Laminina y colágeno tipo 1",
+            "c": "Laminina y colágeno tipo 4",
+            "d": "Colágeno tipo 5 y 6"
+          },
+          "respuesta_correcta": "c",
+          "imagen": false
+        },
+        {
+          "numero": 10,
+          "tipo": "opcion_multiple",
+          "enunciado": "La siguiente afirmación con respecto a la membrana de Bowman es falsa",
+          "opciones": {
+            "a": "Tiene un grosor de aproximadamente 12 um",
+            "b": "Es el nombre propio de la membrana basal del epitelio corneal en honor al patólogo ocular James Bowman",
+            "c": "Está compuesta principalmente por colágeno tipo 1 y 3",
+            "d": "No se regenera luego de una injuria"
+          },
+          "respuesta_correcta": "b",
+          "imagen": false
+        },
+        {
+          "numero": 11,
+          "tipo": "opcion_multiple",
+          "enunciado": "La distancia aproximada entre fibra y fibra de colágeno en el estroma de una córnea transparente sana es en promedio",
+          "opciones": {
+            "a": "235 nm",
+            "b": "40 nm",
+            "c": "10 nm",
+            "d": "310 nm"
+          },
+          "respuesta_correcta": "b",
+          "imagen": false
+        },
+        {
+          "numero": 12,
+          "tipo": "opcion_multiple",
+          "enunciado": "Se ha comprobado que las fibras que dan un mayor soporte estructural a la biomecánica corneal son las del estroma",
+          "opciones": {
+            "a": "Posterior",
+            "b": "Anterior",
+            "c": "Medio",
+            "d": "Limbal"
+          },
+          "respuesta_correcta": "b",
+          "imagen": false
+        },
+        {
+          "numero": 13,
+          "tipo": "opcion_multiple",
+          "enunciado": "Se ha estimado que la pérdida fisiológica anual de células endoteliales corneales en el ser humano es aproximadamente",
+          "opciones": {
+            "a": "5%",
+            "b": "0.05%",
+            "c": "0.5%",
+            "d": "2%"
+          },
+          "respuesta_correcta": "c",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Catarata",
+      "preguntas": [
+        {
+          "numero": 14,
+          "tipo": "opcion_multiple",
+          "enunciado": "[Pregunta parcialmente visible - opciones de porcentaje visibles] Opciones: D) 60%, c) 40%, d) 30%",
+          "opciones": {
+            "D": "60%",
+            "c": "40%",
+            "d": "30%"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false,
+          "nota": "Enunciado principal no visible en la imagen, solo se ven las opciones de respuesta"
+        },
+        {
+          "numero": 15,
+          "tipo": "opcion_multiple",
+          "enunciado": "La importancia de la evaluación prequirúrgica en un paciente que se presenta con una catarata traumática está justificada por los siguientes aspectos, EXCEPTO:",
+          "opciones": {
+            "A": "Nos permite predecir el resultado visual post-operatorio del paciente",
+            "B": "Nos permite anticipar eventos que puedan ocurrir en la sala de operaciones.",
+            "C": "Nos permite comprender la naturaleza de la disfunción de la anatomía ocular.",
+            "D": "Nos permite determinar todos los instrumentos, equipos, suturas e implantes necesarios por adelantado."
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 16,
+          "tipo": "opcion_multiple",
+          "enunciado": "La causa más común de catarata congénita bilateral es:",
+          "opciones": {
+            "A": "Idiopática",
+            "B": "Enfermedades metabólicas",
+            "C": "Infecciones intrauterinas (TORCH'S)",
+            "D": "Hereditaria sin enfermedad sistémica asociada"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 17,
+          "tipo": "opcion_multiple",
+          "enunciado": "La complicación durante o después de la cirugía de catarata del siguiente paciente más probable a ocurrir es: [Imagen clínica adjunta - imagen de lámpara de hendidura]",
+          "opciones": {
+            "A": "Dehisencia zonular",
+            "B": "Retención de viscoelástico",
+            "C": "Descompensación corneal",
+            "D": "Inflamación postoperatoria severa"
+          },
+          "respuesta_correcta": "A",
+          "imagen": true
+        },
+        {
+          "numero": 18,
+          "tipo": "opcion_multiple",
+          "enunciado": "En las cirugías de catarata asistidas por femtosegundo, el uso de este láser nos permite realizar los siguientes pasos de la cirugía de catarata, EXCEPTO:",
+          "opciones": {
+            "A": "Creación de la capsulorrexis",
+            "B": "Facoemulsificación del cristalino",
+            "C": "Construcción de incisiones corneales",
+            "D": "Reducción del astigmatismo preexistente"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 19,
+          "tipo": "opcion_multiple",
+          "enunciado": "Una contraindicación absoluta para la colocación de un anillo de tensión capsular simple es la siguiente:",
+          "opciones": {
+            "A": "Facodonesis",
+            "B": "Debilidad zonular generalizada",
+            "C": "Ruptura de la cápsula posterior del cristalino",
+            "D": "Dehisencia zonular de hasta 4 horas de extensión"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 20,
+          "tipo": "opcion_multiple",
+          "enunciado": "Un recién nacido de 1 semana de edad el pediatra le encontró un reflejo rojo anormal de ambos ojos. La imagen a continuación corresponde a su ojo derecho. El ojo izquierdo tiene una apariencia similar. Por lo demás el resto de los ojos son normales. [Imagen clínica adjunta - catarata congénita] ¿Cuál de las siguientes es la conducta más apropiada para este infante?",
+          "opciones": {
+            "A": "Parchar el ojo que mejor 'fije y siga' la luz y realizarle la cirugía de catarata al otro ojo.",
+            "B": "Realizar la cirugía en un ojo tan pronto como sea posible y el otro después de tres meses de edad.",
+            "C": "Observarlo hasta los 3 meses de edad y realizar la cirugía de catarata solamente si desarrollan nistagmus.",
+            "D": "Realizar la cirugía en un ojo, con la corrección de afaquia inmediatamente; realizar la cirugía en el otro ojo antes de los 3 meses de edad."
+          },
+          "respuesta_correcta": "D",
+          "imagen": true
+        }
+      ]
+    },
+    {
+      "tema": "Retina",
+      "preguntas": [
+        {
+          "numero": 21,
+          "tipo": "opcion_multiple",
+          "enunciado": "La isoforma de VEGF-A más abundante en el ojo es: (marque la correcta)",
+          "opciones": {
+            "A": "VEGF-121",
+            "B": "VEGF-145",
+            "C": "VEGF-165",
+            "D": "VEGF-189"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 22,
+          "tipo": "opcion_multiple",
+          "enunciado": "En el estudio CRUISE: (marque la INCORRECTA)",
+          "opciones": {
+            "A": "Utiliza 6 dosis iniciales de Ranibizumab en las ramas de tratamiento",
+            "B": "Los pacientes con antecedente de Infarto al miocardio o AVC fueron excluidos del estudio",
+            "C": "A los 6 meses alrededor de 50% de los pacientes tratados con Ranibizumab presentaban una ganancia de 3 o más líneas",
+            "D": "Este estudio consiste en dos ramas de Ranibizumab (0,3 mg y 0,5 mg) vs. Sham"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 23,
+          "tipo": "opcion_multiple",
+          "enunciado": "En el CATT Trial en el segundo año (marque la INCORRECTA):",
+          "opciones": {
+            "A": "Los porcentajes de muertes y efectos aterotrombóticos fueron similares entre las dos drogas",
+            "B": "Los efectos adversos sistémicos fueron más frecuentes en la rama de Bevacizumab que en la de Ranibizumab pero estos efectos no parecen estar relacionados con la terapia en sí.",
+            "C": "En la rama de Bevacizumab P.R.N. solamente 13,9% de los ojos estaban libres de líquido subretiniano hacia el segundo año, por lo que es esperable en la practica clínica que encontremos líquido intra o subretiniano en nuestros pacientes si optamos por este régimen.",
+            "D": "Los pacientes que cambiaron de tratamiento mensual (primer año) a tratamiento PRN en el segundo año mantuvieron la agudeza visual estable."
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        },
+        {
+          "numero": 24,
+          "tipo": "opcion_multiple",
+          "enunciado": "En el melanoma coroideo, las características que sugieren la presencia malignidad (un melanoma pequeño vs un nevus) son: (marque la INCORRECTA):",
+          "opciones": {
+            "A": "Presencia de líquido subretiniano",
+            "B": "Presencia de halo perilesional",
+            "C": "Presencia de pigmento naranja en la lesión",
+            "D": "Ausencia de drusas en la lesión"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 25,
+          "tipo": "opcion_multiple",
+          "enunciado": "En orden ascendente, el grado de afinidad de las drogas al VEGF-A es el siguiente (marque la correcta)",
+          "opciones": {
+            "A": "Ranibizumab < Bevacizumab < Aflibercept",
+            "B": "Aflibercept < Ranibizumab < Bevacizumab",
+            "C": "Bevacizumab < Ranibizumab < Aflibercept",
+            "D": "Bevacizumab < Aflibercept < Ranibizumab"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Uveítis",
+      "preguntas": [
+        {
+          "numero": 26,
+          "tipo": "completar",
+          "enunciado": "SIDA Complete. Complete los espacios en blanco:",
+          "items": [
+            "_______ es el más agente oportunista más común en infección ocular.",
+            "_______ es el hallazgo ocular más común en pacientes con SIDA.",
+            "Al usar HAART en pacientes con CMV previa puede desencadenar una uveítis de _______.",
+            "La retinitis toxoplásmica en SIDA es probablemente por infección adquirida por lo que no se asocia a lesiones _______.",
+            "Lesiones faciales por _______ en menores de 50 años requieren serología por HIV."
+          ],
+          "respuestas": [
+            "CMV",
+            "Retinitis HIV",
+            "recuperación inmune",
+            "satélite",
+            "herpes zoster"
+          ],
+          "imagen": false
+        },
+        {
+          "numero": 27,
+          "tipo": "falso_verdadero",
+          "enunciado": "Cataratas y uveítis. Falso o verdadero.",
+          "items": [
+            {
+              "afirmacion": "La cirugía en uveítis de Fuch's es de mal pronóstico.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "El PMMA demuestra la mejor biocompatibilidad.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "Vitrectomía con lensectomía es indicación más comúnmente en artritis idiopática juvenil.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "Control de inflamación por mínimo de un mes es suficiente preparación para la mayoría.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "La uveítis facoantigénica requiere extracción de la catarata al diagnóstico.",
+              "respuesta": "V"
+            }
+          ],
+          "imagen": false
+        },
+        {
+          "numero": 28,
+          "tipo": "falso_verdadero",
+          "enunciado": "Escleritis. Falso o verdadero.",
+          "items": [
+            {
+              "afirmacion": "Frecuentemente se asocia a artritis reumatoide.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "Historia de Herpes Zoster es más común en escleritis difusa.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "La incidencia de escleritis difusa y nodular es parecida.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "El dolor no es un signo importante en escleritis difusa.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "La escleromalacia perforans no es dolorosa.",
+              "respuesta": "V"
+            }
+          ],
+          "imagen": false
+        },
+        {
+          "numero": 29,
+          "tipo": "falso_verdadero",
+          "enunciado": "Respecto al Privilegio Inmune. Falso o verdadero.",
+          "items": [
+            {
+              "afirmacion": "Al retirar el apéndice se pierde el ACAID.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "En el ACAID se da respuesta fuerte con anticuerpos pero disminuida hipersensibilidad retardada.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "En el hígado se procesa la supresión selectiva de Ag.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "Los linfocitos Th1 T, citotóxicos y cel. asesinas naturales funcionan menos en úvea anterior.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "El Fas ligand es ejemplo de bloqueo de efector.",
+              "respuesta": "V"
+            }
+          ],
+          "imagen": false
+        },
+        {
+          "numero": 30,
+          "tipo": "falso_verdadero",
+          "enunciado": "Iridociclitis. Falso o verdadero.",
+          "items": [
+            {
+              "afirmacion": "Hifema es poco frecuente.",
+              "respuesta": "V"
+            },
+            {
+              "afirmacion": "No se asocia a edema macular cistoideo.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "Las espondiloartopatías seronegativas se llaman así por tener HLA B-27 negativo.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "Los esteroides se incrementan progresivamente para evitar cronificación.",
+              "respuesta": "F"
+            },
+            {
+              "afirmacion": "La nefritis túbulo-intersticial se asocia al patrón de presentación agudo bilateral.",
+              "respuesta": "V"
+            }
+          ],
+          "imagen": false
+        },
+        {
+          "numero": 31,
+          "tipo": "asociacion",
+          "enunciado": "Asocie. Relacione cada concepto con la estructura/condición correspondiente:",
+          "conceptos": [
+            "1. Escleritis nodular",
+            "2. Uveítis de recuperación inmune",
+            "3. Coriocapilaris y coroides",
+            "4. MALT",
+            "5. Privilegio inmune corneal"
+          ],
+          "items_a_asociar": [
+            "CD4 T-linfocitos de 50 a 100 cel/microL",
+            "Previene infección recurrente",
+            "Ausencia de cel. presentadoras de Ag.",
+            "Abundantes macrófagos y cel. dendríticas como cel. presentadoras de Ag",
+            "Herpes Zoster"
+          ],
+          "respuestas": {
+            "CD4 T-linfocitos de 50 a 100 cel/microL": "2",
+            "Previene infección recurrente": "4",
+            "Ausencia de cel. presentadoras de Ag.": "5",
+            "Abundantes macrófagos y cel. dendríticas como cel. presentadoras de Ag": "3",
+            "Herpes Zoster": "1"
+          },
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Pediatría",
+      "preguntas": [
+        {
+          "numero": 32,
+          "tipo": "opcion_multiple",
+          "enunciado": "Referente a las consideraciones anatómicas de los músculos durante las cirugías extraoculares. ¿Cuál de los siguientes enunciados es correcto?",
+          "opciones": {
+            "A": "La retroinserción del recto inferior puede ocasionar disminución en la apertura parpebral.",
+            "B": "La perforación de más allá de 10mm de la capsula de tennon puede ocasionar herniación de tejido graso y por lo tanto adherencias y fibrosis.",
+            "C": "La cirugía del recto medio ya sea retroinserción o resección, es la que más riesgo presenta de lesionar alguna de las venas vorticosas.",
+            "D": "El riesgo de deslizamiento de un músculo extraocular en una recolocación, puede suceder cuando no se sutura la vaina muscular con el músculo a la esclera."
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 33,
+          "tipo": "opcion_multiple",
+          "enunciado": "De acuerdo a la exploración ocular en estrabismo. El reflejo de luz en el borde pupilar representa en medidas Hirschberg. [Imagen de ojo con reflejo de luz en borde pupilar adjunta]",
+          "opciones": {
+            "A": "15 diop H",
+            "B": "30 diop H",
+            "C": "60 diop H",
+            "D": "90 diop H"
+          },
+          "respuesta_correcta": "B",
+          "imagen": true
+        },
+        {
+          "numero": 34,
+          "tipo": "opcion_multiple",
+          "enunciado": "Referente al test de 3-pasos en la exploración de músculos extraoculares. ¿Cuál de los siguientes enunciados es cierto?",
+          "opciones": {
+            "A": "Permite evaluar los únicos 3 músculos inciclorotadores de cada ojo.",
+            "B": "Evalúa en el primer paso cuál de los posibles músculos verticales están hiperfuncionando.",
+            "C": "En el segundo paso se demarca en cuál posición horizontal se hace más evidente la hiper-hipotropia.",
+            "D": "En el tercer paso se evalúa cuál ojos hace más hipertropia sin posición compensadora de la cabeza."
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 35,
+          "tipo": "opcion_multiple",
+          "enunciado": "Referente a endotropia, presentaremos un caso y usted seleccionará el diagnóstico de acuerdo a la literatura estudiada. 'Niño de 4 años de edad, el cual fue adoptado hace 1 mes. Notan nuevos padres que a veces tuerce hacia adentro los ojos cuando juega con sus carritos. A la exploración ocular se encuentra visión normal para la edad. Hace ligera endodesviación a la mirada cercana (aprox 15-20 diop). Bajo dilatación se encuentra normal la refracción y el fondo de ojo. Ducciones y versiones normales.' ¿Cuál sería el diagnóstico primero a descartar?",
+          "opciones": {
+            "A": "Endotropia congénita",
+            "B": "Endotropia acomodativa por hipermetropía.",
+            "C": "Endotropia cíclica",
+            "D": "Endotropia con CA/A elevado"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        },
+        {
+          "numero": 36,
+          "tipo": "opcion_multiple",
+          "enunciado": "De acuerdo a la clasificación de exotropia intermitente. ¿A cuál pertenece el siguiente caso? 'Paciente de 5 años que presenta la misma cantidad de exodesviación de cerca y de lejos' (se hacen todos los test de evaluación de extropia)",
+          "opciones": {
+            "A": "Exotropia básica",
+            "B": "Exotropia de pseudoexceso de divergencia.",
+            "C": "Exotropia de divergencia verdadera",
+            "D": "Exotropia por insuficiencia de convergencia"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 37,
+          "tipo": "opcion_multiple",
+          "enunciado": "Referente a las diferencias entre la parálisis del VI par y el Síndrome de Duane. ¿Cuál de los siguientes enunciados, son todos los datos correctos?",
+          "opciones": {
+            "A": "La endodesviación que se presenta es mayor en el síndrome de Duane.",
+            "B": "Se hace evidente y se aplica la ley de Hering en el Síndrome de Duane.",
+            "C": "La retracción ocular a la ABD es evidente en el Síndrome de Duane.",
+            "D": "La retracción ocular es evidente en la parálisis del VI par."
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        }
+      ]
+    },
+    {
+      "tema": "Optometría",
+      "preguntas": [
+        {
+          "numero": 38,
+          "tipo": "opcion_multiple",
+          "enunciado": "En la lensometría, después de asegurar que el lente este bien colocado, cuando el centro óptico del lente no coincide con el retículo del lensómetro es porque:",
+          "opciones": {
+            "A": "Existe un prisma tallado en el lente",
+            "B": "Existe un poder esfero-cyl en el lente",
+            "C": "Existe un poder esférico en el lente",
+            "D": "Todas las anteriores"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 39,
+          "tipo": "opcion_multiple",
+          "enunciado": "Para efectos en la lensometría, la localización del eje, en un poder esfero-cilíndrico está dado por:",
+          "opciones": {
+            "A": "El eje del meridiano más positivo",
+            "B": "El eje del meridiano más negativo",
+            "C": "Cualquiera de los dos meridianos",
+            "D": "El eje del meridiano menos negativo"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 40,
+          "tipo": "opcion_multiple",
+          "enunciado": "Si un paciente en la agudeza visual logra ver 20/60 pero a 3 metros se anota:",
+          "opciones": {
+            "A": "10/60",
+            "B": "5/40",
+            "C": "5/60",
+            "D": "20/60"
+          },
+          "respuesta_correcta": "A",
+          "imagen": false
+        },
+        {
+          "numero": 41,
+          "tipo": "opcion_multiple",
+          "enunciado": "Cuando en la retinoscopia, las sombras observadas presentan la misma velocidad, brillo e intensidad en todos los meridianos el paciente tiene:",
+          "opciones": {
+            "A": "Ametropías cilíndricas",
+            "B": "Presbicie",
+            "C": "Ametropias esféricas",
+            "D": "Todas las anteriores"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        },
+        {
+          "numero": 42,
+          "tipo": "opcion_multiple",
+          "enunciado": "Para corregir una aberración esférica los lentes construidos deben tener una superficie:",
+          "opciones": {
+            "A": "Esférica, para que la curvatura periférica sea menor que la central",
+            "B": "Asférica, para que la curvatura periférica sea menor que la central",
+            "C": "Esférico-cyl para que sean diferentes en ambos meridianos",
+            "D": "Ninguna de las anteriores"
+          },
+          "respuesta_correcta": "B",
+          "imagen": false
+        },
+        {
+          "numero": 43,
+          "tipo": "opcion_multiple",
+          "enunciado": "Las imágenes de Purkinje-Sanson son:",
+          "opciones": {
+            "A": "Imágenes que ayudan a determinar que medio o estructura del ojo ha perdido transparencia, por medio de los reflejos de los medios refractivos del ojo.",
+            "B": "Imágenes que caen en la retina con el ojo relajado, en una interfaz de refracción del ojo.",
+            "C": "Reflejos que en ese momento esta viendo el ojo, y que se aprecian en la curvatura de los medios refractivos",
+            "D": "a y c correctas"
+          },
+          "respuesta_correcta": "D",
+          "imagen": false
+        },
+        {
+          "numero": 44,
+          "tipo": "opcion_multiple",
+          "enunciado": "En la acomodación del ojo, la contracción del músculo ciliar, hace que el cristalino adquiera:",
+          "opciones": {
+            "A": "Menor poder dióptrico",
+            "B": "No afecta el poder dióptrico del cristalino",
+            "C": "Mayor poder dióptrico",
+            "D": "Igual poder dióptrico"
+          },
+          "respuesta_correcta": "C",
+          "imagen": false
+        }
+      ]
+    }
+  ]
+}

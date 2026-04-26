@@ -1,0 +1,108 @@
+const express = require('express');
+const { PrismaClient } = require('@prisma/client');
+const { authenticate } = require('../middleware/auth');
+
+const router = express.Router();
+const prisma = new PrismaClient();
+
+const toPublic = (q) => ({
+  id: q.id,
+  examen: q.examen,
+  tema: q.tema,
+  numero: q.numero,
+  tipo: q.tipo,
+  enunciado: q.enunciado,
+  opciones: JSON.parse(q.opciones),
+  tieneImagen: q.tieneImagen,
+  hasImage: !!q.imagenBase64,
+  nota: q.nota,
+});
+
+router.get('/topics', authenticate, async (req, res) => {
+  try {
+    const rows = await prisma.question.findMany({
+      select: { tema: true },
+      distinct: ['tema'],
+      orderBy: { tema: 'asc' },
+    });
+    res.json({ topics: rows.map((r) => r.tema) });
+  } catch {
+    res.status(500).json({ error: 'Error al obtener temas' });
+  }
+});
+
+router.get('/exams', authenticate, async (req, res) => {
+  try {
+    const rows = await prisma.question.findMany({
+      select: { examen: true },
+      distinct: ['examen'],
+      orderBy: { examen: 'asc' },
+    });
+    res.json({ exams: rows.map((r) => r.examen) });
+  } catch {
+    res.status(500).json({ error: 'Error al obtener exámenes' });
+  }
+});
+
+router.get('/', authenticate, async (req, res) => {
+  try {
+    const { tema, examen, tipo, search, page = 1, limit = 15 } = req.query;
+    const where = {};
+    if (tema) where.tema = tema;
+    if (examen) where.examen = examen;
+    if (tipo) where.tipo = tipo;
+    if (search) where.enunciado = { contains: search };
+
+    const skip = (parseInt(page) - 1) * parseInt(limit);
+    const [questions, total] = await Promise.all([
+      prisma.question.findMany({
+        where,
+        skip,
+        take: parseInt(limit),
+        orderBy: [{ tema: 'asc' }, { numero: 'asc' }],
+      }),
+      prisma.question.count({ where }),
+    ]);
+
+    res.json({
+      questions: questions.map(toPublic),
+      total,
+      page: parseInt(page),
+      pages: Math.ceil(total / parseInt(limit)),
+    });
+  } catch {
+    res.status(500).json({ error: 'Error al obtener preguntas' });
+  }
+});
+
+router.get('/:id/image', authenticate, async (req, res) => {
+  try {
+    const q = await prisma.question.findUnique({
+      where: { id: req.params.id },
+      select: { imagenBase64: true },
+    });
+    if (!q) return res.status(404).json({ error: 'No encontrada' });
+    res.json({ imagenBase64: q.imagenBase64 });
+  } catch {
+    res.status(500).json({ error: 'Error al obtener imagen' });
+  }
+});
+
+router.get('/:id/answer', authenticate, async (req, res) => {
+  try {
+    const q = await prisma.question.findUnique({
+      where: { id: req.params.id },
+      select: { respuestaCorrecta: true, nota: true, opciones: true },
+    });
+    if (!q) return res.status(404).json({ error: 'No encontrada' });
+    res.json({
+      respuestaCorrecta: q.respuestaCorrecta,
+      nota: q.nota,
+      opciones: JSON.parse(q.opciones),
+    });
+  } catch {
+    res.status(500).json({ error: 'Error al obtener respuesta' });
+  }
+});
+
+module.exports = router;
