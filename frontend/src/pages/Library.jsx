@@ -363,11 +363,12 @@ export default function Library() {
   const [tipos,     setTipos]     = useState([]);
   const [soloImagen, setSoloImagen] = useState(false);
   const [page,      setPage]      = useState(1);
+  const [perPage,   setPerPage]   = useState(15);
 
   const fetchQuestions = useCallback(async () => {
     setLoading(true);
     try {
-      const p = new URLSearchParams({ page, limit: 15 });
+      const p = new URLSearchParams({ page, limit: perPage });
       if (search)        p.set('search',   search);
       if (temas.length)  p.set('tema',     temas.join(','));
       if (examenes.length) p.set('examen', examenes.join(','));
@@ -378,7 +379,7 @@ export default function Library() {
       setTotal(r.data.total);
       setPages(r.data.pages);
     } finally { setLoading(false); }
-  }, [search, temas, examenes, tipos, soloImagen, page]);
+  }, [search, temas, examenes, tipos, soloImagen, page, perPage]);
 
   useEffect(() => { fetchQuestions(); }, [fetchQuestions]);
 
@@ -504,13 +505,27 @@ export default function Library() {
             )}
           </div>
 
-          {pages > 1 && (
-            <div style={{ display: 'flex', gap: 8, justifyContent: 'center', alignItems: 'center' }}>
-              <button className="btn btn-secondary btn-sm" onClick={() => setPage(p => p - 1)} disabled={page === 1}>Anterior</button>
-              <span style={{ fontSize: 13, color: 'var(--text-3)', padding: '0 4px' }}>Página {page} de {pages}</span>
-              <button className="btn btn-secondary btn-sm" onClick={() => setPage(p => p + 1)} disabled={page === pages}>Siguiente</button>
-            </div>
-          )}
+          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+            {pages > 1 && (
+              <>
+                <button className="btn btn-secondary btn-sm" onClick={() => setPage(p => p - 1)} disabled={page === 1}>Anterior</button>
+                <span style={{ fontSize: 13, color: 'var(--text-3)', padding: '0 4px' }}>Página {page} de {pages}</span>
+                <button className="btn btn-secondary btn-sm" onClick={() => setPage(p => p + 1)} disabled={page === pages}>Siguiente</button>
+              </>
+            )}
+            <select
+              className="input"
+              style={{ maxWidth: 130, fontSize: 13 }}
+              value={perPage}
+              onChange={e => { setPerPage(parseInt(e.target.value)); setPage(1); }}
+            >
+              <option value={15}>15 por página</option>
+              <option value={30}>30 por página</option>
+              <option value={50}>50 por página</option>
+              <option value={100}>100 por página</option>
+              <option value={500}>Mostrar todas</option>
+            </select>
+          </div>
         </>
       )}
     </div>

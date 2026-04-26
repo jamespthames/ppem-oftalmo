@@ -60,8 +60,10 @@ router.get('/stats', async (req, res) => {
 
 router.get('/questions', async (req, res) => {
   try {
-    const { tema, page = 1, limit = 20 } = req.query;
-    const where = tema ? { tema } : {};
+    const { tema, search, page = 1, limit = 20 } = req.query;
+    const where = {};
+    if (tema) where.tema = tema;
+    if (search) where.enunciado = { contains: search, mode: 'insensitive' };
 
     const [questions, total] = await Promise.all([
       prisma.question.findMany({
@@ -230,6 +232,43 @@ router.post('/import', async (req, res) => {
   } catch (e) {
     console.error(e);
     res.status(500).json({ error: 'Error al importar preguntas' });
+  }
+});
+
+router.get('/questions/:id', async (req, res) => {
+  try {
+    const q = await prisma.question.findUnique({ where: { id: req.params.id } });
+    if (!q) return res.status(404).json({ error: 'No encontrada' });
+    res.json({ question: { ...q, opciones: JSON.parse(q.opciones) } });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener pregunta' });
+  }
+});
+
+router.get('/comments', async (req, res) => {
+  try {
+    const comments = await prisma.questionComment.findMany({
+      include: {
+        question: { select: { id: true, enunciado: true, tema: true, examen: true, numero: true } },
+        user: { select: { name: true, email: true } },
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+    res.json({ comments });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener comentarios' });
+  }
+});
+
+router.delete('/comments/:id', async (req, res) => {
+  try {
+    await prisma.questionComment.delete({ where: { id: req.params.id } });
+    res.json({ ok: true });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al eliminar comentario' });
   }
 });
 

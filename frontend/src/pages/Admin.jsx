@@ -342,25 +342,36 @@ function ImportTab() {
 }
 
 /* ── Questions tab ── */
-function QuestionsTab() {
+function QuestionsTab({ pendingEdit, clearPendingEdit }) {
   const [questions, setQuestions] = useState([]);
   const [loading,   setLoading]   = useState(true);
   const [editing,   setEditing]   = useState(null);
+
+  useEffect(() => {
+    if (pendingEdit) { setEditing(pendingEdit); clearPendingEdit && clearPendingEdit(); }
+  }, [pendingEdit]);
   const [creating,  setCreating]  = useState(false);
   const [page,      setPage]      = useState(1);
   const [pages,     setPages]     = useState(1);
   const [filterTema, setFilterTema] = useState('');
+  const [search, setSearch] = useState('');
+  const [searchInput, setSearchInput] = useState('');
 
   const load = async () => {
     setLoading(true);
     const p = new URLSearchParams({ page, limit: 20 });
     if (filterTema) p.set('tema', filterTema);
+    if (search) p.set('search', search);
     const r = await api.get(`/api/admin/questions?${p}`);
     setQuestions(r.data.questions);
     setPages(r.data.pages);
     setLoading(false);
   };
-  useEffect(() => { load(); }, [page, filterTema]);
+  useEffect(() => { load(); }, [page, filterTema, search]);
+  useEffect(() => {
+    const t = setTimeout(() => { setSearch(searchInput); setPage(1); }, 300);
+    return () => clearTimeout(t);
+  }, [searchInput]);
 
   const handleSave = async (form) => {
     if (editing) { await api.put(`/api/admin/questions/${editing.id}`, form); setEditing(null); }
@@ -395,6 +406,14 @@ function QuestionsTab() {
   return (
     <div>
       <div style={{ display: 'flex', gap: 10, marginBottom: 16, alignItems: 'center', flexWrap: 'wrap' }}>
+        <input
+          className="input"
+          style={{ maxWidth: 320, flex: 1 }}
+          type="text"
+          placeholder="Buscar por enunciado…"
+          value={searchInput}
+          onChange={e => setSearchInput(e.target.value)}
+        />
         <select className="input" style={{ maxWidth: 210 }} value={filterTema} onChange={e => { setFilterTema(e.target.value); setPage(1); }}>
           <option value="">Todos los temas</option>
           {TEMAS.map(t => <option key={t} value={t}>{t}</option>)}
@@ -543,6 +562,84 @@ function ChangelogTab() {
 }
 
 /* ── Reports tab ── */
+function CommentsTab({ onEditQuestion }) {
+  const [comments, setComments] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const load = async () => {
+    setLoading(true);
+    const r = await api.get('/api/admin/comments');
+    setComments(r.data.comments);
+    setLoading(false);
+  };
+  useEffect(() => { load(); }, []);
+
+  const handleDelete = async (id) => {
+    if (!window.confirm('¿Eliminar este comentario?')) return;
+    await api.delete(`/api/admin/comments/${id}`);
+    load();
+  };
+
+  const handleEditFull = async (questionId) => {
+    const r = await api.get(`/api/admin/questions/${questionId}`);
+    onEditQuestion(r.data.question);
+  };
+
+  if (loading) return <Spinner center />;
+  if (!comments.length) return <p style={{ color: 'var(--text-3)', fontSize: 14 }}>No hay comentarios todavía.</p>;
+
+  // Group by question
+  const grouped = comments.reduce((acc, c) => {
+    const k = c.question.id;
+    if (!acc[k]) acc[k] = { question: c.question, comments: [] };
+    acc[k].comments.push(c);
+    return acc;
+  }, {});
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <p style={{ color: 'var(--text-3)', fontSize: 13 }}>
+        {comments.length} comentario(s) en {Object.keys(grouped).length} pregunta(s). Edita la pregunta para corregirla.
+      </p>
+      {Object.values(grouped).map(({ question, comments: cs }) => (
+        <div key={question.id} className="card" style={{ padding: 16 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12, marginBottom: 12 }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
+                <span className="badge badge-indigo">{question.tema}</span>
+                <span className="badge badge-neutral">{question.examen} · #{question.numero}</span>
+              </div>
+              <p style={{ fontSize: 13.5, color: 'var(--text-2)', lineHeight: 1.5 }}>{question.enunciado}</p>
+            </div>
+            <button
+              className="btn btn-primary btn-sm"
+              onClick={() => handleEditFull(question.id)}
+              style={{ display: 'flex', alignItems: 'center', gap: 5, whiteSpace: 'nowrap' }}
+            >
+              <EditIcon size={12} /> Editar pregunta
+            </button>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, paddingTop: 12, borderTop: '1px solid var(--border-1)' }}>
+            {cs.map(c => (
+              <div key={c.id} style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 11.5, color: 'var(--text-4)', marginBottom: 3 }}>
+                    <strong style={{ color: 'var(--text-2)' }}>{c.user.name}</strong> · {new Date(c.createdAt).toLocaleDateString('es-CR', { day: 'numeric', month: 'short', year: 'numeric' })}
+                  </div>
+                  <p style={{ fontSize: 13, color: 'var(--text-2)', lineHeight: 1.45 }}>{c.text}</p>
+                </div>
+                <button className="btn btn-ghost btn-sm" onClick={() => handleDelete(c.id)} style={{ color: 'var(--wrong)' }}>
+                  <TrashIcon size={11} />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function ReportsTab() {
   const [reports, setReports] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -606,6 +703,13 @@ function ReportsTab() {
 
 export default function Admin() {
   const [tab, setTab] = useState('stats');
+  const [pendingEdit, setPendingEdit] = useState(null);
+
+  const handleEditFromComment = (q) => {
+    const normalized = { ...q, opciones: typeof q.opciones === 'string' ? JSON.parse(q.opciones) : q.opciones };
+    setPendingEdit(normalized);
+    setTab('questions');
+  };
 
   return (
     <div className="content-wrap page-in">
@@ -615,13 +719,14 @@ export default function Admin() {
       </div>
 
       <div className="tab-row" style={{ marginBottom: 28 }}>
-        {[['stats','Estadísticas'], ['questions','Preguntas'], ['users','Usuarios'], ['reports','Reportes'], ['changelog','Changelog'], ['import','Importar JSON']].map(([k, v]) => (
+        {[['stats','Estadísticas'], ['questions','Preguntas'], ['comments','Comentarios'], ['users','Usuarios'], ['reports','Reportes'], ['changelog','Changelog'], ['import','Importar JSON']].map(([k, v]) => (
           <button key={k} className={`tab-pill${tab === k ? ' active' : ''}`} onClick={() => setTab(k)}>{v}</button>
         ))}
       </div>
 
       {tab === 'stats'      && <StatsTab />}
-      {tab === 'questions'  && <QuestionsTab />}
+      {tab === 'questions'  && <QuestionsTab pendingEdit={pendingEdit} clearPendingEdit={() => setPendingEdit(null)} />}
+      {tab === 'comments'   && <CommentsTab onEditQuestion={handleEditFromComment} />}
       {tab === 'users'      && <UsersTab />}
       {tab === 'reports'    && <ReportsTab />}
       {tab === 'changelog'  && <ChangelogTab />}
