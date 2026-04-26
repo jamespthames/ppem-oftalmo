@@ -86,7 +86,7 @@ router.get('/questions', async (req, res) => {
 
 router.post('/questions', async (req, res) => {
   try {
-    const { examen, tema, numero, tipo, enunciado, opciones, respuestaCorrecta, tieneImagen, imagenRef, imagenBase64, nota } = req.body;
+    const { examen, tema, numero, tipo, enunciado, opciones, respuestaCorrecta, tieneImagen, imagenRef, imagenBase64, nota, explicacion } = req.body;
     const question = await prisma.question.create({
       data: {
         examen, tema, numero: parseInt(numero), tipo, enunciado,
@@ -96,17 +96,19 @@ router.post('/questions', async (req, res) => {
         imagenRef: imagenRef || null,
         imagenBase64: imagenBase64 || null,
         nota: nota || null,
+        explicacion: explicacion || null,
       },
     });
     res.json({ question: { ...question, opciones: JSON.parse(question.opciones) } });
-  } catch {
+  } catch (err) {
+    console.error('[CREATE QUESTION ERROR]', err);
     res.status(500).json({ error: 'Error al crear pregunta' });
   }
 });
 
 router.put('/questions/:id', async (req, res) => {
   try {
-    const { examen, tema, numero, tipo, enunciado, opciones, respuestaCorrecta, tieneImagen, imagenRef, imagenBase64, nota } = req.body;
+    const { examen, tema, numero, tipo, enunciado, opciones, respuestaCorrecta, tieneImagen, imagenRef, imagenBase64, nota, explicacion } = req.body;
     const question = await prisma.question.update({
       where: { id: req.params.id },
       data: {
@@ -117,10 +119,12 @@ router.put('/questions/:id', async (req, res) => {
         imagenRef: imagenRef || null,
         imagenBase64: imagenBase64 || null,
         nota: nota || null,
+        explicacion: explicacion || null,
       },
     });
     res.json({ question: { ...question, opciones: JSON.parse(question.opciones) } });
-  } catch {
+  } catch (err) {
+    console.error('[UPDATE QUESTION ERROR]', err);
     res.status(500).json({ error: 'Error al actualizar pregunta' });
   }
 });
