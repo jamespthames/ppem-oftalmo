@@ -240,7 +240,56 @@ h1, h2, h3, h4, .display { font-family: 'Cormorant Garamond', serif; }
   .sidebar { display: none; }
   .main-content { margin-left: 0; padding-bottom: 70px; }
   .bottom-nav { display: block; }
-  .content-wrap { padding: 22px 18px; }
+  .content-wrap { padding: 18px 14px; }
+
+  .page-title { font-size: 24px; }
+  .page-subtitle { font-size: 12.5px; }
+  .section-title { font-size: 16px; }
+
+  /* Tabs: scroll horizontally instead of squishing */
+  .tab-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .tab-row::-webkit-scrollbar { display: none; }
+  .tab-pill {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 12.5px;
+  }
+
+  /* Tables: horizontal scroll wrapper */
+  .data-table { font-size: 12.5px; }
+  .data-table th, .data-table td { padding: 10px 10px; }
+  .card:has(.data-table) { overflow-x: auto; }
+
+  /* Forms */
+  .input { font-size: 16px; /* prevents iOS zoom */ }
+  .field-label { font-size: 12.5px; }
+
+  /* Buttons stack on mobile */
+  .btn-lg { padding: 12px 18px; font-size: 14px; }
+
+  /* Stat cards: stack to single column */
+  .stat-card { padding: 16px; }
+
+  /* Question cards */
+  .question-card { padding: 16px; }
+
+  /* Auth */
+  .auth-card { padding: 28px 22px; }
+
+  /* Reduce big gaps */
+  h1, h2, h3 { word-break: break-word; }
+}
+
+@media (max-width: 480px) {
+  .content-wrap { padding: 14px 12px; }
+  .page-title { font-size: 22px; }
+  .tab-pill { padding: 7px 11px; font-size: 12px; }
 }
 
 /* ─── Typography ─────────────────────────────────────── */
