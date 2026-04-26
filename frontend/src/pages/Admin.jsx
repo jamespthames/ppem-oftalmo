@@ -25,7 +25,7 @@ function StatsTab() {
       {data.weakTopics?.length > 0 && (
         <>
           <h3 className="section-title" style={{ marginBottom: 14 }}>Temas más débiles (colectivo)</h3>
-          <div className="card" style={{ overflow: 'hidden', marginBottom: 28 }}>
+          <div className="card table-scroll" style={{ marginBottom: 28 }}>
             <table className="data-table">
               <thead><tr><th>Tema</th><th>Respondidas</th><th>Incorrectas</th><th>Tasa de error</th></tr></thead>
               <tbody>
@@ -46,7 +46,7 @@ function StatsTab() {
       {data.hardestQuestions?.length > 0 && (
         <>
           <h3 className="section-title" style={{ marginBottom: 14 }}>Preguntas más difíciles</h3>
-          <div className="card" style={{ overflow: 'hidden' }}>
+          <div className="card table-scroll">
             <table className="data-table">
               <thead><tr><th>Enunciado</th><th>Tema</th><th>Intentos</th><th>Error</th></tr></thead>
               <tbody>
@@ -92,7 +92,7 @@ function QuestionForm({ initial, onSave, onCancel }) {
     <form onSubmit={submit}>
       {error && <div className="feedback-box feedback-wrong" style={{ marginBottom: 16 }}>{error}</div>}
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
+      <div className="form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
         <div>
           <label className="field-label">Examen</label>
           <input className="input" value={form.examen} onChange={e => upd('examen', e.target.value)} placeholder="ej. I Semestral 2019" required />
@@ -222,7 +222,7 @@ function UsersTab() {
         <div className="card" style={{ padding: '18px 20px', marginBottom: 20 }}>
           <h3 className="section-title" style={{ marginBottom: 14 }}>Agregar usuario</h3>
           {error && <div className="feedback-box feedback-wrong" style={{ marginBottom: 12 }}>{error}</div>}
-          <form onSubmit={handleAdd} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <form onSubmit={handleAdd} className="form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
             <div>
               <label className="form-label">Nombre</label>
               <input className="form-input" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} required />
@@ -242,7 +242,7 @@ function UsersTab() {
                 <option value="admin">Administrador</option>
               </select>
             </div>
-            <div style={{ gridColumn: '1/-1', display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
+            <div className="form-full-row" style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
               <button type="button" className="btn btn-ghost btn-sm" onClick={() => setShowForm(false)}>Cancelar</button>
               <button type="submit" className="btn btn-primary btn-sm" disabled={adding}>
                 {adding ? <span className="spinner spinner-sm" /> : 'Crear usuario'}
@@ -252,7 +252,7 @@ function UsersTab() {
         </div>
       )}
 
-      <div className="card" style={{ overflow: 'hidden' }}>
+      <div className="card table-scroll">
         <table className="data-table">
           <thead>
             <tr><th>Nombre</th><th>Correo</th><th>Rol</th><th>Registrado</th><th></th></tr>
@@ -425,7 +425,7 @@ function QuestionsTab({ pendingEdit, clearPendingEdit }) {
 
       {loading ? <Spinner center /> : (
         <>
-          <div className="card" style={{ overflow: 'hidden', marginBottom: 14 }}>
+          <div className="card table-scroll" style={{ marginBottom: 14 }}>
             <table className="data-table">
               <thead>
                 <tr><th>#</th><th>Examen</th><th>Tema</th><th>Enunciado</th><th>Tipo</th><th>Acciones</th></tr>
@@ -668,7 +668,7 @@ function ReportsTab() {
   );
 
   return (
-    <div className="card" style={{ overflow: 'hidden' }}>
+    <div className="card table-scroll">
       <table className="data-table">
         <thead>
           <tr><th>Pregunta</th><th>Tema</th><th>Reportado por</th><th>Motivo</th><th>Fecha</th><th></th></tr>
