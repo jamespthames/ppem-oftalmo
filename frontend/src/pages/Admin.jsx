@@ -75,12 +75,26 @@ function StatsTab() {
 
 /* ── Question form ── */
 function QuestionForm({ initial, onSave, onCancel }) {
-  const [form,    setForm]    = useState(initial || EMPTY);
-  const [loading, setLoading] = useState(false);
-  const [error,   setError]   = useState('');
+  const [form,     setForm]     = useState(initial || EMPTY);
+  const [loading,  setLoading]  = useState(false);
+  const [error,    setError]    = useState('');
+  const [comments, setComments] = useState(null);
 
   const upd    = (k, v) => setForm(f => ({ ...f, [k]: v }));
   const updOpt = (k, v) => setForm(f => ({ ...f, opciones: { ...f.opciones, [k]: v } }));
+
+  useEffect(() => {
+    if (!initial?.id) { setComments(null); return; }
+    api.get(`/api/admin/questions/${initial.id}/comments`)
+      .then(r => setComments(r.data.comments))
+      .catch(() => setComments([]));
+  }, [initial?.id]);
+
+  const handleDeleteComment = async (id) => {
+    if (!window.confirm('¿Eliminar este comentario?')) return;
+    await api.delete(`/api/admin/comments/${id}`);
+    setComments(cs => cs.filter(c => c.id !== id));
+  };
 
   const submit = async (e) => {
     e.preventDefault(); setError(''); setLoading(true);
@@ -91,6 +105,36 @@ function QuestionForm({ initial, onSave, onCancel }) {
   return (
     <form onSubmit={submit}>
       {error && <div className="feedback-box feedback-wrong" style={{ marginBottom: 16 }}>{error}</div>}
+
+      {initial?.id && comments && comments.length > 0 && (
+        <div className="card" style={{ padding: 16, marginBottom: 20, background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+          <div style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--text-2)', marginBottom: 12, textTransform: 'uppercase', letterSpacing: 0.4 }}>
+            Comentarios de residentes ({comments.length})
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {comments.map(c => (
+              <div key={c.id} style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start', paddingBottom: 10, borderBottom: '1px solid var(--border-1)' }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 11.5, color: 'var(--text-4)', marginBottom: 3 }}>
+                    <strong style={{ color: 'var(--text-2)' }}>{c.user.name}</strong>
+                    <span style={{ color: 'var(--text-4)' }}> · {c.user.email} · {new Date(c.createdAt).toLocaleDateString('es-CR', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                  </div>
+                  <p style={{ fontSize: 13, color: 'var(--text-2)', lineHeight: 1.45, margin: 0, whiteSpace: 'pre-wrap' }}>{c.text}</p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-ghost btn-sm"
+                  onClick={() => handleDeleteComment(c.id)}
+                  title="Eliminar comentario"
+                  style={{ color: 'var(--wrong)', flexShrink: 0 }}
+                >
+                  <TrashIcon size={12} />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="form-grid-2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
         <div>

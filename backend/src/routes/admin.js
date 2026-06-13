@@ -246,6 +246,20 @@ router.get('/questions/:id', async (req, res) => {
   }
 });
 
+router.get('/questions/:id/comments', async (req, res) => {
+  try {
+    const comments = await prisma.questionComment.findMany({
+      where: { questionId: req.params.id },
+      include: { user: { select: { name: true, email: true } } },
+      orderBy: { createdAt: 'desc' },
+    });
+    res.json({ comments });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'Error al obtener comentarios de la pregunta' });
+  }
+});
+
 router.get('/comments', async (req, res) => {
   try {
     const comments = await prisma.questionComment.findMany({
