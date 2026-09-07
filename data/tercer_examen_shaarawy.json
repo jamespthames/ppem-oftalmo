@@ -1,6 +1,6 @@
 [
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 1,
     "tipo": "opcion_multiple",
@@ -17,7 +17,7 @@
     "explicacion": "El PACG es responsable de aproximadamente la mitad de toda la ceguera glaucomatosa a nivel mundial, a pesar de que en poblaciones occidentales su prevalencia es menor que la del POAG. Esto lo hace la forma más visualmente destructiva de glaucoma."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 2,
     "tipo": "opcion_multiple",
@@ -34,7 +34,7 @@
     "explicacion": "PACS = ITC aislado (PIO normal, sin PAS, sin síntomas). PAC = ITC + PIO elevada o PAS o síntomas típicos, pero SIN neuropatía óptica. PACG = PAC + cambios glaucomatosos estructurales/funcionales del nervio óptico o del campo visual."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 3,
     "tipo": "opcion_multiple",
@@ -51,7 +51,7 @@
     "explicacion": "El bloqueo pupilar es el mecanismo predominante y explica ~75% de los cierres angulares. Es causado por la activación simultánea de los músculos dilatador y esfínter pupilares, generando una fuerza perpendicular al cristalino en midriasis media."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 4,
     "tipo": "opcion_multiple",
@@ -68,7 +68,7 @@
     "explicacion": "El estudio poblacional en Singapur cuantificó los riesgos: sexo femenino RR = 2.4, origen étnico chino RR = 2.8, y edad ≥60 años RR = 9.1. Estos factores demográficos reflejan tendencias hereditarias en la biometría ocular."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 5,
     "tipo": "opcion_multiple",
@@ -85,7 +85,7 @@
     "explicacion": "Los factores biométricos clásicos son: cámara anterior superficial, cristalino grueso, cristalino más anterior y longitud axial CORTA (no larga). Lowe demostró que el ACD promedio es 1.0 mm más superficial en PAC, con 66% explicado por posición anterior del cristalino y 33% por su grosor."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 6,
     "tipo": "opcion_multiple",
@@ -102,7 +102,7 @@
     "explicacion": "La técnica de van Herick dirige un haz estrecho de luz perpendicular al limbo temporal y estima la profundidad periférica de la cámara anterior como fracción del grosor corneal adyacente. Un grado más estrecho de van Herick predice ángulos más cerrados en gonioscopía."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 7,
     "tipo": "opcion_multiple",
@@ -119,7 +119,7 @@
     "explicacion": "El iris plateau se caracteriza por procesos ciliares anteriormente posicionados que empujan la base del iris hacia adelante, cerrando el sulcus iridociliar. Después de una iridotomía láser, el iris permanece plano (sin bombe), pero el ángulo sigue estrecho porque el mecanismo no es el bloqueo pupilar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 8,
     "tipo": "opcion_multiple",
@@ -136,7 +136,7 @@
     "explicacion": "Los tres loci identificados por GWAS de Vithana et al. (2012) fueron PLEKHA7, COL11A1 y una variante entre PCMTD1/ST18. MYOC está asociado a POAG juvenil, no a PACG. PLEKHA7 codifica una proteína crítica para uniones adherentes; COL11A1 codifica una cadena de colágeno tipo XI."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 9,
     "tipo": "opcion_multiple",
@@ -153,7 +153,7 @@
     "explicacion": "El manejo agudo del ángulo cerrado primario sintomático es reducir la PIO médicamente (β-bloqueantes, α2-agonistas, IAC, hiperosmóticos) y romper el bloqueo pupilar con pilocarpina. Una vez que la córnea se aclara, se realiza iridotomía láser periférica definitiva. La cirugía se reserva para casos que no responden."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 10,
     "tipo": "opcion_multiple",
@@ -170,7 +170,7 @@
     "explicacion": "Un estudio citado en Shaarawy documentó que 33% de los casos de ángulo cerrado agudo unilateral presentan guttatas endoteliales bilateralmente, sugiriendo una vulnerabilidad endotelial constitucional en estos pacientes, además del daño agudo por PIO elevada."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 11,
     "tipo": "opcion_multiple",
@@ -187,7 +187,7 @@
     "explicacion": "El timolol es un β-bloqueante que REDUCE la PIO y no desencadena cierre angular. Los desencadenantes clásicos son: anticolinérgicos nebulizados (ipratropium, salbutamol), tricíclicos con efecto antimuscarínico (amitriptilina, imipramina), ISRS con actividad antimuscarínica (paroxetina, citalopram), y midriáticos diagnósticos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 12,
     "tipo": "opcion_multiple",
@@ -204,7 +204,7 @@
     "explicacion": "En POAG el hemicampo SUPERIOR se afecta más severamente que el inferior. En PACG este patrón está menos pronunciado — la distribución del daño tiende a ser más difusa. Esta diferencia refleja mecanismos fisiopatológicos distintos entre ambos glaucomas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 13,
     "tipo": "opcion_multiple",
@@ -221,7 +221,7 @@
     "explicacion": "Los glaukomflecken son opacidades subcapsulares anteriores del cristalino que aparecen tras episodios agudos de PIO muy elevada. Reflejan necrosis focal del epitelio subcapsular anterior por la isquemia asociada al pico de presión."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 14,
     "tipo": "opcion_multiple",
@@ -238,7 +238,7 @@
     "explicacion": "La iridotomía elimina el bloqueo pupilar y por tanto es efectiva ANTES de que se formen sinequias anteriores permanentes. Una vez formadas las PAS, la iridotomía no las revierte. Además, 20-25% de los ojos tratados aún tienen cierre appositional residual, especialmente en casos con iris plateau o inserción anterior."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 15,
     "tipo": "opcion_multiple",
@@ -255,7 +255,7 @@
     "explicacion": "El EAGLE trial (Effectiveness in Angle-closure Glaucoma of Lens Extraction) compara facoemulsificación primaria del cristalino claro versus iridotomía láser periférica primaria como manejo inicial de PAC y PACG. Los resultados apoyan la extracción del cristalino como opción efectiva en cierre angular temprano-moderado."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 16,
     "tipo": "opcion_multiple",
@@ -272,7 +272,7 @@
     "explicacion": "El ojo contralateral tiene un riesgo alto de sufrir un episodio similar (rango citado 40-80% a largo plazo) por lo que se recomienda iridotomía láser profiláctica. Esta iridotomía es efectiva en prevenir aumentos de PIO a largo plazo en aproximadamente el 90% de estos ojos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 17,
     "tipo": "opcion_multiple",
@@ -289,7 +289,7 @@
     "explicacion": "Los ojos nanoftálmicos y aquellos con cristalinos muy anteriormente posicionados tienen alto riesgo de misdirección acuosa post-trabeculectomía. En estos casos se prefiere extracción del cristalino (previa o combinada), ablación ciliar localizada o midriasis farmacológica intensiva."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 18,
     "tipo": "opcion_multiple",
@@ -306,7 +306,7 @@
     "explicacion": "Lindberg describió el síndrome de exfoliación en Finlandia en 1917. Aunque durante décadas se consideró una enfermedad escandinava, hoy sabemos que es la causa identificable más común de glaucoma de ángulo abierto a nivel mundial, con 60-70 millones de afectados."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 19,
     "tipo": "opcion_multiple",
@@ -323,7 +323,7 @@
     "explicacion": "El gen LOXL1, ubicado en el cromosoma 15, codifica una enzima de la familia lysyl oxidase involucrada en la formación y estabilización de fibras elásticas. Sus variantes de secuencia son el factor de riesgo genético principal para XFS y XFG en todas las poblaciones estudiadas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 20,
     "tipo": "opcion_multiple",
@@ -340,7 +340,7 @@
     "explicacion": "El material exfoliativo (XFM) se acumula principalmente en el tejido yuxtacanalicular por debajo de la pared interna del canal de Schlemm — el sitio de mayor resistencia al flujo acuoso. Este XFM es producido localmente por las células endoteliales del canal, y su acumulación correlaciona con el nivel de PIO y con la severidad del daño del nervio óptico."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 21,
     "tipo": "opcion_multiple",
@@ -357,7 +357,7 @@
     "explicacion": "El patrón clásico exfoliativo tiene tres zonas: un disco central homogéneo, una zona intermedia clara creada por el roce del iris que 'barre' el material, y una zona periférica granular donde el material se acumula sin ser perturbado. Esto se hace evidente con dilatación pupilar amplia."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 22,
     "tipo": "opcion_multiple",
@@ -374,7 +374,7 @@
     "explicacion": "La fragilidad zonular en XFS incrementa hasta 10 veces el riesgo de dislocación del cristalino, diálisis zonular o pérdida vítrea durante extracción cristaliniana. También son más frecuentes las sinequias posteriores por dilatación pobre, descentración tardía de LIO, contracción capsular y opacificación capsular posterior."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 23,
     "tipo": "opcion_multiple",
@@ -391,7 +391,7 @@
     "explicacion": "El XFG tiene un curso clínico más severo: PIO promedio mayor al momento del diagnóstico, mayor fluctuación diurna, más resistencia al tratamiento médico, respuesta más corta a los fármacos, y para una misma PIO tiene más probabilidad de daño glaucomatoso que POAG."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 24,
     "tipo": "opcion_multiple",
@@ -408,7 +408,7 @@
     "explicacion": "Los pacientes con XFS tienen elevación significativa de homocisteína en plasma, humor acuoso y lágrimas. Esto podría ser un mecanismo que explica su asociación con enfermedad vascular sistémica y CRVO. Se plantea el uso de suplementos de vitamina B6, B12 y ácido fólico para reducirla."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 25,
     "tipo": "opcion_multiple",
@@ -425,7 +425,7 @@
     "explicacion": "En una serie clásica, XFS se encontró en 20.8% de ojos con CRVO versus 5.2% de controles pareados por edad. Esta asociación se ha explicado por la vasculopatía sistémica, breakdown crónico de la barrera hemato-acuosa e hipoperfusión ocular observados en XFS."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 26,
     "tipo": "opcion_multiple",
@@ -442,7 +442,7 @@
     "explicacion": "El estudio prospectivo de Pasquale et al. en la población de EE.UU. encontró que consumir ≥3 tazas de café al día se asocia con mayor riesgo de XFS. El riesgo no se replicó con otras bebidas cafeinadas (té, gaseosas cola, chocolate, café descafeinado), sugiriendo un componente específico del café."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 27,
     "tipo": "opcion_multiple",
@@ -459,7 +459,7 @@
     "explicacion": "Aproximadamente 50% de los casos clínicamente unilaterales de XFS se vuelven bilaterales a 15 años. Aunque electron microscopía revela XFM en el ojo contralateral con frecuencia, otros factores (posiblemente inmunológicos) parecen retardar o inhibir la expresión clínica en el segundo ojo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 28,
     "tipo": "opcion_multiple",
@@ -476,7 +476,7 @@
     "explicacion": "El XFM contiene componentes de microfibrillas elásticas (fibrillin-1, fibulin-2, vitronectina), proteoglicanos (syndecan, versican), clusterina, LOXL1 y apoE. Colágeno tipo IV y laminina son componentes de la membrana basal — no son componentes principales del XFM."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 29,
     "tipo": "opcion_multiple",
@@ -493,7 +493,7 @@
     "explicacion": "La ALT es particularmente efectiva inicialmente en XFG (PIO basal más alta → mayor caída), y puede retrasar la necesidad de medicación por hasta 8 años en muchos pacientes. Sin embargo, ~20% desarrolla picos súbitos tardíos de PIO en los primeros 2 años, y el éxito a largo plazo cae a 35-55% en 3-6 años."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 30,
     "tipo": "opcion_multiple",
@@ -510,7 +510,7 @@
     "explicacion": "Los signos precoces incluyen: dispersión pigmentaria en cámara anterior tras dilatación, pérdida del rufo pupilar, defectos de transiluminación en el esfínter, depósitos pigmentarios en córnea (huso de Krukenberg-like), pigmentación trabecular aumentada. Estos preceden a menudo la aparición de XFM clínicamente visible."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 31,
     "tipo": "opcion_multiple",
@@ -527,7 +527,7 @@
     "explicacion": "Aproximadamente el 25% de pacientes con XFS desarrolla PIO elevada, y de ellos alrededor de un tercio desarrolla glaucoma. Los pacientes con XFS tienen el doble de probabilidad de convertir de hipertensión ocular a glaucoma y, ya con glaucoma, tienen mayor probabilidad de progresar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 32,
     "tipo": "opcion_multiple",
@@ -544,7 +544,7 @@
     "explicacion": "La pilocarpina 2% q.h.s. limita la movilidad pupilar (reduciendo el barrido de XFM y liberación de pigmento por fricción iris-cristalino), aumenta el flujo trabecular ayudando a aclarar la malla, y baja la PIO. Los supresores acuosos, en contraste, reducen el flujo a través de la malla — teóricamente perjudicando su función a largo plazo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 33,
     "tipo": "opcion_multiple",
@@ -561,7 +561,7 @@
     "explicacion": "La tríada diagnóstica de Sugar y Barbour (1949) es: (1) defectos de transiluminación tipo hendidura mid-periféricos del iris, (2) pigmentación difusa marrón del ángulo, y (3) huso de Krukenberg (pigmento endotelial vertical). Las sinequias posteriores son características de uveítis, no de glaucoma pigmentario."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 34,
     "tipo": "opcion_multiple",
@@ -578,7 +578,7 @@
     "explicacion": "Según Shields, 'el paciente típico con PG es joven, miope y hombre'. La relación hombre:mujer es 3:1. La prevalencia pico es entre la 3ª y 4ª década. Se observa casi exclusivamente en caucásicos, aunque su prevalencia en poblaciones negras puede estar subdiagnosticada."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 35,
     "tipo": "opcion_multiple",
@@ -595,7 +595,7 @@
     "explicacion": "Campbell (1979) planteó el 'bloqueo pupilar reverso': el iris periférico se curva posteriormente y hace contacto repetido con las zónulas del cristalino, liberando pigmento del epitelio pigmentado del iris. Las características anatómicas requeridas son inserción iris más posterior, perfil cóncavo y iris más flácido/largo — confirmadas todas por UBM."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 36,
     "tipo": "opcion_multiple",
@@ -612,7 +612,7 @@
     "explicacion": "El parpadeo, la acomodación y el ejercicio empujan aire/humor acuoso hacia posterior o desplazan el cristalino, aumentando el bowing posterior del iris y la liberación de pigmento. La pilocarpina, en cambio, revierte el perfil iridiano cóncavo haciéndolo convexo y previene el flujo de pigmento post-ejercicio — por eso es útil terapéuticamente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 37,
     "tipo": "opcion_multiple",
@@ -629,7 +629,7 @@
     "explicacion": "En pacientes jóvenes (<45 años) con PDS/PG temprano, iris cóncavo demostrado por UBM y dispersión activa de pigmento, la iridotomía YAG revierte el bowing posterior y aplana el iris, reduciendo el roce iris-zonular. Se combina con tratamiento hipotensor tópico. El beneficio de la iridotomía disminuye significativamente una vez que la función trabecular ya está severamente dañada."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 38,
     "tipo": "opcion_multiple",
@@ -646,7 +646,7 @@
     "explicacion": "El pigmento se deposita en un patrón vertical fusiforme en el endotelio corneal central debido a las corrientes de convección del humor acuoso: el acuoso caliente asciende cerca del iris y desciende cerca de la córnea fría, arrastrando gránulos que son fagocitados por células endoteliales, generando polimegatismo y polimorfismo (aunque el conteo endotelial permanece normal)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 39,
     "tipo": "opcion_multiple",
@@ -663,7 +663,7 @@
     "explicacion": "Un estudio poblacional retrospectivo estimó 10% a 5 años y 15% a 15 años. Algunas series reportan hasta 35% en 5-35 años. La dispersión activa de pigmento y la alta miopía son factores de riesgo consistentes para conversión."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 40,
     "tipo": "opcion_multiple",
@@ -680,7 +680,7 @@
     "explicacion": "Con la edad, algunos pacientes con PG dejan de dispersar pigmento; el pigmento se aclara del trabéculo y la PIO se normaliza, pero el daño glaucomatoso permanece. El 'signo de reversión pigmentaria' (más pigmento en cuadrantes superiores que inferiores) es característico. El paciente puede ser mal etiquetado como glaucoma de baja tensión."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 41,
     "tipo": "opcion_multiple",
@@ -697,7 +697,7 @@
     "explicacion": "Los ratones DBA/2J con mutaciones en GPNMB (R150X) y TYRP1 desarrollan un fenotipo pigmentario glaucomatoso. Ambos codifican proteínas transmembrana melanosomales; sus mutaciones permiten la fuga de intermediarios citotóxicos de la producción de melanina. En familias humanas con PG, estas mutaciones específicas no se han identificado consistentemente, aunque genes similares pueden estar involucrados."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 42,
     "tipo": "opcion_multiple",
@@ -714,7 +714,7 @@
     "explicacion": "Wesley et al. encontraron degeneraciones regmatógenas en 20% de ojos con PDS/PG, agujeros retinianos de espesor total en 11%, y desprendimiento de retina en 6-7% — independientemente del grado de miopía. Esta susceptibilidad retiniana obliga a examen periódico del fondo con midriasis completa."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 43,
     "tipo": "opcion_multiple",
@@ -731,7 +731,7 @@
     "explicacion": "En malla trabecular altamente pigmentada como en PG, la energía láser es más absorbida y se pueden producir picos agudos de PIO. Se recomienda reducir la energía. Los fármacos que actúan sobre outflow uveoscleral (prostaglandinas) tienden a funcionar mejor que los que reducen producción, ya que estos últimos ralentizan la 'limpieza' del trabéculo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 44,
     "tipo": "opcion_multiple",
@@ -748,7 +748,7 @@
     "explicacion": "PG y PDS tienen anterior chamber más PROFUNDA que lo normal (opuesto al ángulo cerrado). El iris se inserta más posteriormente al espolón escleral: 0.42 mm vs 0.28-0.29 mm en controles. Estos rasgos biométricos favorecen el perfil cóncavo del iris y el contacto irido-zonular."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 45,
     "tipo": "opcion_multiple",
@@ -765,7 +765,7 @@
     "explicacion": "En casos asimétricos, la pérdida marcada de pigmento del iris puede producir anisocoria (pupila ligeramente más dilatada en el ojo más afectado) y heterocromía (por adelgazamiento del iris y depósito irregular de pigmento). Esta combinación puede confundirse con un síndrome de Horner."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 46,
     "tipo": "opcion_multiple",
@@ -782,7 +782,7 @@
     "explicacion": "Los gránulos pigmentados son fagocitados por las células endoteliales trabeculares. La sobrecarga de melanina causa muerte de estas células, denudación de las trabéculas de colágeno, colapso y fusión de las estructuras, obliteración de los canales acuosos, y por tanto aumento de resistencia al outflow y de PIO. Este es un proceso progresivo, no bloqueo mecánico agudo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 47,
     "tipo": "opcion_multiple",
@@ -799,7 +799,7 @@
     "explicacion": "El ejercicio, la midriasis farmacológica (especialmente con fenilefrina) y la oscuridad prolongada pueden acelerar la dispersión de pigmento y causar picos agudos de PIO con síntomas como halos y visión borrosa por edema corneal. La pilocarpina, por el contrario, convierte el perfil iridiano en convexo y BLOQUEA la dispersión inducida por ejercicio — es protectora."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 48,
     "tipo": "opcion_multiple",
@@ -816,7 +816,7 @@
     "explicacion": "La tríada clásica que hace sospechar glaucoma congénito primario es: epífora, fotofobia y blefaroespasmo. Los padres suelen notar lagrimeo excesivo y que el niño 'entrecierra los ojos' con la luz. Otros signos incluyen agrandamiento corneal, opacidad corneal y buftalmos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 49,
     "tipo": "opcion_multiple",
@@ -833,7 +833,7 @@
     "explicacion": "Las estrías de Haab son roturas curvilíneas de la membrana de Descemet secundarias al estiramiento del globo por PIO elevada en la infancia. Deben diferenciarse de las roturas por fórceps (que son verticales u oblicuas, no curvilíneas). Su presencia junto a edema corneal es altamente sugestiva de glaucoma congénito."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 50,
     "tipo": "opcion_multiple",
@@ -850,7 +850,7 @@
     "explicacion": "El locus GLC3A (2p21) codifica el gen CYP1B1, involucrado en el metabolismo de esteroides endógenos. Las mutaciones en CYP1B1 son la causa genética más común del glaucoma congénito primario, con mayor incidencia en culturas con matrimonios consanguíneos. Aprox 10% de casos son familiares (AR con alta penetrancia)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 51,
     "tipo": "opcion_multiple",
@@ -867,7 +867,7 @@
     "explicacion": "Los criterios de agrandamiento corneal patológico en glaucoma pediátrico son: >11 mm en recién nacido, >12 mm en niño <1 año, >13 mm a cualquier edad. Debe diferenciarse de megalocornea (AD, córneas grandes bilaterales pero claras, sin glaucoma)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 52,
     "tipo": "opcion_multiple",
@@ -884,7 +884,7 @@
     "explicacion": "La definición requiere 2+ de: PIO >21, cupping/asimetría glaucomatosa, hallazgos corneales (Haab o diámetro anormal), miopía progresiva con crecimiento ocular anormal, o defecto campimétrico reproducible glaucomatoso. La heterocromía no es un criterio."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 53,
     "tipo": "opcion_multiple",
@@ -901,7 +901,7 @@
     "explicacion": "El tratamiento inicial del glaucoma congénito primario es quirúrgico: goniotomía (requiere córnea clara para visualización angular) o trabeculotomía (menos dependiente de claridad corneal, útil con edema corneal). La terapia médica es adjuvante. Si la cirugía angular falla, se procede a trabeculectomía con antifibróticos, shunt o ciclodestrucción."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 54,
     "tipo": "opcion_multiple",
@@ -918,7 +918,7 @@
     "explicacion": "La brimonidina NO debe usarse en lactantes o niños pequeños — se asocia con efectos sistémicos severos: apnea, bradicardia, hipotensión, somnolencia, letargo severo, hipotonía e hipotermia. Su uso debe limitarse a niños mayores de 6 años o >20 kg. La apraclonidina es un poco más segura pero menos efectiva."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 55,
     "tipo": "opcion_multiple",
@@ -935,7 +935,7 @@
     "explicacion": "El JOAG es AD y el locus GLC1A codifica miocilina (TIGR = trabecular meshwork-induced glucocorticoid response). Se presenta después de los 4 años, sin agrandamiento ocular ni anomalías congénitas. Cinco loci identificados: GLC1A, GLC1J, GLC1K, GLC1M, GLC1N; solo GLC1A tiene gen identificado. Latanoprost es especialmente efectivo en JOAG."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 56,
     "tipo": "opcion_multiple",
@@ -952,7 +952,7 @@
     "explicacion": "El Sturge-Weber (angiomatosis encefalotrigeminal) se sospecha por nevus flammeus en V1/V2. Glaucoma en ~50% cuando hay nevus V1 ipsilateral. Casos tempranos: disgenesia angular. Casos tardíos: aumento de presión venosa episcleral y envejecimiento prematuro del trabéculo. Cuidado: alto riesgo de efusión coroidea intraoperatoria; algunos recomiendan esclerostomías profilácticas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 57,
     "tipo": "opcion_multiple",
@@ -969,7 +969,7 @@
     "explicacion": "La aniridia se debe a mutaciones en PAX6 (11p13), autosómico dominante. La forma esporádica (~1/3 de casos) tiene alto riesgo de tumor de Wilms — la deleción del cromosoma 11p13 puede incluir el gen WT1 adyacente. Es crítico realizar historia familiar y screening para Wilms. Glaucoma ocurre en 50-70% de aniridias."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 58,
     "tipo": "opcion_multiple",
@@ -986,7 +986,7 @@
     "explicacion": "Axenfeld-Rieger: embriotoxon posterior (línea de Schwalbe desplazada anteriormente), hebras iridianas periféricas altas adheridas a la línea de Schwalbe, ectropion uveae, hipoplasia iridiana, corectopia, policoria. Sistémicos: oligodoncia/anodoncia, hipoplasia maxilar con aplanamiento medio-facial, deficiencia de hormona de crecimiento, anomalías umbilicales. Genes: PITX2 (4q25), FOXC1 (6p25)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 59,
     "tipo": "opcion_multiple",
@@ -1003,7 +1003,7 @@
     "explicacion": "El neurofibroma plexiforme del párpado (que da la clásica deformidad en S del párpado superior) se asocia con 50% de riesgo de glaucoma congénito ipsilateral en NF1. NF1 se hereda AD por mutación en el gen supresor de tumores NF1 en cromosoma 17. Otros signos: nódulos de Lisch, ectropion uveae, hiperpigmentación coroidea ipsilateral, manchas café-con-leche."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 60,
     "tipo": "opcion_multiple",
@@ -1020,7 +1020,7 @@
     "explicacion": "El Lowe (oculocerebrorrenal) es recesivo ligado al X (locus Xq26). Se caracteriza por cataratas y glaucoma bilaterales, retardo mental, raquitismo renal, aminoaciduria (síndrome de Fanconi), hipotonía y acidosis. El glaucoma es secundario a disgenesia trabecular. Las pupilas puntiformes que dilatan mal son una pista clínica."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 61,
     "tipo": "opcion_multiple",
@@ -1037,7 +1037,7 @@
     "explicacion": "La anomalía de Peter presenta leucoma corneal central causado por un defecto en la membrana de Descemet, típicamente con adherencias iridianas hasta los bordes del leucoma. En algunos casos hay catarata keratolenticular y microftalmos. Glaucoma ocurre en ~50% de casos. Genes asociados: PAX6, PITX2, CYP1B1, FOXC1, FOXE3, B3GALTL."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 62,
     "tipo": "opcion_multiple",
@@ -1054,7 +1054,7 @@
     "explicacion": "La incidencia puede llegar al 75.9% en pacientes seguidos >6 años. La media de inicio es ~4 años post-cirugía. La mayoría (93.9%) son de ángulo abierto. Factores de riesgo: cirugía en primer año de vida, microcórnea <10 mm, microftalmos, persistencia de vasculatura fetal (PFV), y los tipos completo y nuclear de catarata congénita. Datos del IATS confirman edad temprana y PFV como factores clave."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 63,
     "tipo": "opcion_multiple",
@@ -1071,7 +1071,7 @@
     "explicacion": "La mayoría de los anestésicos generales BAJAN la PIO — por lo que la tonometría debe ser el primer paso del examen bajo anestesia. La ketamina es la EXCEPCIÓN: no baja la PIO y puede aumentarla. Aplanación bajo anestesia tiende a subestimar la PIO real; pneumotonometría o Tonopen son buenas alternativas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 64,
     "tipo": "opcion_multiple",
@@ -1088,7 +1088,7 @@
     "explicacion": "En AIJ, la uveítis ocurre en 8-37% y de ellos ~15-19% desarrolla glaucoma. Los factores de riesgo para uveítis en AIJ son: presencia de anticuerpos antinucleares (ANA+), diagnóstico a edad temprana, sexo femenino y tipo oligoarticular. Complicaciones frecuentes: catarata, sinequias posteriores y glaucoma."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 65,
     "tipo": "opcion_multiple",
@@ -1105,7 +1105,7 @@
     "explicacion": "En ROP avanzada (especialmente estadio 5), el glaucoma es típicamente por cierre angular secundario a membranas retrolentales que empujan el cristalino y el iris hacia adelante. Puede haber también anomalías del ángulo anterior asociadas. Manejo: descartar bloqueo pupilar (iridotomía si presente), considerar lensectomía + remoción de membranas retrolentales."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 66,
     "tipo": "opcion_multiple",
@@ -1122,7 +1122,7 @@
     "explicacion": "La clasificación de Ritch considera 4 niveles anatómicos donde puede originarse el cierre angular: (I) iris (bloqueo pupilar relativo, grosor/arquitectura), (II) cuerpo ciliar (iris plateau, quistes iridociliares), (III) cristalino (intumescencia, subluxación) y (IV) posterior al cristalino (glaucoma maligno, efusión coroidea, tumores, post-cerclaje/PRP)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 67,
     "tipo": "opcion_multiple",
@@ -1139,7 +1139,7 @@
     "explicacion": "PIC = configuración anatómica: iris con superficie central plana y drop-off angulado en la periferia, con procesos ciliares anteriormente posicionados. PIS = PIC que desarrolla cierre angular APESAR de tener una iridotomía permeable — indicando que el bloqueo pupilar no era la causa principal. La UBM muestra procesos ciliares anteriores y ausencia de sulcus ciliar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 68,
     "tipo": "opcion_multiple",
@@ -1156,7 +1156,7 @@
     "explicacion": "El signo del 'doble hump' en la gonioscopia por indentación es característico del iris plateau: se ven dos jorobas convexas — la central es el iris apoyándose sobre la cápsula anterior del cristalino, y la periférica corresponde a los procesos ciliares anteriormente posicionados que empujan la base del iris. Requiere iridoplastia láser periférica (ALPI) para tratar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 69,
     "tipo": "opcion_multiple",
@@ -1173,7 +1173,7 @@
     "explicacion": "El manejo definitivo del glaucoma facomórfico es la EXTRACCIÓN del cristalino intumescente. Primero se controla la PIO médicamente y se realiza iridotomía láser (siempre hay componente de bloqueo pupilar). La iridoplastia láser periférica (ALPI) puede ayudar a bajar la PIO previo a la cirugía. Si tras extracción persisten sinequias, se puede realizar goniosinequiólisis."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 70,
     "tipo": "opcion_multiple",
@@ -1190,7 +1190,7 @@
     "explicacion": "El topiramato (y otros como sulfonamidas, IAC, venlafaxina, fluvoxamina, bupropión) puede causar efusión uveal idiosincrática, con edema y rotación anterior del cuerpo ciliar, desplazamiento anterior del cristalino y cierre angular bilateral con miopía súbita. IMPORTANTE: la iridotomía NO ayuda (no hay bloqueo pupilar). Tratamiento: suspender el fármaco, ciclopléjicos y hipotensores. Suele resolverse tras suspender el desencadenante."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 71,
     "tipo": "opcion_multiple",
@@ -1207,7 +1207,7 @@
     "explicacion": "En glaucoma maligno los MIÓTICOS ESTÁN CONTRAINDICADOS — empeoran el cuadro al relajar zónulas y permitir mayor desplazamiento anterior del cristalino. El manejo médico incluye ciclopléjicos (tensan zónulas, jalan el cristalino posteriormente), supresores acuosos, hiperosmóticos y esteroides tópicos. Si falla en 5 días → capsulotomía-hialoidotomía con Nd:YAG a través de iridotomía en pseudofáquicos o transpupilar en afáquicos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 72,
     "tipo": "opcion_multiple",
@@ -1224,7 +1224,7 @@
     "explicacion": "El signo Fuji (volcán) describe el iris drapeando sobre un cristalino anteriormente desplazado. Los procesos ciliares se hacen visibles detrás del ecuador cristaliniano — normalmente no son visibles por reflexión interna total de luz en la superficie anterior del cristalino. Al moverse el cristalino anteriormente, el ángulo de incidencia cambia y los procesos se hacen visibles."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 73,
     "tipo": "opcion_multiple",
@@ -1241,7 +1241,7 @@
     "explicacion": "El síndrome de Marfan es la causa más común de ectopia lentis hereditaria, típicamente con luxación supero-temporal. Homocistinuria clásicamente luxa infero-nasal. Weill-Marchesani produce microesferofaquia con luxación anterior y bloqueo pupilar. El síndrome de exfoliación es la causa más común de subluxación cristaliniana en general (adquirida) a nivel mundial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 74,
     "tipo": "opcion_multiple",
@@ -1258,7 +1258,7 @@
     "explicacion": "El cerclaje escleral puede comprimir las venas vorticosas causando congestión venosa, efusión ciliocoroidea, rotación anterior del cuerpo ciliar y cierre angular. Se maneja con ciclopléjicos, esteroides y supresores acuosos. Si no responde, considerar drenaje de la efusión y/o reposicionar el cerclaje. La iridotomía NO ayuda porque no hay bloqueo pupilar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 75,
     "tipo": "opcion_multiple",
@@ -1275,7 +1275,7 @@
     "explicacion": "Las prostaglandinas aumentan el outflow uveoescleral. En cierre angular con efusión uveal, esto teóricamente puede empeorar la acumulación de fluido. Se ha reportado efusión ciliocoroidea inducida por latanoprost/travoprost en Sturge-Weber. En cierre angular clásico con ángulo parcialmente abierto pueden usarse con cuidado."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 76,
     "tipo": "opcion_multiple",
@@ -1292,7 +1292,7 @@
     "explicacion": "La 'paradoja de la pilocarpina' (Ritch 1996): en cierres angulares primarios por bloqueo pupilar puro, la pilocarpina ayuda al jalar el iris periférico. Pero en mecanismos no-pupilares (iris plateau, cristalino desplazado, bloqueo ciliar, glaucoma maligno), la contracción del músculo ciliar circular puede relajar zónulas y desplazar el cristalino anteriormente, EMPEORANDO el cierre."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 77,
     "tipo": "opcion_multiple",
@@ -1309,7 +1309,7 @@
     "explicacion": "La goniosinequiólisis mecánicamente separa las PAS recientes del ángulo, restaurando la función trabecular (que es intrínsecamente normal en cierre angular secundario). Es altamente exitosa en sinequias recientes; una vez que hay cambios ultraestructurales irreversibles, el beneficio es limitado. Se realiza bajo visualización directa con gonio-lente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 78,
     "tipo": "opcion_multiple",
@@ -1326,7 +1326,7 @@
     "explicacion": "El VKH puede presentarse con desprendimientos retinianos exudativos bilaterales masivos y efusión coroidea, causando rotación anterior del cuerpo ciliar y cierre angular bilateral. La iridotomía láser NO es efectiva porque no hay bloqueo pupilar. Tratamiento: esteroides sistémicos + ciclopléjicos + hipotensores; la resolución del componente inflamatorio permite reapertura del ángulo. Similar mecanismo se ve en lupus con efusión coroidea."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 79,
     "tipo": "opcion_multiple",
@@ -1343,7 +1343,7 @@
     "explicacion": "La ALPI usa aplicaciones largas de baja densidad y potencia moderada en el iris periférico. La contracción térmica del estroma iridiano lo aleja del trabéculo, mientras el efecto secundario desplaza los procesos ciliares subyacentes hacia posterior. Un estudio mostró éxito a largo plazo: 20/23 ojos permanecieron abiertos, los 3 restantes reabiertos con retratamiento único a 5-9 años."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 80,
     "tipo": "opcion_multiple",
@@ -1360,7 +1360,7 @@
     "explicacion": "AS-OCT detecta más ángulos cerrados que gonioscopia porque no induce miosis por luz y evita el error de presión inadvertida sobre el globo. Pero ambas imágenes (AS-OCT y UBM) dan solo un corte transversal (2 cuadrantes) por vez y pueden perderse patologías focales. La gonioscopia da vista panorámica de los 360° y descripción cualitativa. Las imágenes son complementarias, no sustitutas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 81,
     "tipo": "opcion_multiple",
@@ -1377,7 +1377,7 @@
     "explicacion": "La prevalencia de glaucoma en uveítis oscila entre 10-20%. En un estudio de Neri, la incidencia acumulada en uveítis crónica fue 6.5% al año, 11.1% a los 5 años y 22.7% a los 10 años — subrayando el efecto de la cronicidad. La AIJ es especialmente alto riesgo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 82,
     "tipo": "opcion_multiple",
@@ -1394,7 +1394,7 @@
     "explicacion": "En uveítis aguda, la PIO suele DESCENDER por dos mecanismos: reducción de producción acuosa (ciclitis) y aumento de outflow uveoescleral (prostaglandinas). Paradójicamente, la hipoperfusión del trabéculo puede dañarlo secundariamente. La elevación de PIO surge cuando falla el outflow trabecular por células/proteínas/PAS/esteroides."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 83,
     "tipo": "opcion_multiple",
@@ -1411,7 +1411,7 @@
     "explicacion": "En seclusio pupillae por sinequias posteriores 360°, la obstrucción del flujo acuoso es ABSOLUTA (no relativa), por lo que el iris periférico se abomba dramáticamente hacia adelante (iris bombé muy prominente). Sin embargo, la cámara anterior CENTRAL permanece PROFUNDA. En cambio, si el mecanismo es desplazamiento anterior del iris-cristalino (ej. escleritis posterior), la cámara central también es superficial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 84,
     "tipo": "opcion_multiple",
@@ -1428,7 +1428,7 @@
     "explicacion": "La iridotomía láser es poco útil en bloqueo pupilar uveítico por: (1) el acuoso en la cámara posterior puede estar loculado por adherencias detrás del iris, (2) puede haber adherencias irido-corneales que ponen la endotelio en riesgo con el láser, (3) las iridotomías se cierran rápidamente. Manejo definitivo: IRIDECTOMÍA quirúrgica con sinequiolisis, viscodisección del iris, y esteroides intensivos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 85,
     "tipo": "opcion_multiple",
@@ -1445,7 +1445,7 @@
     "explicacion": "Fuchs es una uveítis crónica típicamente unilateral con precipitados queráticos estrellados finos difusos, iris heterocrómico (más claro el afectado), transiluminación en patrón apolillado (blue eyes), depigmentación estromal, catarata precoz. Los vasos angulares son delicados pero SIN sinequias (a diferencia de otros glaucomas neovasculares). El signo de Amsler: hifema al descomprimir el ojo por cirugía. Prácticamente no hay sinequias posteriores."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 86,
     "tipo": "opcion_multiple",
@@ -1462,7 +1462,7 @@
     "explicacion": "El Posner-Schlossman se caracteriza por inicio súbito de crisis unilaterales recurrentes con PIO muy elevada (40-70) pero inflamación mínima en cámara anterior (pocas células) y 1-2 precipitados queráticos 'centinela'. Se hipotetiza trabeculitis como mecanismo (PIO desproporcionada). Suele responder a corticoides tópicos + hipotensores; los episodios se autolimitan."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 87,
     "tipo": "opcion_multiple",
@@ -1479,7 +1479,7 @@
     "explicacion": "En ojos con antecedente de queratitis herpética o queratouveitis herpética, los PGA deben evitarse cuando sea posible: hay base científica animal para reactivación herpética, y aunque no se ha confirmado aumento poblacional, existen casos anecdóticos de queratitis epitelial recurrente al reintroducir latanoprost."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 88,
     "tipo": "opcion_multiple",
@@ -1496,7 +1496,7 @@
     "explicacion": "La pilocarpina rompe la barrera hemato-acuosa (empeorando flare y células), y al mantener la pupila miótica favorece la formación de sinequias posteriores 360°. Por eso está desaconsejada en uveítis. Los ciclopléjicos (atropina, homatropina), por el contrario, se usan activamente para PREVENIR sinequias posteriores durante uveítis activa."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 89,
     "tipo": "opcion_multiple",
@@ -1513,7 +1513,7 @@
     "explicacion": "La terapia inmunosupresora en uveítis grave incluye ciclosporina, tacrolimus, micofenolato, azatioprina, metotrexato, y biológicos anti-TNF-α como infliximab, etanercept, adalimumab. Rituximab es una opción para casos refractarios. El interferón se ha explorado en uveítis por Behçet, pero NO es primera línea en uveítis anterior aguda."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 90,
     "tipo": "opcion_multiple",
@@ -1530,7 +1530,7 @@
     "explicacion": "En bloqueo pupilar por oclusión fibrinosa aguda de la pupila, puede considerarse inyección intracameral de tPA (12.5 μg) para lisar la fibrina. El manejo definitivo sigue siendo iridectomía quirúrgica con sinequiolisis. En pacientes fáquicos con catarata podría considerarse extracción del cristalino una vez controlada la inflamación."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 91,
     "tipo": "opcion_multiple",
@@ -1547,7 +1547,7 @@
     "explicacion": "En sujetos normales, ~1/3 tiene elevación 6-15 mmHg y ~4-5% desarrolla mayor elevación. En POAG, 50% tiene elevación ≥15 mmHg. En uveítis, el uso prolongado hace la respuesta muy frecuente. La latencia varía: horas en POAG, semanas en normales. Los niños son especialmente susceptibles: >50% de niños <10 años responden significativamente. Rimexolone tiene menor efecto en adultos pero en niños puede aproximarse a la dexametasona."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 92,
     "tipo": "opcion_multiple",
@@ -1564,7 +1564,7 @@
     "explicacion": "El estándar es trabeculectomía con MMC. Sin antifibróticos, los resultados son pobres. Los shunts acuosos son cada vez más elegidos como cirugía primaria en uveíticos con factores de mal pronóstico: AIJ, trabeculectomía previa fallida, afaquia, aceite de silicón, historia de neovascularización. Los estudios de shunts en uveíticos muestran control de PIO mejor que en otros glaucomas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 93,
     "tipo": "opcion_multiple",
@@ -1581,7 +1581,7 @@
     "explicacion": "El metipranolol, sobre todo en concentraciones 0.3% y 0.6%, se reportó desde los años 90 como causa de uveítis granulomatosa (inicialmente en Reino Unido, luego Europa y EE.UU.). También se ha observado en preparación no-preservada, sugiriendo que es efecto del fármaco per se. Debe evitarse en uveíticos si hay alternativa. Otros β-bloqueantes son en general seguros."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 94,
     "tipo": "opcion_multiple",
@@ -1598,7 +1598,7 @@
     "explicacion": "AS-OCT permite imaginar el ángulo en oscuridad (sin miosis reflectiva), es no-contacto y altamente reproducible; detecta más ángulos cerrados que gonioscopia. UBM añade evaluación de cuerpo ciliar y cristalino. Sin embargo, dan solo cortes transversales limitados; la gonioscopia panorámica sigue siendo esencial para vista de 360° y descripción cualitativa."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 95,
     "tipo": "opcion_multiple",
@@ -1615,7 +1615,7 @@
     "explicacion": "En AIJ, control de la inflamación es prioridad — subtratar por miedo a esteroide-inducción del glaucoma es 'falsa economía'. Se combinan corticoides tópicos con inmunosupresores ahorradores de esteroides (metotrexato es primera línea, luego biológicos anti-TNF-α como adalimumab) para permitir dosis menores de esteroides. El manejo interdisciplinario con reumatología y uveitólogo es esencial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 96,
     "tipo": "opcion_multiple",
@@ -1632,7 +1632,7 @@
     "explicacion": "Las bridging PAS ocurren cuando un ataque agudo de uveítis fibrinosa causa estrechamiento angular temporal (por bloqueo pupilar transitorio o rotación anterior del cuerpo ciliar edematizado). Al resolver la inflamación, el ángulo se reabre pero quedan estas sinequias filiformes que 'puentean' desde iris a Schwalbe. Semejan las de Axenfeld pero suelen ser menos numerosas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 97,
     "tipo": "opcion_multiple",
@@ -1649,7 +1649,7 @@
     "explicacion": "Los vasos angulares en Fuchs son finos, radiales, cruzan el ángulo del iris a córnea periférica; NO producen sinequias ni cierre angular (a diferencia del glaucoma neovascular isquémico clásico). Su única relevancia clínica es la tendencia a sangrar durante descompresión quirúrgica del ojo (signo de Amsler → hifema)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 98,
     "tipo": "opcion_multiple",
@@ -1666,7 +1666,7 @@
     "explicacion": "La iridotomía láser NO es útil en el cierre angular NO-pupilar (el mecanismo no es bloqueo pupilar). En este caso el diafragma iris-cristalino es empujado hacia adelante por el edema/masa posterior. Se trata la causa (esteroides sistémicos para escleritis), se usan ciclopléjicos para tensar zónulas y jalar el cristalino atrás, y se controla la PIO con hipotensores acuoso-supresores."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 99,
     "tipo": "opcion_multiple",
@@ -1683,7 +1683,7 @@
     "explicacion": "TGF-β2 está inusualmente elevado en el acuoso de pacientes con POAG (contribuye a resistencia al outflow). En uveítis, al ser TGF-β una citocina inmunosupresora con papel supresor en uveítis, sus niveles en acuoso son BAJOS. Este es un contraste bioquímico interesante entre ambos glaucomas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 100,
     "tipo": "opcion_multiple",
@@ -1700,7 +1700,7 @@
     "explicacion": "Los α2-agonistas actúan en parte por liberación de prostaglandinas, y el uso concomitante de AINEs (inhibidores de la ciclooxigenasa) puede atenuar su efecto hipotensor. Lo mismo se ha reportado con PGA + AINE. Esto debe considerarse al planear el régimen hipotensor en un uveítico bajo tratamiento con AINEs tópicos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 101,
     "tipo": "opcion_multiple",
@@ -1717,7 +1717,7 @@
     "explicacion": "Las tres condiciones más frecuentes son CRVO (~36%), RDP (~32%) y obstrucción carotídea/síndrome ocular isquémico (~13%). Todas comparten un denominador común: isquemia retiniana crónica que estimula liberación de VEGF."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 102,
     "tipo": "opcion_multiple",
@@ -1734,7 +1734,7 @@
     "explicacion": "El CVOS demostró que la pobre agudeza visual fue el factor MÁS predictivo de rubeosis iridis — es un marcador de isquemia retiniana extensa. El 15% de CRVO no-isquémicos convierten a isquémicos en los primeros 4 meses, y 34% a 3 años. NVI ≥2 horas horarias o NVA se desarrollaron en 16% de ojos totales."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 103,
     "tipo": "opcion_multiple",
@@ -1751,7 +1751,7 @@
     "explicacion": "En síndrome ocular isquémico, ~66% desarrolla rubeosis iridis pero la PIO tiende a ser NORMAL o BAJA — la perfusión comprometida del cuerpo ciliar reduce la producción de acuoso. Frecuentemente se malinterpreta como POAG. Ante rubeosis + hemorragias medio-periféricas debe hacerse Doppler carotídeo. Endarterectomía carotídea puede frenar la progresión."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 104,
     "tipo": "opcion_multiple",
@@ -1768,7 +1768,7 @@
     "explicacion": "El paciente está en Estadio 3: contracción de la membrana fibrovascular ha jalado el iris hacia el trabéculo produciendo sinequias 360°, ectropion uveae y cierre angular. PIO frecuentemente 60-70 mmHg. Estadio 1 = rubeosis con PIO normal; Estadio 2 = ángulo abierto con crecimiento fibrovascular incipiente sobre trabéculo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 105,
     "tipo": "opcion_multiple",
@@ -1785,7 +1785,7 @@
     "explicacion": "La PRP es el pilar etiológico: destruye retina isquémica → reduce hipoxia → menor VEGF → involución de la neovascularización. Se requiere PRP ADECUADA (1200-1600 impactos → 71% regresión vs 36% con 400-650 impactos). Es la primera línea si los medios están claros."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 106,
     "tipo": "opcion_multiple",
@@ -1802,7 +1802,7 @@
     "explicacion": "VEGF es el mediador principal. En isquemia retiniana severa, VEGF difunde hacia adelante a los capilares viables más cercanos (iris posterior). La neovascularización brota del iris posterior, cruza la pupila, se extiende por el iris anterior y entra al ángulo. Los miofibroblastos ocultos bajo los neovasos proporcionan la fuerza contráctil que produce ectropion uveae y cierre sinequial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 107,
     "tipo": "opcion_multiple",
@@ -1819,7 +1819,7 @@
     "explicacion": "IVB es adjuvante de primera línea con PRP en NVG con rubeosis iridis. Regresión completa en 100% con PRP+IVB vs 17% con PRP sola. Estabiliza actividad neovascular y ayuda control de PIO si el ángulo aún está abierto. NO reabre ángulos ya cerrados por sinequias. Precauciones: casos raros de eventos isquémicos oculares — CRAO en 50% con síndrome ocular isquémico preexistente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 108,
     "tipo": "opcion_multiple",
@@ -1836,7 +1836,7 @@
     "explicacion": "En NVG generalmente NO se recomiendan prostaglandinas: el outflow uveoescleral está comprometido y hay inflamación concurrente. Se prefieren supresores acuosos: β-bloqueantes, IAC tópicos/sistémicos y α2-agonistas. Se añaden ciclopléjicos y esteroides tópicos para control de dolor e inflamación."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 109,
     "tipo": "opcion_multiple",
@@ -1853,7 +1853,7 @@
     "explicacion": "Con medios turbios se opta por PPV con endoláser (aplicando PRP durante la cirugía) ± ciclofotocoagulación endoscópica de procesos ciliares. IVB preoperatorio reduce hemorragia intra y postoperatoria. Alternativas: diodo retinopexia transescleral, crioterapia panretiniana. En casos con aceite de silicón e vaso remanente, IVB intraocular puede regresar neovascularización."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 110,
     "tipo": "opcion_multiple",
@@ -1870,7 +1870,7 @@
     "explicacion": "Los mejores resultados con trabeculectomía en NVG se obtienen con PRP completa preoperatoria + MMC ± IVB preoperatorio. Con PRP completa + PPV + trabeculectomía con MMC: 81.2% éxito a 3 años vs 18.5% sin PRP previa. IVB preoperatorio: 95% éxito completo a 6 meses (vs 50%). Se plantea que la trabeculectomía misma puede suprimir recurrencia de neovascularización al 'lavar' VEGF acuoso."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 111,
     "tipo": "opcion_multiple",
@@ -1887,7 +1887,7 @@
     "explicacion": "Los shunts en NVG tienen tasas moderadas: Ahmed 63% al año → 25% a 5 años; Molteno 37% al año → 30% a 5 años. Baerveldt 79% a 12m → 56% a 18m. Combinar con PPV y tubo pars plana mejora éxito en refractarios. NVG per se es factor de riesgo de falla y peor pronóstico visual — hasta 31% terminan sin percepción de luz."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 112,
     "tipo": "opcion_multiple",
@@ -1904,7 +1904,7 @@
     "explicacion": "Contrario a la creencia previa, la incidencia de rubeosis post-CRAO es más alta de lo pensado: ~18% en los primeros 3 meses (aparición 12 días a 15 semanas post-oclusión); ~15% del total desarrolla NVG. La enfermedad carotídea NO es la causa en la mayoría de estos casos. Requiere seguimiento cercano y PRP si aparece rubeosis."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 113,
     "tipo": "opcion_multiple",
@@ -1921,7 +1921,7 @@
     "explicacion": "En NVG estadio terminal sin visión útil: ciclopléjicos + esteroides tópicos para confort, PRP si medios claros, IVB para reducir neovascularización dolorosa. Ciclodestrucción (Nd:YAG o diodo transescleral, ciclocriocoagulación) para control de PIO — riesgo de hipotonía y phthisis. Si dolor persiste: alcohol retrobulbar, evisceración o enucleación. La ciclocriocoagulación transconjuntival ha mostrado reducción significativa de PIO y dolor a 180 días."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 114,
     "tipo": "opcion_multiple",
@@ -1938,7 +1938,7 @@
     "explicacion": "La fluorangiografía iridiana es más sensible que biomicroscopía para detectar rubeosis precoz: sensibilidad 97.2%, falsos positivos 1%, y detecta neovascularización antes de ser clínicamente evidente en ~33% de ojos. Aunque NVI suele preceder NVA, en ~5-10% NVA precede rubeosis pupilar visible → gonioscopía completa es esencial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 115,
     "tipo": "opcion_multiple",
@@ -1955,7 +1955,7 @@
     "explicacion": "La facoemulsificación DUPLICA la progresión de retinopatía diabética a 12 meses. La inflamación postoperatoria aumenta expresión de factores angiogénicos. La PRP profiláctica previa a catarata reduce riesgo de rubeosis. En diabéticos con retinopatía severa considerar IVB perioperatorio. También: 80% de ojos con retina desprendida (vs 4% con retina adherida) desarrollan NVG tras vitrectomía por complicaciones diabéticas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 116,
     "tipo": "opcion_multiple",
@@ -1972,7 +1972,7 @@
     "explicacion": "En glaucoma facolítico, la cápsula del cristalino permanece INTACTA pero desarrolla microdefectos que permiten fuga de proteínas de alto peso molecular. Estas proteínas y los macrófagos que las fagocitan obstruyen el trabéculo. Se ve un cristalino maduro/hipermaduro con núcleo compacto flotando en corteza licuefaccionada. La paracentesis puede mostrar macrófagos gigantes; tratamiento definitivo = extracción del cristalino."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 117,
     "tipo": "opcion_multiple",
@@ -1989,7 +1989,7 @@
     "explicacion": "El término 'facoanafiláctico' es un misnomer — NO es una anafilaxia IgE-mediada verdadera. Es una uveítis granulomatosa zonal por pérdida de tolerancia inmune y formación de complejos inmunes contra proteínas cristalinianas tras disrupción traumática o quirúrgica. Puede ocurrir días a años después. Tratamiento: remoción quirúrgica de TODO el material cristaliniano remanente + esteroides; los esteroides solos pueden solo elevar la PIO sin controlar la uveítis."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 118,
     "tipo": "opcion_multiple",
@@ -2006,7 +2006,7 @@
     "explicacion": "La característica común de ICE es una apariencia de 'plata martillada' (silver-gray hammered) del endotelio corneal. La microscopía especular muestra pleomorfismo y polimegatismo. Las células endoteliales anormales proliferan sobre el ángulo e iris, causando sinequias, distorsión pupilar y atrofia. ICE es más común en mujeres, unilateral, presenta en 4ª-5ª década. Se ha detectado ADN de HSV en 16/25 córneas por PCR."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 119,
     "tipo": "opcion_multiple",
@@ -2023,7 +2023,7 @@
     "explicacion": "La atrofia iridiana esencial (progresiva) se caracteriza por corectopia, atrofia estromal, orificios iridianos (policoria), ectropion uveae y PAS. Chandler predomina edema corneal (con iris relativamente conservado). Cogan-Reese muestra nódulos iridianos pedunculados (que son islas de tejido iridiano NORMAL rodeadas por membrana endotelial contraída — de ahí que 'iris nevus syndrome' sea un misnomer). Chandler es el 50% de casos; los otros dos, 25% cada uno."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 120,
     "tipo": "opcion_multiple",
@@ -2040,7 +2040,7 @@
     "explicacion": "Los niños son más respondedores que adultos como clase; los ≤6 años son los MÁS respondedores. Otros factores: POAG, sospecha, familiar 1er grado POAG, respuesta previa, alta miopía, DM tipo 1, conectivopatías. Los ancianos responden más que adultos jóvenes en la escala adulta. La respuesta a corticoides sistémicos ocurre en semanas-años; la tópica en 1-4 semanas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 121,
     "tipo": "opcion_multiple",
@@ -2057,7 +2057,7 @@
     "explicacion": "La IVT causa elevación significativa de PIO en aproximadamente 50% de pacientes. La respuesta puede ser aguda o desarrollarse hasta varios meses después. La vitrectomía con remoción del depósito de triamcinolona normaliza la PIO en algunos casos. Los implantes intravítreos de dexametasona y fluocinolona acetonide también causan elevación en proporciones significativas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 122,
     "tipo": "opcion_multiple",
@@ -2074,7 +2074,7 @@
     "explicacion": "Los corticoides DISMINUYEN la actividad del activador tisular del plasminógeno, estromelisina y metaloproteinasas, y REDUCEN la fagocitosis trabecular — llevando a acumulación de detritos. Aumentan el grosor de las trabéculas y matriz extracelular. Se ha implicado el gen miocilina (TIGR/GLC1A) — su expresión es inducida por glucocorticoides paralelo a la elevación de PIO, aunque los estudios son conflictivos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 123,
     "tipo": "opcion_multiple",
@@ -2091,7 +2091,7 @@
     "explicacion": "La presión venosa episcleral normal es 8-10 mmHg. La regla práctica: por cada 1 mmHg de aumento en Pe, la PIO sube ~1 mmHg (aunque la relación no es exactamente 1:1). Formación de acuoso normal 2-3 μL/min; facilidad de outflow 0.2-0.3 μL/min/mmHg. Elevaciones agudas de Pe no afectan facilidad de outflow inicialmente; cronicidad puede dañar el trabéculo irreversiblemente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 124,
     "tipo": "opcion_multiple",
@@ -2108,7 +2108,7 @@
     "explicacion": "La fístula carótido-cavernosa traumática (de alto flujo) es característica: proptosis pulsátil, soplo orbitario, vasos episclerales/conjuntivales dilatados 'arterializados', restricción de motilidad, isquemia ocular. Comunicación entre la carótida interna y el plexo venoso del seno cavernoso. Se distingue de las fístulas espontáneas (bajo flujo, dural, más frecuentes en mujeres mayores) que son más suaves y muchas resuelven espontáneamente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 125,
     "tipo": "opcion_multiple",
@@ -2125,7 +2125,7 @@
     "explicacion": "Por la ecuación de Goldmann, en Pe elevada aguda la facilidad de outflow es normal; los supresores acuosos (β-bloqueantes, IAC, α-agonistas) son más efectivos. Las prostaglandinas y trabeculoplastía tienen efecto limitado agudamente. En casos crónicos con daño trabecular secundario, los fármacos que mejoran outflow pueden ser útiles. La cirugía filtrante conlleva alto riesgo de hipotonía, coroidal, hemorragia supracoroidea — considerar mannitol pre-op, esclerostomías profilácticas, viscoelástico intracameral."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 126,
     "tipo": "opcion_multiple",
@@ -2142,7 +2142,7 @@
     "explicacion": "Stickler es AD por defecto en síntesis de colágeno. Miopía congénita alta (>10 D), degeneración vítreo-retiniana, desprendimiento de retina frecuente (uni o bilateral), catarata presenil, glaucoma de ángulo abierto. Sistémicos: sordera neurosensorial, artritis progresiva, hiperextensibilidad, orofaciales (Pierre-Robin en subtipos). Los mióticos deben evitarse por riesgo de desprendimiento."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 127,
     "tipo": "opcion_multiple",
@@ -2159,7 +2159,7 @@
     "explicacion": "Las células fantasma son eritrocitos degenerados en el vítreo que se hacen rígidos y color caqui. Cuando pasan al segmento anterior (típicamente tras hemorragia vítrea previa + ruptura de la hialoides o cirugía), obstruyen el trabéculo. El hifema tiene color caqui/tan característico. Tratamiento: lavado de cámara anterior si medical no basta; vitrectomía si hay reservorio vítreo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 128,
     "tipo": "opcion_multiple",
@@ -2176,7 +2176,7 @@
     "explicacion": "Normalmente los desprendimientos regmatógenos BAJAN la PIO. En el síndrome de Schwartz (raro), fotorreceptores pigmentados (outer segments) se liberan por la ruptura retiniana y pasan al vítreo/segmento anterior, obstruyendo el trabéculo. El glaucoma resuelve típicamente al reparar el desprendimiento."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 129,
     "tipo": "opcion_multiple",
@@ -2193,7 +2193,7 @@
     "explicacion": "PPMD es AD con expresión variable, bilateral congénita. Se ven opacidades vesiculares en la córnea interna, banda o lesiones geográficas con neblina posterior. Glaucoma se desarrolla en ~13% por proliferación de la membrana endotelial (con cualidades tipo epitelial) sobre el ángulo o cierre angular por PAS. Se distingue de ICE por ser bilateral, congénita, AD."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 130,
     "tipo": "opcion_multiple",
@@ -2210,7 +2210,7 @@
     "explicacion": "ICE: unilateral, adquirida, 4ª-5ª década, más en mujeres, sin patrón hereditario, progresiva. Rieger: bilateral, congénita, AD, no progresiva. El endotelio anormal, las alteraciones progresivas y unilaterales son claves para ICE. También se distingue de Axenfeld por la ausencia de embriotoxon posterior y sinequias en Axenfeld."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 131,
     "tipo": "opcion_multiple",
@@ -2227,7 +2227,7 @@
     "explicacion": "Los anti-VEGF causan pico transitorio de PIO al momento de inyección (normaliza 30-60 min). Un subgrupo desarrolla elevación SOSTENIDA de PIO — mecanismo desconocido, posiblemente relacionado con inflamación trabecular, agregados proteicos, o volumen inyectado. Requiere manejo con hipotensores, láser, o cirugía. En pacientes con glaucoma preexistente hay que monitorizar de cerca."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 132,
     "tipo": "opcion_multiple",
@@ -2244,7 +2244,7 @@
     "explicacion": "Campbell describió 7 anillos de daño: (1) esfínter pupilar → pupila irregular; (2) raíz iridiana → iridodiálisis; (3) cuerpo ciliar anterior → receso angular (más común, banda ciliar ensanchada); (4) unión CB-espolón escleral → cyclodialysis; (5) malla trabecular → desgarro; (6) zónulas → subluxación/luxación cristaliniana; (7) ora serrata → diálisis retiniana."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 133,
     "tipo": "opcion_multiple",
@@ -2261,7 +2261,7 @@
     "explicacion": "Regla de Goldberg: en drepanocitosis (enfermedad o rasgo), la tolerancia máxima es 24 mmHg por 24 horas antes de daño permanente. Sanos toleran hasta 50 mmHg × 5 días. Los eritrocitos falciformes obstruyen el trabéculo mecánicamente y hay vaso-oclusión que compromete el nervio óptico incluso a PIO moderadamente elevada. IAC y manitol están relativamente contraindicados en sickle por riesgo de acidosis/hemoconcentración que precipita más falcificación."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 134,
     "tipo": "opcion_multiple",
@@ -2278,7 +2278,7 @@
     "explicacion": "El resangrado ocurre típicamente entre los días 2-5 al retraer/lisar el coágulo. Incidencia 0-38%. Factores predisponentes: PIO inicial >22 mmHg, drepanocitosis, raza afroamericana sin hemoglobinopatía, antiplaquetarios/anticoagulantes, discrasias sanguíneas. Pacientes con rebleed tienen >50% de riesgo de glaucoma. Los antifibrinolíticos (ácido aminocaproico, tranexámico) reducen significativamente el resangrado."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 135,
     "tipo": "opcion_multiple",
@@ -2295,7 +2295,7 @@
     "explicacion": "Manejo del hifema: β-bloqueantes tópicos, IAC (evitar en sickle), esteroides tópicos (reducen inflamación y rebleed), ciclopléjicos (dolor, previenen sinequias posteriores), antifibrinolíticos (aminocaproico oral/tópico) para prevenir rebleed. EVITAR: mióticos (agravan inflamación) y análogos de prostaglandinas (inflamación adicional). Hyperosmóticos solo si necesario, evitar en sickle."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 136,
     "tipo": "opcion_multiple",
@@ -2312,7 +2312,7 @@
     "explicacion": "Criterios quirúrgicos: PIO no controlada (>60×2d, >50×5d, >35×7d, o en drepanocitosis >25×24h), teñido corneal microscopico de sangre, hifema total persistente ≥10 días, hifema >50% que no baja de 50% al día 8 (prevenir PAS). ~5% de hifemas requieren cirugía. Técnica: paracentesis + lavado; vitrector si coágulo denso; controlar sangrado con bottle alto, viscoelástico o endodiatermia."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 137,
     "tipo": "opcion_multiple",
@@ -2329,7 +2329,7 @@
     "explicacion": "Solo 7-9% de ojos con receso angular desarrollan glaucoma. El riesgo aumenta con recesos >180-240°. El receso NO es la causa directa del glaucoma (el ángulo permanece funcional); es un marcador de daño trabecular degenerativo invisible. Hasta 50% desarrolla glaucoma en el ojo contralateral, sugiriendo predisposición constitucional. Manejo: supresores acuosos, trabeculoplastía láser poco efectiva; trabeculectomía con antimetabolitos si falla médico."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 138,
     "tipo": "opcion_multiple",
@@ -2346,7 +2346,7 @@
     "explicacion": "Las células fantasma son eritrocitos degenerados (senescentes, rígidos) que pasan del vítreo al segmento anterior. A diferencia de eritrocitos jóvenes flexibles, no pueden atravesar el trabéculo → obstrucción → PIO elevada. Aparece semanas post-injuria. Clínicamente: hifema color caqui/tan. Tratamiento: hipotensores acuosos → lavado de cámara anterior si no responde → vitrectomía si hay reservorio vítreo continuando la 'siembra'."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 139,
     "tipo": "opcion_multiple",
@@ -2363,7 +2363,7 @@
     "explicacion": "Discrasia sanguínea + hifema es alto riesgo de rebleed catastrófico. Hospitalizar, cobertura de factor VIII para hemofilia A, consulta hematología, evitar antiplaquetarios. Los antifibrinolíticos sistémicos (aminocaproico) pueden precipitar eventos trombóticos y deben usarse con cautela — tranexámico tiene mejor perfil pero no disponible en EE.UU. Manejar cabecera elevada 30°, protector ocular, reposo relativo, dolor/emesis controlados."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 140,
     "tipo": "opcion_multiple",
@@ -2380,7 +2380,7 @@
     "explicacion": "Normalmente los desprendimientos regmatógenos BAJAN la PIO. En el síndrome de Schwartz-Matsuo (raro), segmentos externos fotorreceptores pigmentados escapan por la ruptura retiniana al vítreo/segmento anterior, obstruyen la malla → elevación de PIO paradójica. Resuelve tras reparación del desprendimiento retiniano."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 141,
     "tipo": "opcion_multiple",
@@ -2397,7 +2397,7 @@
     "explicacion": "El cyclodialysis cleft = separación del cuerpo ciliar del espolón escleral → outflow directo al espacio supracoroideo → HIPOTONÍA. Al cerrarse (espontáneamente o con cirugía), la restauración súbita del outflow trabecular en un ojo con trabéculo hipoperfundido/subutilizado causa pico severo de PIO. Manejo: primero atropina para intentar reafrontamiento; si falla, cirugía (sutura ciclopéxica directa)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 142,
     "tipo": "opcion_multiple",
@@ -2414,7 +2414,7 @@
     "explicacion": "El trauma penetrante tiene menor incidencia global de glaucoma (~3%) comparado con el trauma contuso (~19% con contusión cerrada). Mecanismos: hifema, contaminación, uveítis, epitelio o fibras epitelio-fibrosas invadiendo cámara anterior (ingrowth), sinequias, pérdida de estructuras. El manejo requiere cierre primario meticuloso, antibióticos, antiinflamatorios y seguimiento a largo plazo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 143,
     "tipo": "opcion_multiple",
@@ -2431,7 +2431,7 @@
     "explicacion": "El glaucoma post-receso angular es característicamente TARDÍO (años a décadas después). Recesos >180-240° tienen mayor riesgo. Manejo inicial: hipotensores (supresores acuosos son mejores que outflow; la trabeculoplastía es poco efectiva). Trabeculectomía con antimetabolitos si falla médico. CLAVE: el ojo contralateral tiene ~50% de riesgo de desarrollar glaucoma también — monitoreo de por vida."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 144,
     "tipo": "opcion_multiple",
@@ -2448,7 +2448,7 @@
     "explicacion": "Los antiplaquetarios y AINEs orales (aspirina, ibuprofeno) deben EVITARSE — aumentan el riesgo de rebleed. Manejo: protector rígido, cabecera elevada 30°, reposo relativo, control de dolor con analgesia sin efecto antiagregante (acetaminofén), control de emesis (empujar puede resangrar). Hospitalización si otras injurias oculares, sospecha de maltrato infantil, discrasia, drepanocitosis, PIO alta o hifema >50%."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 145,
     "tipo": "opcion_multiple",
@@ -2465,7 +2465,7 @@
     "explicacion": "Aminocaproico sistémico: riesgo trombótico (drepanocíticos ya son hipercoagulables). IAC (acetazolamida): causa acidosis metabólica que puede precipitar falcificación adicional de eritrocitos, aumentando obstrucción trabecular y vaso-oclusión. Manitol: hemoconcentración también puede empeorar. Preferir β-bloqueantes tópicos, α2-agonistas y control agresivo temprano; considerar cirugía precoz si PIO no controlada en 24 h."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 146,
     "tipo": "opcion_multiple",
@@ -2482,7 +2482,7 @@
     "explicacion": "La iridodiálisis grande (>2 horas de reloj) con diplopía monocular o anisocoria significativa requiere reparación quirúrgica: sutura del iris de vuelta al espolón escleral (técnica McCannel modificada o similar). También previene bloqueo pupilar y sinequias posteriores por iris colgante. Ilis pequeños asintomáticos pueden observarse."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 147,
     "tipo": "opcion_multiple",
@@ -2499,7 +2499,7 @@
     "explicacion": "El resangrado se asocia con >50% de riesgo de glaucoma. Al detectarlo: hospitalizar y considerar antifibrinolíticos sistémicos (aminocaproico o tranexámico) para estabilizar y prevenir más resangrado. Meta-análisis de 6 RCT demostraron reducción significativa. Contraindicados en embarazo, cardiopatía, hepatopatía, nefropatía; efectos adversos: trombosis, hipotensión ortostática, náuseas. Alternativa tópica (aminocaproico tópico) existe pero no disponible ampliamente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 148,
     "tipo": "opcion_multiple",
@@ -2516,7 +2516,7 @@
     "explicacion": "Distribución de PIO elevada en melanomas uveales: cuerpo ciliar 17% > iris 7% > coroideo 2%. El melanoma del cuerpo ciliar tiene mayor tendencia a causar glaucoma por proximidad al ángulo, siembra angular y desplazamiento anterior del iris. Sospechar en glaucoma unilateral con vasos centinela episclerales o pigmentación asimétrica del ángulo."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 149,
     "tipo": "opcion_multiple",
@@ -2533,7 +2533,7 @@
     "explicacion": "El melanoma anular circunda el ángulo 360°. La transiluminación es positiva en 100% de casos. La invasión trabecular y del canal de Schlemm predispone a diseminación extraocular por el flujo acuoso — alta tasa de metástasis. Manejo: enucleación en la mayoría; NO se recomienda cirugía filtrante por riesgo de siembra extraocular."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 150,
     "tipo": "opcion_multiple",
@@ -2550,7 +2550,7 @@
     "explicacion": "Glaucoma melanomalítico = macrófagos cargados con detritos de melanoma necróticas obstruyen el trabéculo. Es específico de tumores melanóticos. A diferencia del facolítico (macrófagos con proteínas cristalinianas), este contiene pigmento y detritos tumorales. Puede presentarse con melanomas anteriores (iris, cuerpo ciliar) o posteriores (coroides con dispersión pigmentaria al vítreo/segmento anterior)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 151,
     "tipo": "opcion_multiple",
@@ -2567,7 +2567,7 @@
     "explicacion": "El mecanismo más común del glaucoma en retinoblastoma es el glaucoma neovascular por isquemia retiniana tumoral. Rubeosis iridis se reporta como signo inicial en 7% de retinoblastomas con glaucoma. La presencia de glaucoma implica tumor grande y peor pronóstico. NUNCA hacer cirugía filtrante en retinoblastoma sospechoso — riesgo de diseminación tumoral extraocular. Manejo: enucleación o terapia oncológica del tumor."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 152,
     "tipo": "opcion_multiple",
@@ -2584,7 +2584,7 @@
     "explicacion": "La retinopatía por radiación (~12-24 meses post-tratamiento) causa vasculopatía isquémica retiniana, análoga a la retinopatía diabética. Puede llevar a neovascularización iridiana y glaucoma neovascular. Manejo: PRP para reducir isquemia, IVB para regresión de neovasos, control hipotensor. La trabeculectomía es complicada por la fibrosis conjuntival post-radiación; shunts (Baerveldt) han mostrado 86% de éxito en una serie."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 153,
     "tipo": "opcion_multiple",
@@ -2601,7 +2601,7 @@
     "explicacion": "Los carcinomas de pulmón (más común en hombres) y mama (más común en mujeres) son los primarios más frecuentes que metastatizan al ojo. La coroides es el sitio metastásico más frecuente, pero el glaucoma es más común con metástasis al segmento anterior. Las lesiones metastásicas al iris/CB son translúcidas/gelatinosas — pueden confundirse con melanoma amelanótico. Frecuentemente asociadas a NVI o hifema."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 154,
     "tipo": "opcion_multiple",
@@ -2618,7 +2618,7 @@
     "explicacion": "El xantogranuloma juvenil (JXG) se diagnostica en infantes/niños pequeños. Lesiones iridianas ligeramente pigmentadas compuestas de histiocitos espumosos y células gigantes de Touton pueden causar hifema espontáneo recurrente. Glaucoma secundario a hifema o invasión angular por histiocitos. Diagnóstico apoyado por lesiones cutáneas papulares amarillas en cabeza/cuello. Tratamiento: corticoides tópicos, ocasionalmente sistémicos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 155,
     "tipo": "opcion_multiple",
@@ -2635,7 +2635,7 @@
     "explicacion": "Medulopepitelioma es un tumor infantil del epitelio no pigmentado del cuerpo ciliar. Puede ser benigno o maligno. Aparece como masa blanquecina-gris del CB/iris. Tiene predisposición ESPECÍFICA a inducir neovascularización iridiana en niños — considerarlo en el diagnóstico diferencial de rubeosis pediátrica. También glaucoma por cierre angular por desplazamiento anterior de iris/PAS."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 156,
     "tipo": "opcion_multiple",
@@ -2652,7 +2652,7 @@
     "explicacion": "En tumores malignos activos (melanoma, retinoblastoma, metástasis), la cirugía filtrante conlleva riesgo de diseminación extraocular iatrogénica del tumor por el sitio quirúrgico. Se ha reportado siembra de melanoma iridiano a través de trabeculectomía. Preferir: manejo médico, láser trabeculoplastía (útil si hay dispersión pigmentaria), ciclodestrucción (preserva integridad de cámara anterior). Cirugía filtrante o shunts solo tras control tumoral documentado (tumor regresado post-radiación), en centros expertos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 157,
     "tipo": "opcion_multiple",
@@ -2669,7 +2669,7 @@
     "explicacion": "En Sturge-Weber, la vasculatura coroidea anómala (hemangioma coroideo difuso) + presión venosa episcleral crónicamente elevada = alto riesgo de efusión coroidea intraoperatoria y hemorragia expulsiva. Algunos recomiendan esclerostomías profilácticas. La goniotomía puede ser preferida por menor riesgo. En niños, considerar CPC transescleral con láser diodo. Todos los pacientes con Sturge-Weber requieren manejo especializado del glaucoma."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 158,
     "tipo": "opcion_multiple",
@@ -2686,7 +2686,7 @@
     "explicacion": "Glaucoma unilateral con dispersión pigmentaria angular DEBE hacer sospechar melanoma uveal oculto. Signos de alarma: vasos centinela episclerales, pigmentación angular asimétrica/focal, defectos de transiluminación, sombras oscuras. UBM detecta masas del cuerpo ciliar. La biopsia por aspiración con aguja fina puede ser diagnóstica cuando la imagen no lo es. Diferenciar de PG primario (bilateral, joven, miope) y XFS."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 159,
     "tipo": "opcion_multiple",
@@ -2703,7 +2703,7 @@
     "explicacion": "Leucemia y linfoma pueden causar glaucoma por varios mecanismos: (1) pseudohipopión leucémico obstruyendo el trabéculo, (2) infiltración iridiana como iritis → glaucoma de ángulo abierto, (3) hemorragia subretiniana masiva → cierre angular agudo (leucemia mieloide crónica). El linfoma primario intraocular puede manifestarse como uveítis crónica atípica; vitrectomía con muestra citológica/inmunohistoquímica es diagnóstica."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 160,
     "tipo": "opcion_multiple",
@@ -2720,7 +2720,7 @@
     "explicacion": "Los phakomatosis originales de van der Hoeve fueron: neurofibromatosis (von Recklinghausen), esclerosis tuberosa (Bourneville) y von Hippel-Lindau. Comparten tumores multisistémicos hereditarios con riesgo de transformación maligna. Otras condiciones han sido añadidas: Sturge-Weber, ataxia-telangiectasia, incontinentia pigmenti, Gorlin. Solo SWS y NF tienen glaucoma directamente asociado."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 161,
     "tipo": "opcion_multiple",
@@ -2737,7 +2737,7 @@
     "explicacion": "Hasta 70% de pacientes con SWS desarrollan glaucoma ipsilateral. Distribución bimodal: 60% en infancia (buftalmos, disgenesia angular) y el resto en niñez/adultez temprana (por elevación de presión venosa episcleral). Riesgo mayor si port-wine stain bilateral y afecta párpado superior/inferior. Todos los SWS con glaucoma tienen malformaciones vasculares episclerales al examen cuidadoso. 88% de SWS con hemangioma coroideo desarrollan glaucoma."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 162,
     "tipo": "opcion_multiple",
@@ -2754,7 +2754,7 @@
     "explicacion": "Regla de Anderson: cuando el port-wine stain afecta el párpado superior, hay compromiso intraocular ipsilateral (aunque existen excepciones). El nevus flammeus típicamente sigue la distribución del V1/V2 trigeminal, aunque la asociación es coincidental, no dermatómica desarrollo-embriológicamente. Solo 3-9% de pacientes con port-wine stains faciales tienen SWS."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 163,
     "tipo": "opcion_multiple",
@@ -2771,7 +2771,7 @@
     "explicacion": "El 'tomato catsup fundus' o 'salsa de tomate' es un aspecto rojizo difuso del fondo del ojo por malformación vascular coroidea difusa en Sturge-Weber. Ocupa más del 50% de la coroides. Se puede acompañar de desprendimiento coroideo/retiniano seroso y hemorragia coroidea, especialmente durante cirugía intraocular (descompresión súbita)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 164,
     "tipo": "opcion_multiple",
@@ -2788,7 +2788,7 @@
     "explicacion": "La goniotomía o trabeculotomía tiene MENOR riesgo de complicaciones catastróficas y es preferida en niños con SWS y disgenesia angular. La trabeculectomía es de más riesgo por: baja rigidez escleral, buftalmos, cicatrización agresiva por vasculatura episcleral extensa, y sobre todo alto riesgo de efusión coroidea masiva y hemorragia expulsiva por descompresión súbita en presencia de PVE elevada. Precauciones para filtrante: reducción pre-op de PIO, mantenedor de cámara intraoperatorio, suturas preplaced, liberación lenta del acuoso."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 165,
     "tipo": "opcion_multiple",
@@ -2805,7 +2805,7 @@
     "explicacion": "Latanoprost teóricamente debería puentear el trabéculo anómalo y sistema venoso alterado vía outflow uveoescleral. Sin embargo, estudios clínicos no son alentadores. Puede aumentar ingurgitación vascular episcleral, complicando una eventual cirugía filtrante. Existe reporte de efusión ciliocoroidea inducida por latanoprost en un niño con SWS. Manejo médico prefiere supresores acuosos como primera línea."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 166,
     "tipo": "opcion_multiple",
@@ -2822,7 +2822,7 @@
     "explicacion": "NF-1 (90% de NF, 1/3500-5000): mutación NF1 en cr 17, café-au-lait ≥6 (>5mm niño/>15mm adulto), neurofibromas cutáneos/plexiformes, nódulos de Lisch (>90%), pecas axilares, gliomas ópticos. Glaucoma raro pero 50% cuando plexiforme palpebral. NF-2 (1/50,000): mutación NF2 en cr 22, schwannomas vestibulares bilaterales (sordera). Cataratas subcapsulares posteriores juveniles, hamartomas retinianos. Sin Lisch/café característicos."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 167,
     "tipo": "opcion_multiple",
@@ -2839,7 +2839,7 @@
     "explicacion": "Los nódulos de Lisch son hamartomas melanocíticos iridianos, avasculares, en forma de cúpula, 1-2 mm, distribuidos por todo el iris. Presentes en >90% de pacientes con NF-1 adultos. Aparecen temprano y son un signo diagnóstico clave especialmente en niños cuyas manifestaciones cutáneas aún no son evidentes. En iris marrón oscuro son distintivamente visibles como nódulos color café claro. NF-2 casi nunca tiene Lisch."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 168,
     "tipo": "opcion_multiple",
@@ -2856,7 +2856,7 @@
     "explicacion": "El síndrome de François: buftalmos unilateral + hemihipertrofia facial homolateral + neuroma plexiforme palpebral, todo asociado a NF-1. El neurofibroma plexiforme del párpado superior tiene la clásica deformidad en 'S'. Se acompaña de hipertricosis, hiperpigmentación periorbitaria, ptosis secundaria y astigmatismo — todos factores de riesgo de ambliopía en niños."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 169,
     "tipo": "opcion_multiple",
@@ -2873,7 +2873,7 @@
     "explicacion": "El ectropion uveae congénito ipsilateral es común en ojos con NF-1 y glaucoma — 60% en una serie de 13 pacientes con NF-1 y glaucoma. Se asocia con glaucoma más severo y endotelialización de la cámara anterior con PAS. Los hallazgos histopatológicos consistentes en enucleaciones sugieren que la sobre-expresión de genes relacionados con NF1 lleva a endotelialización angular que contribuye al glaucoma. Puede requerir filtrante con antifibróticos o shunt."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 170,
     "tipo": "opcion_multiple",
@@ -2890,7 +2890,7 @@
     "explicacion": "ODM = nevus de Ota = melanocitosis oculodermal congénita. Hiperpigmentación en distribución V1/V2 (a veces V3), congénita, típicamente unilateral (bilateral 6%). Complete form (piel+ojo) 63%; solo piel 33%; solo ocular (melanosis oculi) minoría. Hallazgos oculares: hiperpigmentación de esclera, iris (heterocromía), coroides, pupila 1-1.5 mm más pequeña ipsilateral, macromelanosomas. Glaucoma en 10%. Riesgo de melanoma uveal (más en caucásicos)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 171,
     "tipo": "opcion_multiple",
@@ -2907,7 +2907,7 @@
     "explicacion": "KTW y SWS son considerados un espectro. KTW: nevus flammeus cutáneo de extremidades y cara, varicosidades, hipertrofia ósea y de partes blandas de la extremidad afectada, fístulas arteriovenosas. Combinación de malformaciones capilares, linfáticas y venosas. Puede tener también malformación vascular cerebral (seizures, retraso mental) y ocular con glaucoma."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 172,
     "tipo": "opcion_multiple",
@@ -2924,7 +2924,7 @@
     "explicacion": "PPV combina cutáneo: nevus flammeus (SWS-like) + nevi pigmentarios (ODM-like). Histopatológicamente: telangiectasias + melanocitos coexistentes en dermis. Cuando ambos afectan el ojo difusamente → GLAUCOMA CONGÉNITO casi siempre. Si predomina uno u otro, el glaucoma puede aparecer más tarde. Las malformaciones vasculares predisponen MÁS al glaucoma que la melanocitosis. Manejo similar a SWS + ODM."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 173,
     "tipo": "opcion_multiple",
@@ -2941,7 +2941,7 @@
     "explicacion": "En von Hippel-Lindau, el glaucoma neovascular es secundario a hemangiomas capilares retinianos no tratados que producen desprendimiento de retina, isquemia y liberación de VEGF con neovascularización iridiana. La detección precoz de hemangiomas retinianos y su tratamiento (fotocoagulación, crioterapia) previene esta complicación. También pueden asociarse hemangioblastomas cerebelosos, feocromocitoma, carcinoma renal de células claras — de ahí la importancia de screening sistémico."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 174,
     "tipo": "opcion_multiple",
@@ -2958,7 +2958,7 @@
     "explicacion": "La cresta neural es tejido pluripotencial que da origen a: sistema nervioso periférico, leptomeninges, melanocitos, células de Schwann, tejido conectivo y esquelético cráneo-facial, células trabeculares y melanocitos iridianos. SWS, KTW, ODM, PPV y NF son trastornos de desarrollo de la cresta neural — de ahí las anomalías angulares comunes. La goniotomía/trabeculotomía trata la disgenesia angular. Los hamartomas contribuyen adicionalmente al glaucoma vía elevación de PVE, infiltración trabecular, etc."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 175,
     "tipo": "opcion_multiple",
@@ -2975,7 +2975,7 @@
     "explicacion": "PACS = ángulo estrecho/ocluible como única anormalidad (ITC solo en algunos definiciones). PAC = ITC + PIO elevada y/o PAS y/o síntomas típicos, pero SIN neuropatía óptica. PACG = PAC + evidencia estructural/funcional de neuropatía óptica glaucomatosa. Chronic PAC es la forma más prevalente y responsable de gran parte de la ceguera glaucomatosa mundial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 176,
     "tipo": "opcion_multiple",
@@ -2992,7 +2992,7 @@
     "explicacion": "Manejo del ataque agudo de PAC: β-bloqueantes tópicos, IAC sistémicos (acetazolamida oral/IV), hiperosmóticos (manitol IV, glicerol oral). Pilocarpina se añade CUANDO la PIO haya bajado (durante PIO muy alta el esfínter está isquémico y no responde). Evitar IAC tópicos (agravan edema corneal). Las prostaglandinas pueden ayudar si el ángulo aún es parcialmente abierto. La iridotomía láser definitiva se hace cuando la córnea aclare."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 177,
     "tipo": "opcion_multiple",
@@ -3009,7 +3009,7 @@
     "explicacion": "En ataque agudo refractario cuando la iridotomía no es factible, la iridoplastía láser periférica (LPI) es efectiva: las quemaduras contraen el iris periférico y mecánicamente 'jalan' la base del iris del ángulo. Reducción rápida en ~1 h. Paracentesis inmediata también es rápida pero invasiva. LPI solo rompe temporalmente el ataque — hay que hacer iridotomía definitiva después para eliminar el bloqueo pupilar."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 178,
     "tipo": "opcion_multiple",
@@ -3026,7 +3026,7 @@
     "explicacion": "El ojo contralateral tiene 40-80% de riesgo de ataque agudo en 5-10 años sin iridotomía profiláctica. Estos ojos suelen ser más cortos y con segmentos anteriores más 'apretados' que ojos sanos. La pilocarpina profiláctica crónica NO previene efectivamente el ataque; iridotomía o iridectomía quirúrgica sí. Por eso se RECOMIENDA iridotomía profiláctica en el ojo contralateral, a menos que el ángulo sea claramente no ocluible."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 179,
     "tipo": "opcion_multiple",
@@ -3043,7 +3043,7 @@
     "explicacion": "La iridotomía profiláctica universal en PACS NO está justificada. El RCT de Mongolia no mostró reducción de PACG a 6 años. Un 20% continúa con cierre appositional post-iridotomía (mecanismos no-pupilares presentes). Además, hay riesgos: quemaduras endoteliales/cristalinianas focales, edema corneal progresivo (raro), efusión ciliocoroidea subclínica, progresión de catarata (reportado en Singapur, no confirmado en Mongolia). Evaluar cada caso individualmente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 180,
     "tipo": "opcion_multiple",
@@ -3060,7 +3060,7 @@
     "explicacion": "En ojos asiáticos con PAC agudo tras iridotomía exitosa, 58.1% continúan con PIO elevada y 32.7% eventualmente requieren trabeculectomía. Factores: presentación tardía, PAC crónico asintomático preexistente, severidad del ataque, mecanismos no-pupilares coexistentes. Hasta 32.2% desarrollan progresión de PAS tras una iridotomía permeable. Por eso el seguimiento con gonioscopía y tonometría periódica es esencial."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 181,
     "tipo": "opcion_multiple",
@@ -3077,7 +3077,7 @@
     "explicacion": "La facoemulsificación con LIO ha superado a la iridotomía láser como tratamiento inicial de PAC agudo. Elimina tanto el bloqueo pupilar como el 'crowding' del segmento anterior. La LIO delgada añade ~4 mm de espacio axial. En PAC/PACG uncontrolled, la extracción del cristalino (incluso claro) gana aceptación. La cataratogénesis se acelera tras ataque agudo. La faco combinada con trabeculectomía tiene MÁS complicaciones que faco sola sin ganancia significativa en control de PIO."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 182,
     "tipo": "opcion_multiple",
@@ -3094,7 +3094,7 @@
     "explicacion": "Goniosinequiólisis (GSL) separa mecánicamente las PAS del trabéculo bajo visualización directa. Éxito ~80% si PAS <1 año. Combinada con faco (phaco-GSL): >90% de control en ataques agudos <6 meses. Ventajas: reemplazar cristalino por LIO delgada da espacio, reduce reformación de PAS. Ideal en pacientes con trabéculo previamente normal que desarrolló cierre sinequial reciente. Menos efectiva en PAS establecidas de larga data."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 183,
     "tipo": "opcion_multiple",
@@ -3111,7 +3111,7 @@
     "explicacion": "La trabeculectomía es cada vez menos popular en PAC. Se considera INFERIOR a la extracción cristaliniana. Bajo éxito por fibrosis del sitio; el uso rutinario de MMC aumenta endoftalmitis y fugas de bulla. En PAC refractario, la faco (± GSL) está reemplazando a la trabeculectomía como cirugía primaria. La trabeculectomía queda para casos donde la extracción cristaliniana no es suficiente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 184,
     "tipo": "opcion_multiple",
@@ -3128,7 +3128,7 @@
     "explicacion": "En PACG con PAS extensas, la pilocarpina es INEFICAZ (el ángulo cerrado sinequial no reabre con miosis) y puede paradójicamente elevar la PIO al desplazar el cristalino anteriormente por contracción ciliar. Manejo médico crónico similar a POAG: prostaglandinas (superan timolol y pilocarpina en PAC/PACG post-iridotomía), β-bloqueantes, IAC tópicos, α2-agonistas."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 185,
     "tipo": "opcion_multiple",
@@ -3145,7 +3145,7 @@
     "explicacion": "Rasgos biométricos de PAC: cámara anterior superficial, cristalino más grueso y más anteriormente posicionado, longitud axial más corta, córnea con curvatura anterior/posterior más pronunciada, iris más grueso/rígido, ancho de cámara anterior reducido. Todos crean el 'crowding' que predispone al ITC. Modernos parámetros: lens vault, dinámica del iris al dilatarse, expansión coroidea."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 186,
     "tipo": "opcion_multiple",
@@ -3162,7 +3162,7 @@
     "explicacion": "Gonioscopía por indentación en oscuridad: se realiza en cuarto totalmente oscuro para evitar miosis por luz. Cuatro-espejos con diámetro central menor a la córnea permite ejercer presión sobre la córnea → desplaza acuoso hacia el ángulo → separa aposiciones (pero NO sinequias). Al final se ilumina intensamente para inducir miosis y estudiar dinámica iridiana. Se examina primero el cuadrante superior (ángulo más estrecho)."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 187,
     "tipo": "opcion_multiple",
@@ -3179,7 +3179,7 @@
     "explicacion": "Quigley (Edward Jackson Memorial Lecture 2009) propuso que la expansión coroidea es el evento precipitante del movimiento anterior del vítreo en PAC agudo y glaucoma maligno. Junto con volumen iridiano abnormal (Quigley: iris 'sponge' que pierde volumen al dilatarse en normales, pero AUMENTA volumen en angle closure), estos son mecanismos fisiopatológicos modernos del PAC."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 188,
     "tipo": "opcion_multiple",
@@ -3196,7 +3196,7 @@
     "explicacion": "Síndrome de iris plateau: cierre angular a PESAR de iridotomía permeable. UBM muestra procesos ciliares anteriormente posicionados sin sulcus ciliar. Mecanismo no-pupilar. Requiere iridoplastía láser periférica (LPI) o pilocarpina crónica de baja dosis para mantener miosis leve. Un solo tratamiento de LPI mantuvo abiertos 20/23 ojos; los otros 3 fueron reabiertos con retratamiento único a 5-9 años."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 189,
     "tipo": "opcion_multiple",
@@ -3213,7 +3213,7 @@
     "explicacion": "Secuelas del PAC agudo: glaukomflecken (opacidades subcapsulares por necrosis focal por isquemia de PIO alta), atrofia sectorial iridiana, PAS por prolongado ITC, midriasis media fija persistente (isquemia del esfínter), guttatas endoteliales (33% bilateralmente en unilateral), reducción significativa del RNFL peripapilar en primeros 4 meses. Larger IOP más largo → más daño. Rescate rápido = mejor pronóstico visual."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 190,
     "tipo": "opcion_multiple",
@@ -3230,7 +3230,7 @@
     "explicacion": "El glaucoma maligno moderno = combinación multifactorial: cierre angular previo, cámara superficial, cristalino desplazado anterior, relajación zonular, rotación/edema anterior del CB, vítreo anterior engrosado, misdirección acuosa hacia vítreo. UBM detecta efusión suprachoroidea sutil no evidente en B-scan. Se plantea que la expansión coroidea inicia el desplazamiento anterior del vítreo, y todo el proceso es un espectro."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 191,
     "tipo": "opcion_multiple",
@@ -3247,7 +3247,7 @@
     "explicacion": "Secuencia óptima en PAC agudo + catarata: (1) control médico agudo, (2) iridotomía láser (o iridoplastía si córnea opaca), (3) facoemulsificación con LIO (definitiva — elimina bloqueo pupilar y crowding), ± (4) goniosinequiólisis si PAS. Trabeculectomía reservada para fallos (rara en esta era). Combinada faco-trabeculectomía tiene MÁS complicaciones sin mejor control de PIO que faco sola."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 192,
     "tipo": "opcion_multiple",
@@ -3264,7 +3264,7 @@
     "explicacion": "PGAs (latanoprost, bimatoprost, travoprost) son igualmente efectivas y superan a timolol y pilocarpina en PAC/PACG post-iridotomía, independientemente de la extensión de las PAS. Funcionan vía outflow uveoescleral, puenteando el trabéculo cerrado. Efectivas incluso con ángulo parcialmente abierto. Precaución con edema macular quístico en afáquicos/pseudofáquicos; historia de herpético queratitis; en cierre angular activo con inflamación pueden diferirse."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 193,
     "tipo": "opcion_multiple",
@@ -3281,7 +3281,7 @@
     "explicacion": "Los α2-agonistas (brimonidina, apraclonidina) reducen PIO por reducción de producción acuosa. Tienen efecto neuroprotector demostrado experimentalmente en modelos de daño óptico. Sin embargo, un estudio clínico en PAC agudo no mostró superioridad sobre timolol en protección del campo visual. Precaución: apnea/bradicardia en niños pequeños con brimonidina."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 194,
     "tipo": "opcion_multiple",
@@ -3298,7 +3298,7 @@
     "explicacion": "La profundidad de cámara anterior está dominada por grosor del cristalino + posición axial del cristalino. Lowe: en ojos con PAC, 66% del déficit de ACD se explica por cristalino anteriormente posicionado; 33% por cristalino grueso. Facoemulsificación con LIO delgada libera ~4 mm de espacio axial. Lens vault es el moderno parámetro que integra ambos aspectos y correlaciona fuertemente con cierre angular."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 195,
     "tipo": "opcion_multiple",
@@ -3315,7 +3315,7 @@
     "explicacion": "En PACS bilateral, no se recomienda iridotomía láser universal. El ensayo aleatorizado en Mongolia falló en demostrar reducción de PACG con iridotomía profiláctica a 6 años. Evaluar mecanismos: gonioscopía dinámica en oscuridad, UBM, AS-OCT. Iridotomía es beneficiosa solo si predomina bloqueo pupilar. Si mecanismos no-pupilares → iridotomía puede ser insuficiente; considerar iridoplastía, seguimiento, o eventualmente extracción cristaliniana. Balance riesgos (quemaduras, catarata, efusión) vs beneficios."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 196,
     "tipo": "opcion_multiple",
@@ -3332,7 +3332,7 @@
     "explicacion": "El 'lens vault' es la distancia perpendicular desde el plano horizontal del espolón escleral hasta la superficie anterior del cristalino, medida por AS-OCT. Cuanto mayor, más 'crowding' anterior y mayor riesgo de PAC. Se ha demostrado como factor independiente asociado con cierre angular. Junto con otros parámetros (relative lens position, lens-axial length factor), cuantifica el grado en que el cristalino ocupa la cámara anterior."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 197,
     "tipo": "opcion_multiple",
@@ -3349,7 +3349,7 @@
     "explicacion": "El uso rutinario de antifibróticos aumenta endoftalmitis tardía y fugas de bulla. Combinado con anatomía anterior alterada del PAC, contribuye a que la trabeculectomía sea menos exitosa y con más complicaciones que la extracción cristaliniana en PAC. Por eso la faco (± GSL) reemplaza cada vez más a la trabeculectomía como cirugía primaria de PAC/PACG."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 198,
     "tipo": "opcion_multiple",
@@ -3366,7 +3366,7 @@
     "explicacion": "Un estudio mostró que 32.2% de 59 ojos con PAC agudo tuvieron progresión de PAS tras una iridotomía láser exitosa. Esto refleja: mecanismos no-pupilares coexistentes, PAS residuales que continúan estrechando el ángulo, o crowding persistente por el cristalino. Justifica el papel emergente de extracción cristaliniana ± GSL en estos ojos, y el seguimiento con gonioscopía periódica post-iridotomía."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 199,
     "tipo": "opcion_multiple",
@@ -3383,7 +3383,7 @@
     "explicacion": "En PAC crónico con >50% PAS, la pilocarpina es INEFICAZ (el ángulo cerrado sinequial no reabre con miosis) y puede empeorar la PIO por reacción paradójica al desplazar el cristalino anteriormente. Manejo apropiado: PGAs (efectivas), β-bloqueantes, IAC, α-agonistas; considerar extracción cristaliniana ± GSL; trabeculectomía si falla lo anterior. La iridotomía láser en este estadio es solo útil si hay componente appositional persistente."
   },
   {
-    "examen": "Tercer Examen Sharawi",
+    "examen": "Tercer Examen Shaarawy",
     "tema": "Glaucoma",
     "numero": 200,
     "tipo": "opcion_multiple",
