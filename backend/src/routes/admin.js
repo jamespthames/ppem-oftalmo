@@ -224,6 +224,7 @@ router.post('/import', async (req, res) => {
           imagenRef: q.imagen_ref || null,
           imagenBase64: imageBase64 || null,
           nota: q.nota || null,
+          explicacion: q.explicacion || null,
         },
       });
       imported++;
